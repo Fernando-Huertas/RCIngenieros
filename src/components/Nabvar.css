@@ -1,0 +1,577 @@
+
+/* ==========================================================================
+   DISEÑO BASE (ESCRITORIO / DESKTOP-FIRST)
+   ========================================================================== */
+
+/* 1. Elementos Ocultos en Desktop (exclusivos de móvil) */
+.hamburger-btn,
+.close-btn,
+.sidebar-overlay,
+.sidebar-logo,
+.sidebar-contact,
+.sidebar-socials {
+  display: none;
+}
+
+header {
+  position: -webkit-sticky; /* Soporte para Safari */
+  position: sticky;
+  top: 0;           /* Se pega al borde superior */
+  z-index: 1000;    /* Pasa por encima de los sliders del Hero */
+  background: white; /* Evita que se vea transparente al bajar */
+  top: -40px; /* El header sube 40px y se "traba" justo cuando empieza la navbar */
+  transition: box-shadow 0.3s ease-in-out;
+}
+
+/* Sombra dinámica (Solo cuando se hace scroll) */
+.main-header.header--scrolled {
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.12) !important; /* Sombra probada y visible */
+  border-bottom: 1px solid rgba(0, 0, 0, 0.05); /* Borde sutil como límite inferior */
+}
+
+/* 2. Topbar Superior */
+.topbar {
+  display: block;
+  background: #ffffff;
+}
+
+.topbar-content {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 90%;
+  max-width: 1400px;
+  margin: 0 auto;
+  padding: 5px 15px;
+  border-bottom: 2px solid #CCCCCC;
+  box-sizing: border-box;
+}
+
+.top-left {
+  display: flex;
+  gap: 15px;
+}
+
+/* 3. Estilos principales del Header y Navbar */
+.navbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 90%;
+  max-width: 1400px;
+  margin: 0 auto;
+  background: white;
+  padding: 0px;
+  box-sizing: border-box;
+  transition: all 0.3s ease-in-out;
+}
+
+/* Clase que se activará con JavaScript al bajar el scroll */
+.navbar--scrolled {
+  width: 90%; 
+  max-width: 1400px;
+  padding: 0px;  /* Se hace más delgada al bajar */
+}
+
+/* Logo */
+.logo {
+  position: static;
+  transform: none;
+}
+
+.logo img {
+  height: 80px; /* Tamaño del logo en escritorio */
+}
+
+/* 4. Menú Principal (Horizontal en Desktop) */
+.sidebar {
+  position: static;
+  width: auto;
+  height: auto;
+  background: transparent;
+  box-shadow: none;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  padding: 0;
+  margin: 0 auto;
+  z-index: 1000;
+  overflow-y: visible;
+  transition: left 0.3s ease-in-out;
+  color: #383838;
+}
+
+.menu {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  display: flex;
+  flex-direction: row;
+  width: auto;
+  gap: 20px;
+  font-size: 17px;
+  font-weight: 700;
+  font-family: 'Inter', sans-serif;
+  color: #2c2c2c;
+}
+
+.menu li {
+  width: auto;
+  padding: 0;
+  border-bottom: none;
+  box-sizing: border-box;
+  color: #2c2c2c;
+  cursor: pointer;
+}
+
+/* Servicios y Dropdown */
+.servicios {
+  position: relative;
+  padding-bottom: 10px;
+}
+
+.flechita {
+  transition: transform 0.3s ease;
+  vertical-align: middle;
+  display: inline-block;
+  margin-left: 5px;
+  font-size: 0.9em;
+}
+
+.dropdown {
+  position: absolute;
+  top: 30px;
+  left: 0;
+  width: 300px;
+  background: white;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+  display: none;
+  flex-direction: column;
+  margin-top: 0;
+  border-radius: 5px;
+  z-index: 99;
+}
+
+.dropdown::before {
+  content: "";
+  position: absolute;
+  top: -25px;
+  left: 0;
+  width: 100%;
+  height: 25px;
+  background: transparent;
+}
+
+.servicios:hover .dropdown,
+.servicios.activo .dropdown {
+  display: flex;
+}
+
+.servicios:hover .flechita,
+.servicios.activo .flechita {
+  transform: rotate(-180deg);
+}
+
+.item {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  padding: 10px;
+  color: #383838;
+  cursor: pointer;
+}
+
+.item:hover {
+  background: #f5f5f5;
+}
+
+.icon-servicio {
+  width: 50px;
+  height: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #36A6EB;
+  font-size: 35px;
+}
+
+.item span {
+  font-size: 15px;
+}
+
+/* 5. Componentes Globales de Contacto y Redes (Escala Desktop) */
+.contact-item {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  font-family: 'Inter', sans-serif;
+}
+
+.icon-circle {
+  width: 24px;
+  height: 24px;
+  background-color: #123361;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  font-size: 13px;
+}
+
+.font-contact {
+  font-size: 12px;
+  font-weight: 600;
+  color: #383838;
+}
+
+.facebook-icon,
+.ig-icon,
+.tiktok-icon,
+.youtube-icon {
+  width: 36px;
+  height: 36px;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  font-size: 25px;
+}
+
+.facebook-icon { background-color: #0866ff; }
+.ig-icon { background: radial-gradient(circle at 30% 107%, #fdf497 0%, #fdf497 5%, #fd5949 45%, #d6249f 60%, #285AEB 90%); }
+.tiktok-icon { background-color: black; }
+.youtube-icon { background-color: #ff0000; font-size: 26px; }
+
+/* 6. Zona Derecha (Teléfono y Redes) */
+.nav-right {
+  display: flex;
+  align-items: center;
+  gap: 18px;
+}
+
+.contacto {
+  font-weight: normal;
+  display: flex;
+  height: 100%;
+  gap: 5px;
+}
+
+.icon-phone {
+  font-size: 43px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin: 0 auto;
+  color: #252525;
+}
+
+.info-contact {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin: 0 auto;
+  font-size: 10px;
+  font-weight: 400;
+  font-family: 'Inter', sans-serif;
+  color: #383838;
+}
+
+.redes-sociales {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+/* ==========================================================================
+   BREAKPOINT 1: TABLETS Y PEQUEÑAS LAPTOPS (Máximo 1280px)
+   ========================================================================== */
+   @media (max-width: 1280px) {
+    .logo img {
+      height: 60px;
+    }
+    .menu {
+      font-size: 15px;
+    }
+    .icon-phone{
+      font-size: 40px;  
+    }
+   }
+
+
+/* ==========================================================================
+   BREAKPOINT 1: TABLETS Y PEQUEÑAS LAPTOPS (Máximo 1024px)
+   ========================================================================== */
+@media (max-width: 1024px) {
+
+   header{
+    top: 0 !important;
+  }
+
+  /* 1. Ocultamos las barras extra de Desktop */
+  .topbar,
+  .nav-right {
+    display: none;
+  }
+
+  /* 2. Mostramos los elementos de estructura móvil */
+  .hamburger-btn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: none;
+    border: none;
+    cursor: pointer;
+    color: #123361;
+    padding: 0;
+    z-index: 10;
+  }
+  
+  .hamburger-btn .iconify {
+    font-size: 40px !important;
+  }
+
+  .close-btn,
+  .sidebar-logo,
+  .sidebar-contact,
+  .sidebar-socials {
+    display: block !important;
+  }
+  
+  .sidebar-contact { display: flex !important; }
+  .sidebar-socials { display: flex !important; }
+
+  /* 3. Reorganizamos la barra de navegación para tablet/móvil */
+  .navbar {
+    width: 100%;
+    justify-content: flex-start;
+    padding: 20px 10px;
+  }
+
+  /* El logo se vuelve absoluto para centrarlo entre el menú hamburguesa */
+  .logo {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+
+  .logo img {
+    height: 75px;
+  }
+
+  /* 4. El sidebar se transforma en un panel lateral oculto */
+  .sidebar {
+    position: fixed;
+    top: 0;
+    left: -100%;
+    width: 70vw;
+    max-width: 600px;
+    height: 100vh;
+    background: #123361;
+    box-shadow: 2px 0 10px rgba(0, 0, 0, 0.5);
+    flex-direction: column;
+    align-items: flex-start;
+    padding-top: 10px;
+    color: white;
+    overflow-y: auto;
+  }
+
+  .sidebar.active {
+    left: 0;
+  }
+
+  .close-btn {
+    position: absolute;
+    top: 15px;
+    right: 15px;
+    background: none;
+    border: none;
+    cursor: pointer;
+    color: white;
+    z-index: 10;
+  }
+
+  .sidebar-logo {
+    width: 100%;
+    text-align: center;
+    margin-top: 40px;
+    margin-bottom: 20px;
+  }
+
+  .sidebar-logo img {
+    height: 100px;
+    padding: 10px 15px;
+    border-radius: 8px;
+  }
+
+  .sidebar-contact {
+    flex-direction: column;
+    gap: 20px;
+    width: 100%;
+    padding: 30px 40px;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+    box-sizing: border-box;
+  }
+
+  .sidebar-socials {
+    justify-content: center;
+    gap: 25px;
+    width: 100%;
+    padding: 40px 40px;
+    box-sizing: border-box;
+  }
+
+  .sidebar-overlay.active {
+    display: block !important;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5);
+    z-index: 999;
+  }
+
+  /* 5. Reformateo del menú principal hacia un formato vertical gigante */
+  .menu {
+    flex-direction: column;
+    width: 100%;
+    gap: 0;
+    font-size: 18px;
+    color: white;
+  }
+
+  .menu li {
+    width: 100%;
+    padding: 25px 40px;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+    color: white;
+  }
+  
+  .servicios {
+    padding-bottom: 20px;
+  }
+
+  /* 6. El Sub-menú abandona 'position: absolute' y empuja hacia abajo */
+  .dropdown {
+    position: static;
+    width: 100%;
+    box-shadow: none;
+    background: #0a1e3b;
+    display: none; /* Se maneja con Javascript al hacer clic */
+  }
+
+  .servicios.activo .dropdown {
+    display: flex;
+  }
+  
+  /* Anulamos la apertura por hover del desktop para evitar bugs en touch */
+  .servicios:hover .dropdown {
+    display: none; 
+  }
+  .servicios.activo:hover .dropdown,
+  .servicios.activo .dropdown {
+    display: flex;
+    margin-top: 20px;
+  }
+
+  .item {
+    gap: 20px;
+    padding: 15px 15px;
+    color: white;
+  }
+
+  .item:hover {
+    background: rgba(255, 255, 255, 0.05);
+  }
+
+  .icon-servicio {
+    width: 50px;
+    height: 50px;
+    font-size: 40px;
+  }
+
+  .item span {
+    font-size: 16px;
+  }
+
+  /* 7. Iconos grandes para el menú de contacto de la barra lateral */
+  .icon-circle {
+    width: 30px;
+    height: 30px;
+    font-size: 18px;
+    background-color: rgba(255, 255, 255, 0.2);
+  }
+
+  .font-contact {
+    font-size: 15px;
+    font-weight: normal;
+    color: white;
+  }
+
+  .facebook-icon,
+  .ig-icon,
+  .tiktok-icon,
+  .youtube-icon {
+    width: 50px;
+    height: 50px;
+    font-size: 30px;
+  }
+}
+
+/* ==========================================================================
+   BREAKPOINT 2: CELULARES (Máximo 768px)
+   ========================================================================== */
+@media (max-width: 768px) {
+  header{
+    top: 0 !important;
+  }
+  .navbar {
+    padding: 15px 10px;
+  }
+  .sidebar{
+    width: 100%;
+    height: 100vh;
+  }
+  .sidebar-logo img{
+    height: 100px;
+    padding: 10px 5px;
+  }
+
+  .logo img {
+    height: 60px; /* Logo más pequeño en celular */
+  }
+
+  /* Ajustar tamaño de flecha hamburguesa por defecto o cualquier ajuste extra */
+  .hamburger-btn {
+    font-size: 50px;
+  }
+  .menu{
+    font-size: 18px;
+  }
+  .menu li{
+    padding: 18px 40x;
+  }
+  .sidebar-contact{
+    padding: 15px 30px;
+  }
+  .font-contact{
+    font-size: 13px;
+  }
+  .icon-circle {
+    width: 22px;
+    height: 22px;
+    font-size: 14px;
+  }
+  .sidebar-socials{
+    padding: 25px 30px;
+    gap: 15px;
+  }
+  .sidebar-socials a{
+    width: 38px;
+    height: 38px;
+    font-size: 25px;
+  }
+}
+

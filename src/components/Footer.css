@@ -1,0 +1,241 @@
+/* ==========================================================================
+    FOOTER STYLES
+========================================================================== */
+
+.footer-container {
+    background-color: #123361; /* Color azul institucional */
+    color: #ffffff;
+    padding: 60px 5% 20px 5%; /* Padding superior amplio, inferior pequeño para el subfooter */
+    font-family: inherit; /* Hereda fuente general */
+}
+
+/* --- MAIN FOOTER (4 COLUMNAS) --- */
+.footer-main {
+    display: grid;
+    grid-template-columns: 2fr 1fr 1fr 1.5fr; /* Proporciones aproximadas de la imagen */
+    gap: 40px;
+    margin-bottom: 40px;
+}
+
+/* Columna 1: Marca */
+.footer-col-marca {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.footer-logo {
+    width: 280px; /* Ajusta según tamaño original del logo */
+    max-width: 100%;
+}
+
+.footer-descripcion {
+    font-size: 15px;
+    line-height: 1.6;
+    color: #e0e0e0;
+    max-width: 380px;
+}
+
+.footer-socials {
+    display: flex;
+    gap: 15px;
+    margin-top: 5px;
+}
+
+.social-icon {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 40px;
+    height: 40px;
+    background-color: #36A6EB; /* Celeste/Azul claro para los botones */
+    border-radius: 10px;
+    color: white;
+    font-size: 20px;
+    transition: all 0.3s ease;
+    cursor: pointer;
+    text-decoration: none;
+}
+
+.social-icon:hover {
+    transform: translateY(-5px);
+    background-color: #4eb1ef;
+    box-shadow: 0 5px 15px rgba(54, 166, 235, 0.4);
+}
+
+/* Títulos de las columnas 2, 3, 4 */
+.footer-subtitle {
+    font-size: 18px;
+    font-weight: 700;
+    margin-bottom: 25px;
+    color: #ffffff;
+}
+
+/* Listas de Enlaces (Columnas 2 y 3) */
+.footer-links {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.footer-links li a {
+    color: #cbd5e1;
+    text-decoration: none;
+    font-size: 15px;
+    transition: color 0.3s ease, padding-left 0.3s ease;
+}
+
+.footer-links li a:hover {
+    color: #36A6EB;
+    padding-left: 5px; /* Pequeño avance a la derecha interactivo */
+}
+
+/* Columna 4: Contacto */
+.footer-contacto-lista {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    gap: 18px;
+}
+
+.contacto-item {
+    display: flex;
+    align-items: flex-start;
+    gap: 12px;
+}
+
+.contacto-icon {
+    font-size: 22px;
+    color: #ffffff; /* Si prefieres el celeste: #36A6EB */
+    margin-top: 2px; /* Alinea los íconos con la primera línea de texto */
+}
+
+.contacto-textos {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    font-size: 15px;
+    color: #cbd5e1;
+}
+
+.contacto-textos a {
+    color: #cbd5e1;
+    text-decoration: underline;
+    text-underline-offset: 3px;
+    transition: color 0.3s ease;
+}
+
+.contacto-textos a:hover {
+    color: #36A6EB;
+}
+
+.contacto-textos span {
+    line-height: 1.4;
+}
+
+/* --- SUB-FOOTER LEGAL --- */
+.footer-divisor {
+    width: 100%;
+    height: 1px;
+    background-color: rgba(255, 255, 255, 0.1); /* Línea sutil */
+    margin-bottom: 20px;
+}
+
+.footer-sub {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap; /* Para que caiga en línea en móviles */
+    gap: 15px;
+    font-size: 14px;
+    color: #94a3b8;
+}
+
+.footer-legal-links {
+    display: flex;
+    gap: 20px;
+}
+
+.footer-legal-links a {
+    color: #94a3b8;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.footer-legal-links a:hover {
+    color: #36A6EB;
+}
+
+/* ==========================================================================
+    RESPONSIVE DESIGN FOOTER
+========================================================================== */
+
+/* Tablets Horizontales (Menos de 1200px) */
+@media (max-width: 1200px) {
+    .footer-main {
+        grid-template-columns: 1fr 1fr 1fr; /* Columna 4 salta */
+    }
+    .footer-col-marca {
+        grid-column: span 3; /* Logo arriba entero */
+        align-items: center;
+        text-align: center;
+    }
+    .footer-descripcion{
+       margin: 0 auto;
+    }
+    .footer-socials {
+        justify-content: center;
+    }
+}
+
+/* Tablets Verticales (Menos de 900px) */
+@media (max-width: 900px) {
+    .footer-main {
+        grid-template-columns: 1fr 1fr; /* 2 columnas */
+    }
+    .footer-col-marca {
+        grid-column: span 2; 
+    }
+    .footer-sub {
+        flex-direction: column;
+        justify-content: center;
+        text-align: center;
+    }
+    .footer-legal-links {
+        justify-content: center;
+        flex-wrap: wrap;
+    }
+}
+
+/* Teléfonos (Menos de 600px) */
+@media (max-width: 600px) {
+    .footer-container {
+        padding: 50px 5% 20px 5%; 
+    }
+    .footer-main {
+        grid-template-columns: 1fr; /* 1 columna sola */
+        gap: 35px;
+        text-align: center;
+    }
+    .footer-col-marca {
+        grid-column: span 1; 
+    }
+    .contacto-item {
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+    .contacto-icon {
+        margin-top: 0;
+        margin-bottom: 5px;
+    }
+    .footer-links li a:hover {
+        padding-left: 0; /* Sin avance en móviles */
+        transform: scale(1.05); /* Mejor para táctil */
+    }
+}
