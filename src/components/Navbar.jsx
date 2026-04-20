@@ -1,5 +1,5 @@
 import React from 'react'
-import './nabvar.css'
+import './Navbar.css'
 import logoprincipal from '../assets/logoprincipal.jpg'
 import logorc1 from '../assets/logorc1.webp'
 import { Icon } from '@iconify/react';
