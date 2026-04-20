@@ -144,6 +144,12 @@
   width: 100%;
 }
 
+/* Elimina el subrayado que el navegador aplica a los <a> que envuelven los botones */
+.botones-hero a {
+  text-decoration: none;
+
+}
+
 .boton-hero-1, .boton-hero-2 {
   display: flex;
   align-items: center;
@@ -160,13 +166,15 @@
   /* Piden llenar el 100% de su espacio disponible, pero se limitan solos a 320px máximo. */
   width: 100%; 
   flex: 1 1 200px; /* Pueden crecer o achicarse pero idealmente quieren 200px */
-  max-width: 320px; 
+  max-width: 320px;
+ 
 }
 
 .boton-hero-1 {
   background-color: #123361;
   color: white;
   border: none;
+   text-decoration: none; 
 }
 .boton-hero-1:hover { transform: scale(1.05); background-color: #214981; }
 

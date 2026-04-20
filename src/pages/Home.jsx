@@ -250,7 +250,7 @@ export default function Home() {
                 </div>
                 <div className="botones-hero">
                     <a href="#">
-                      <button className="boton-hero-1">Solicitar Demo <Icon icon="line-md:arrow-right" style={{fontSize: "22px"}} /></button>
+                      <button className="boton-hero-1">Solicitar Cotizacion <Icon icon="line-md:arrow-right" style={{fontSize: "22px"}} /></button>
                     </a>
                     <a href="#">
                       <button className="boton-hero-2">Nuestros Servicios</button>
@@ -298,7 +298,7 @@ export default function Home() {
                 </div>
                 <div className="botones-hero">
                     <a href="#">
-                      <button className="boton-hero-1">Solicitar Demo <Icon icon="line-md:arrow-right" style={{fontSize: "22px"}} /></button>
+                      <button className="boton-hero-1">Solicitar Cotizacion <Icon icon="line-md:arrow-right" style={{fontSize: "22px"}} /></button>
                     </a>
                     <a href="#">
                       <button className="boton-hero-2">Nuestros Servicios</button>
@@ -346,7 +346,7 @@ export default function Home() {
                 </div>
                 <div className="botones-hero">
                     <a href="#">
-                      <button className="boton-hero-1">Solicitar Demo <Icon icon="line-md:arrow-right" style={{fontSize: "22px"}} /></button>
+                      <button className="boton-hero-1">Solicitar Cotizacion <Icon icon="line-md:arrow-right" style={{fontSize: "22px"}} /></button>
                     </a>
                     <a href="#">
                       <button className="boton-hero-2">Nuestros Servicios</button>
