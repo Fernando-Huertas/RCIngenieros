@@ -45,7 +45,67 @@ header {
   padding: 5px 15px;
   border-bottom: 2px solid #CCCCCC;
   box-sizing: border-box;
+  gap: 20px;
 }
+
+.top-left, .top-right {
+  flex-shrink: 0;
+}
+
+/* Estilos del Ticker 
+.top-center-ticker {
+  flex-grow: 1;
+  overflow: hidden;
+  height: 28px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+}
+
+.ticker-wrapper {
+  width: 80%;
+  overflow: hidden;
+  white-space: nowrap;
+}
+
+.ticker-items {
+  display: inline-block;
+  white-space: nowrap;
+  animation: ticker-scroll 35s linear infinite;
+  padding-left: 100%; /* Inicia desde afuera 
+}
+
+.ticker-items span {
+  font-size: 13px;
+  font-weight: 700;
+  color: #123361; /* Azul corporativo 
+  text-transform: uppercase;
+  font-family: 'Inter', sans-serif;
+}
+
+.ticker-intro {
+  color: #36A6EB !important; /* Resaltado en celeste 
+  margin-right: 15px;
+  background: rgba(54, 166, 235, 0.1);
+  padding: 2px 10px;
+  border-radius: 4px;
+}
+
+.separator {
+  margin: 0 20px;
+  color: #36A6EB !important; /* Celeste de destaque 
+}
+
+@keyframes ticker-scroll {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-100%);
+  }
+}
+*/
 
 .top-left {
   display: flex;
@@ -282,6 +342,28 @@ header {
   display: flex;
   align-items: center;
   gap: 10px;
+}
+
+
+@media (max-width: 1400px) {
+  .top-center-ticker {
+    width: 90%;
+  }
+  .menu{
+    font-size: 16px;
+  }
+  .icon-phone{
+    font-size: 40px;
+  }
+  .info-contact{
+    font-size: 10px;
+  }
+  .item span  {
+    font-size: 14px;
+  }
+  .icon-servicio{
+    font-size: 32px;
+  }
 }
 
 /* ==========================================================================

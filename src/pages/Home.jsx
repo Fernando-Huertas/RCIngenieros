@@ -7,7 +7,7 @@ import Footer from '../components/Footer'
 import heroimg1 from '../assets/imghero1.png'
 import heroImg2 from '../assets/img1header.jfif'
 import heroImg3 from '../assets/hero3.jpg'
-import heroImg4 from '../assets/hero4.jpg'
+import heroImg4 from '../assets/slide4ac.png'
 import SP247 from '../assets/SP247.png'
 import facturacion from '../assets/imgapufact.png'
 import apugescom2 from '../assets/imgapugescom.png'
@@ -26,6 +26,7 @@ import petrolumara from '../assets/clientes/6.jpg'
 import ava from '../assets/clientes/7.jpg'
 import sagitario from '../assets/clientes/8.jpg'
 import mascaravideo from '../assets/mascaravideo.webp'
+import tuercaRC from '../assets/tuercaRC.png'
 
 
 // --- LIBRERÍAS ---
@@ -398,7 +399,7 @@ export default function Home() {
       </section>
 
       {/* --- SECCIÓN SERVICIOS (Con Vigilante de Scroll Dual) --- */}
-      <section className="container-servicios">
+      <section className="container-servicios" style={{ '--bg-tuerca': `url(${tuercaRC})` }}>
           <div className="info-servi">
               
               {/* Parte superior (Título y Botones): Animados con isHeaderVisible */}
@@ -466,7 +467,7 @@ export default function Home() {
                 <img src={imgnostros} alt="#" />
               </div>
               <div className='img-info'>
-                <h1>25+</h1>
+                <h1>15+</h1>
                 <span>Años de Experiencia</span>
               </div>
               <div className='img-secundaria'>
@@ -570,7 +571,8 @@ export default function Home() {
         <div className='info-llamada-accion'>
           <div className='llamada-accion-izq'>
             <h1 className='llamada-accion-titulo'>Construyamos algo Juntos</h1>
-            <p className='llamada-accion-descripcion'>Contáctanos hoy mismo para una consulta gratuita y déjanos ayudarte a llevar tu proyecto al siguiente nivel.</p>
+            <p className='llamada-accion-descripcion'>Contáctanos hoy mismo para una consulta gratuita y déjanos
+               ayudarte a llevar tu proyecto al siguiente nivel.</p>
           </div>
           <div className='llamada-accion-der'>
             <button className='btn-cotizar'>
@@ -590,9 +592,10 @@ export default function Home() {
                   <span className="apufact-highlight">APUFACT</span>
                 </h1>
                 <p className='apufact-descripcion'>
-                  APUGESCOM es su solución completa para el control total de sus Estaciones de Servicios en GLP,
-                   GNL, UREA y Líquidos. Permite la gestión integral de inventarios, dipensadores, ventas y reportes
-                    en tiempo real, maximizando la presición, eficiencia operativa y la rentabilidad de su negocio de combustibles.
+                  Transforme la administración de su empresa con Apufact, el facturador electrónico diseñado para 
+                  adaptarse a cualquier sector comercial. Cumpla con las normativas de SUNAT de forma rápida, sencilla
+                   y segura. Ya sea que maneje una tienda minorista, servicios profesionales o una gran distribuidora,
+                    nuestra plataforma le permite emitir comprobantes legales en segundos desde cualquier dispositivo.
                 </p>
                 <div className='apufact-images'>
                   <img src={verificadosunat} alt="" />

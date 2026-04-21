@@ -321,8 +321,30 @@
 .container-servicios{
    background-color: #E7E7E7;
    overflow: hidden; /* Evita que las animaciones laterales disparen el scroll horizontal */
+   position: relative;
 }
+
+/* Tuerca decorativa de fondo */
+.container-servicios::before {
+  content: "";
+  position: absolute;
+  top: 60%;
+  right: -5%; /* Ajustado para compensar el mayor tamaño */
+  width: clamp(600px, 60vw, 1200px); /* Tamaño mucho más grande */
+  height: clamp(600px, 60vw, 1200px);
+  background-image: var(--bg-tuerca);
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+  transform: translateY(-50%) rotate(15deg);
+  opacity: 0.1; /* Un poco más sutil al ser más grande */
+  pointer-events: none;
+  z-index: 0;
+}
+
 .info-servi{
+  position: relative;
+  z-index: 2; /* Asegura que el contenido esté por encima de la tuerca */
   display: flex;
   flex-direction: column;
   width: 90%;

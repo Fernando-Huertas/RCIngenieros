@@ -57,6 +57,47 @@ export default function Navbar() {
                         <span className="font-contact">ventas@rcingenieros.com</span>
                     </div>
                 </div>
+
+                {/* Cinta de productos deslizante (Solo Desktop) 
+                <div className="top-center-ticker">
+                    <div className="ticker-wrapper">
+                        <div className="ticker-items">
+                            <span className="ticker-intro">CONTAMOS CON UNA AMPLIA GAMA DE PRODUCTOS:</span>
+                            <span>Servidores</span>
+                            <span className="separator">•</span>
+                            <span>Impresoras</span>
+                            <span className="separator">•</span>
+                            <span>Gabinetes</span>
+                            <span className="separator">•</span>
+                            <span>Patch cord</span>
+                            <span className="separator">•</span>
+                            <span>Cables UTP</span>
+                            <span className="separator">•</span>
+                            <span>Productos eléctricos</span>
+                            <span className="separator">•</span>
+                            <span>Luces LED antiexplosivos</span>
+                            <span className="separator">•</span>
+                            <span>Surtidores</span>
+                            <span className="separator">•</span>
+                            {/* Duplicado para loop infinito suave *
+                            <span className="ticker-intro">CONTAMOS CON UNA AMPLIA GAMA DE PRODUCTOS:</span>
+                            <span>Servidores</span>
+                            <span className="separator">•</span>
+                            <span>Impresoras</span>
+                            <span className="separator">•</span>
+                            <span>Gabinetes</span>
+                            <span className="separator">•</span>
+                            <span>Patch cord</span>
+                            <span className="separator">•</span>
+                            <span>Cables UTP</span>
+                            <span className="separator">•</span>
+                            <span>Productos eléctricos</span>
+                            <span className="separator">•</span>
+                        </div>
+                    </div>
+                </div>
+                */}
+
                 <div className="top-right">
                     <span className="font-contact">Av. Augusto B. Leguía 307 - S.M.P</span>
                 </div>
@@ -130,6 +171,7 @@ export default function Navbar() {
 
                         </div>
                     </li>
+                    <li>Productos</li>
                     <li>Contacto</li>
                 </ul>
 
