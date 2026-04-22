@@ -4,6 +4,7 @@ import './Nosotros.css'
 // Assets de Certificaciones
 import iso27001 from '../assets/iso27001.webp'
 import sunat from '../assets/verificado-por-sunat.webp'
+import nosotroscontent from '../assets/nosotroscont.jpg'
 
 export default function Nosotros() {
     
@@ -24,7 +25,7 @@ export default function Nosotros() {
             {/* ... resto del código ... */}
             {/* Hero Section para Nosotros */}
             <section className="nosotros-hero">
-                <h1>RC Ingenieros</h1>
+                <h1>Sobre Nosotros</h1>
                 <p>
                     Innovación y excelencia en soluciones tecnológicas para la industria del combustible.
                 </p>
@@ -77,7 +78,7 @@ export default function Nosotros() {
                     </div>
                     <div className="nosotros-image-wrapper">
                         <img 
-                            src="/src/assets/imgnosotros.jpg" 
+                            src={nosotroscontent} 
                             alt="Ingeniería RC" 
                         />
                     </div>
