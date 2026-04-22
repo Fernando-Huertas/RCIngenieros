@@ -184,6 +184,12 @@ header {
   cursor: pointer;
 }
 
+.menu li a {
+  text-decoration: none;
+  color: inherit;
+  display: block;
+}
+
 /* Servicios y Dropdown */
 .servicios {
   position: relative;
@@ -656,4 +662,9 @@ header {
     font-size: 25px;
   }
 }
-
+@media (max-width: 425px) {
+  .sidebar{
+    max-width: 80%;
+    height: 100vh;
+  }
+}

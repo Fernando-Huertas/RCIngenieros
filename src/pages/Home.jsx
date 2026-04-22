@@ -1,7 +1,5 @@
 import React from 'react'
 import './Home.css'
-import Navbar from '../components/Navbar'
-import Footer from '../components/Footer'
 
 // --- ASSETS (Imágenes) ---
 import heroimg1 from '../assets/imghero1.png'
@@ -179,7 +177,6 @@ export default function Home() {
   
   return (
     <>
-      <Navbar />
 
       {/* --- SECCIÓN HERO (SLIDER) --- */}
       <section className="hero-slider-container">
@@ -676,7 +673,6 @@ export default function Home() {
         </div>
       </section>
 
-      <Footer/>
     </>
   );
 }

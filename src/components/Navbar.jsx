@@ -1,4 +1,4 @@
-import React from 'react'
+import { Link } from 'react-router-dom'
 import './Navbar.css'
 import logoprincipal from '../assets/logoprincipal.jpg'
 import logorc1 from '../assets/logorc1.webp'
@@ -133,8 +133,8 @@ export default function Navbar() {
                 </div>
 
                 <ul className="menu">
-                    <li>Inicio</li>
-                    <li>Nosotros</li>
+                    <li><Link to="/">Inicio</Link></li>
+                    <li><Link to="/nosotros">Nosotros</Link></li>
                     <li className={`servicios ${isServiciosOpen ? "activo" : ""}`}
             onClick={() => setIsServiciosOpen(!isServiciosOpen)}>
                         Servicios <Icon icon="bx:chevron-down" />
