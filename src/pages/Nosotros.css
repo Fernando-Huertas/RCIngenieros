@@ -13,18 +13,19 @@
 }
 
 .nosotros-hero h1 {
-    font-size: clamp(2.5rem, 5vw, 4rem);
+    font-size: clamp(33px, 6vw, 70px);
     font-weight: 800;
     margin-bottom: 20px;
     letter-spacing: -1px;
 }
 
 .nosotros-hero p {
-    font-size: clamp(1rem, 2vw, 1.25rem);
+    font-size: clamp(16px, 2vw, 20px);
     max-width: 800px;
     margin: 0 auto;
     opacity: 0.9;
     line-height: 1.6;
+    font-weight: 450;
 }
 
 .nosotros-content {
@@ -60,9 +61,10 @@
 .nosotros-text p {
     font-size: 16px;
     line-height: 1.6;
-    color: #4a4a4a;
+    color: #666666;
     margin-bottom: 40px;
     max-width: 90%;
+    font-weight: normal;
 }
 
 /* Feature List */
@@ -93,16 +95,16 @@
 }
 
 .feature-info h3 {
-    font-size: 1.2rem;
+    font-size: 20px;
     font-weight: 700;
     color: #1a1a1a;
     margin-bottom: 8px;
 }
 
 .feature-info p {
-    font-size: 0.95rem;
-    line-height: 1.5;
-    color: #666;
+    font-size: 16px;
+    line-height: 1.6;
+    color: #666666;
     margin-bottom: 0;
     max-width: 100%;
 }
@@ -128,166 +130,359 @@
 }
 
 .nosotros-values {
-    background-color: rgba(192, 218, 229, 0.192);
+    background: radial-gradient(circle at top left, rgba(54, 166, 235, 0.05) 0%, transparent 40%),
+                radial-gradient(circle at bottom right, rgba(18, 51, 97, 0.08) 0%, transparent 40%),
+                #f8fafc;
     padding: 100px 20px;
+    position: relative;
+    overflow: hidden;
+}
+
+.nosotros-values::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-image: url("data:image/svg+xml,%3Csvg width='60' height='60' viewBox='0 0 60 60' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='none' fill-rule='evenodd'%3E%3Cg fill='%23123361' fill-opacity='0.02'%3E%3Cpath d='M36 34v-4h-2v4h-4v2h4v4h2v-4h4v-2h-4zm0-30V0h-2v4h-4v2h4v4h2v-4h4V4h-4zM6 34v-4H4v4H0v2h4v4h2v-4h4v-2H6zM6 4V0H4v4H0v2h4v4h2v-4h4V4H6z'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E");
 }
 
 .values-container {
     max-width: 1200px;
     margin: 0 auto;
+    position: relative;
+    z-index: 2;
 }
 
 .values-header {
     text-align: center;
-    margin-bottom: 70px;
+    margin-bottom: 80px;
+}
+
+.values-subtitle {
+    display: block;
+    color: #36A6EB;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    font-size: 14px;
+    margin-bottom: 15px;
 }
 
 .values-header h2 {
     font-size: 46px;
-    color: #123361;
-    margin-bottom: 20px;
+    color: #000000;
+    margin-bottom: 25px;
+    font-weight: 650;
 }
 
 .values-header p {
-    color: #64748b;
+    color: #666666;
     font-size: 16px;
-    max-width: 600px;
+    max-width: 700px;
     margin: 0 auto;
+    line-height: 1.6;
+    font-weight: normal;
 }
 
 .values-grid {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-    gap: 40px;
+    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+    gap: 30px;
 }
 
 .value-card {
-    background: white;
-    padding: 40px 40px;
-    border-radius: 24px;
-    box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1);
-    transition: all 0.3s ease;
-    border: 1px solid #e2e8f0;
+    background: rgba(255, 255, 255, 0.8);
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    padding: 50px 40px;
+    border-radius: 30px;
+    border: 1px solid rgba(255, 255, 255, 0.5);
+    transition: all 0.5s cubic-bezier(0.23, 1, 0.32, 1);
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    box-shadow: 0 10px 30px -10px rgba(0, 0, 0, 0.05);
+}
+
+.value-card-glow {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 100%;
+    height: 100%;
+    background: radial-gradient(circle at center, rgba(54, 166, 235, 0.1), transparent 70%);
+    opacity: 0;
+    transition: opacity 0.5s ease;
+    border-radius: inherit;
+    pointer-events: none;
 }
 
 .value-card:hover {
-    transform: translateY(-10px);
-    box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1);
-    border-color: #36A6EB;
+    transform: translateY(-15px);
+    box-shadow: 0 40px 60px -20px rgba(18, 51, 97, 0.15);
+    background: white;
+    border-color: rgba(54, 166, 235, 0.3);
 }
 
-.value-icon {
-    font-size: 3.5rem;
-    margin-bottom: 25px;
+.value-card:hover .value-card-glow {
+    opacity: 1;
+}
+
+.value-icon-container {
+    width: 90px;
+    height: 90px;
+    background: linear-gradient(135deg, #123361 0%, #1e4b8a 100%);
+    border-radius: 24px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 35px;
+    position: relative;
+    transform: rotate(-5deg);
+    transition: transform 0.5s ease;
+    box-shadow: 0 10px 20px rgba(18, 51, 97, 0.2);
+}
+
+.value-card:hover .value-icon-container {
+    transform: rotate(0deg) scale(1.1);
+}
+
+.v-icon {
+    font-size: 45px;
+    color: #36A6EB;
 }
 
 .value-card h3 {
-    font-size: 1.5rem;
+    font-size: 22px;
     color: #123361;
-    margin-bottom: 20px;
+    margin-bottom: 15px;
+    font-weight: 700;
 }
 
 .value-card p {
-    color: #64748b;
-    line-height: 1.7;
-    font-size: 1rem;
+    color: #666666;
+    line-height: 1.8;
+    font-size: 16px;
+    margin: 0;
 }
 
-.certificaciones-container{
+.certificaciones {
+    background: linear-gradient(135deg, #f0f7ff 0%, #ffffff 100%);
+    padding: 100px 0;
+    overflow: hidden;
+}
+
+.certificaciones-container {
+    width: 90%;
     max-width: 1400px;
     margin: 0 auto;
-    padding: 90px 20px;
 }
 
 .certificaciones-header {
     text-align: center;
-    margin-bottom: 70px;
+    margin-bottom: 60px;
 }
 
 .certificaciones-header h2 {
     font-size: 46px;
-    font-weight: 700;
+    font-weight: 650;
     color: #000000;
-    margin-bottom: 20px;
+    margin-bottom: 15px;
+    letter-spacing: -0.5px;
 }
 
 .certificaciones-header p {
-    color: #64748b;
+    color: #666666;
     font-size: 16px;
-    max-width: 600px;
-    margin: 0 auto;
+    font-weight: normal;
 }
 
 .certificaciones-grid {
     display: grid;
-    grid-template-columns: repeat(4, 1fr);
-    gap: 60px;
-    align-items: center;
-    justify-items: center;
+    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+    gap: 25px;
+    padding: 40px;
+    background: rgba(255, 255, 255, 0.4);
+    backdrop-filter: blur(20px);
+    border-radius: 40px;
+    border: 1px solid rgba(255, 255, 255, 0.6);
+    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.03);
 }
 
 .certificacion-item {
-    width: 100%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    padding: 20px;
-    background: white;
-    border-radius: 12px;
-    transition: transform 0.3s ease;
+    background: rgba(255, 255, 255, 0.7);
+    backdrop-filter: blur(10px);
+    border: 1px solid rgba(255, 255, 255, 0.8);
+    border-radius: 100px;
+    padding: 15px 30px;
+    transition: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.05);
 }
 
 .certificacion-item:hover {
-    transform: translateY(-5px);
+    transform: scale(1.03) translateY(-5px);
+    background: white;
+    box-shadow: 0 15px 30px rgba(18, 51, 97, 0.1);
+    border-color: #36A6EB;
 }
 
-.certificacion-item img {
-    max-height: 120px;
-    width: auto;
-    max-width: 100%;
-    object-fit: contain;
-    filter: drop-shadow(0 5px 15px rgba(0,0,0,0.05));
-    transition: transform 0.3s ease;
-}
-
-.certificacion-item:hover img {
-    transform: scale(1.1);
-}
-
-.logo-placeholder {
+.cert-card-inner {
     display: flex;
-    flex-direction: column;
     align-items: center;
-    gap: 10px;
-    color: #123361;
-    opacity: 0.6;
+    gap: 20px;
 }
 
-.logo-placeholder span {
-    font-size: 14px;
-    font-weight: 600;
-    text-transform: uppercase;
-    letter-spacing: 1px;
+.cert-icon {
+    width: 60px;
+    height: 60px;
+    min-width: 60px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 32px;
+    color: #123361;
 }
+
+.cert-icon img {
+    max-width: 100%;
+    max-height: 100%;
+    object-fit: contain;
+}
+
+.cert-info {
+    text-align: left;
+}
+
+.cert-name {
+    font-size: 18px;
+    font-weight: 700;
+    color: #1a1a1a;
+    margin: 0;
+    line-height: 1.2;
+}
+
+.cert-desc {
+    font-size: 14px;
+    color: #666666;
+    margin: 4px 0 0 0;
+    font-weight: 500;
+}
+
+/* ==========================================================================
+    RESPONSIVE: NOSOTROS
+========================================================================== */
 
 @media (max-width: 1024px) {
-    .certificaciones-grid {
+    .nosotros-grid {
+        grid-template-columns: 1fr;
+        gap: 60px;
+        margin: 60px auto;
+    }
+
+    .nosotros-image-wrapper {
+        aspect-ratio: 16/9;
+        max-width: 800px;
+        margin: 0 auto;
+    }
+
+    .nosotros-titulo1, .nosotros-highlight {
+        font-size: 38px;
+    }
+
+    .values-grid {
         grid-template-columns: repeat(2, 1fr);
-        gap: 40px;
+    }
+
+    .certificaciones-grid {
+        grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+        padding: 30px;
     }
 }
-
 
 @media (max-width: 768px) {
     .nosotros-hero {
         padding: 80px 20px;
     }
-    
-    .nosotros-grid {
-        gap: 40px;
+
+    .nosotros-content {
+        padding: 30px 0 0 0;
     }
-    
-    .nosotros-text h2 {
-        font-size: 2rem;
+
+    .nosotros-titulo1, .nosotros-highlight {
+        font-size: 32px;
+        text-align: center;
+    }
+
+    .nosotros-text p {
+        text-align: center;
+        max-width: 100%;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .feature-item {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    .nosotros-values {
+        padding: 80px 20px;
+    }
+
+    .values-header h2 {
+        font-size: 32px;
+    }
+
+    .values-grid {
+        grid-template-columns: 1fr;
+        gap: 20px;
+    }
+
+    .certificaciones-header h2 {
+        font-size: 32px;
+    }
+
+    .certificaciones-grid {
+        padding: 20px;
+        border-radius: 25px;
     }
 }
+
+@media (max-width: 480px) {
+    .nosotros-hero h1 {
+        font-size: 28px;
+    }
+
+    .nosotros-hero p {
+        font-size: 15px;
+    }
+
+    .nosotros-titulo1, .nosotros-highlight {
+        font-size: 28px;
+    }
+
+    .value-card {
+        padding: 40px 25px;
+    }
+
+    .certificacion-item {
+        border-radius: 20px;
+        padding: 15px 20px;
+    }
+
+    .cert-card-inner {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .cert-info {
+        text-align: center;
+    }
+}
+

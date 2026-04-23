@@ -661,7 +661,7 @@
 /* Breakpoint para Móviles */
 @media (max-width: 600px) {
     .info-servi {
-        padding: 50px 0;
+        padding: 60px 0 75px 0;
         gap: 30px;
     }
     .servicios-titulo {
@@ -746,8 +746,8 @@
     gap: 20px;
 }
 .nosotros-subtitulo{
-    font-size: 18px;
-    font-weight: 400;
+    font-size: 14px;
+    font-weight: 700;
     color: #36A6EB;
 }
 .nosotros-titulo{
@@ -1078,6 +1078,9 @@
 }
 
 @media (max-width: 570px){
+  .container-nosotros{
+    padding: 60px 0;
+  }
   .info-nosotros {
     width: 90%;
     margin: 0 auto;
@@ -1579,7 +1582,7 @@
 
 @media (max-width: 480px) {
   .llamada-accion{
-    padding: 40px 20px;
+    padding: 60px 20px;
   }
   .llamada-accion-titulo {
     font-size: 28px;
@@ -1752,7 +1755,7 @@
 @media (max-width: 768px) {
   .container-apufact {
     min-height: auto;
-    padding: 50px 20px;
+    padding: 60px 20px;
     background: linear-gradient(135deg, rgba(230, 245, 255, 0.95) 0%, rgba(247, 252, 255, 0) 100%), url('../assets/apufactversion1sinfondo.png');
     background-size: cover;
     background-position: center;

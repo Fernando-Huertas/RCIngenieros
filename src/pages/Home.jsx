@@ -472,7 +472,7 @@ export default function Home() {
               </div>
             </div>
             <div className='nosotros-der'>
-              <h2 className='nosotros-subtitulo'>Sobre Nosotros</h2>
+              <h2 className='nosotros-subtitulo'>SOBRE NOSOTROS</h2>
               <h1 className='nosotros-titulo'>Soluciones Tecnológicas, Eléctricas e Informaticas</h1>
               <p className='nosotros-descripcion'>Somos una empresa peruana líder que brinda soluciones
                  innovadoras y confiables para el control de ventas y gestión de combustible, con más de 

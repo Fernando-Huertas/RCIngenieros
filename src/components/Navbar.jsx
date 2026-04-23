@@ -141,12 +141,12 @@ export default function Navbar() {
 
                         <div className="dropdown" onClick={(e) => e.stopPropagation()}>
 
-                            <div className="item">
+                            <Link to="/servicios/soporte-tecnico" className="item">
                                 <div className="icon-servicio">
                                     <Icon icon="fluent:person-settings-20-regular" />
                                 </div>
                                 <span>Soporte Técnico a Estaciones GNV GLP GNL y Líquidos</span>
-                            </div>
+                            </Link>
 
                             <div className="item">
                                 <div className="icon-servicio">

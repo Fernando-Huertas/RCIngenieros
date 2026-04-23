@@ -1,0 +1,315 @@
+.soporte-page {
+    font-family: 'Inter', sans-serif;
+    overflow-x: hidden;
+}
+
+.soporte-hero {
+    background: linear-gradient(135deg, #0a0f2c 0%, #16245a 100%);
+    min-height: 500px;
+    display: flex;
+    align-items: center;
+    position: relative;
+    padding: 120px 5%;
+    overflow: hidden;
+}
+
+.soporte-hero-container {
+    max-width: 1400px;
+    width: 90%;
+    margin: 0 auto;
+    position: relative;
+    z-index: 10;
+}
+
+.soporte-hero-text {
+    max-width: 850px;
+    animation: fadeInUp 0.8s ease-out forwards;
+}
+
+.soporte-badge {
+    display: inline-block;
+    background-color: rgba(54, 166, 235, 0.15);
+    color: #36A6EB;
+    padding: 8px 20px;
+    border-radius: 50px;
+    font-size: 14px;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    margin-bottom: 25px;
+    border: 1px solid rgba(54, 166, 235, 0.3);
+}
+
+.soporte-hero-text h1 {
+    font-size: 70px;
+    font-weight: 800;
+    color: #ffffff;
+    line-height: 1.1;
+    margin-bottom: 30px;
+}
+
+.soporte-highlight {
+    color: #36A6EB;
+    display: block;
+}
+
+.soporte-hero-text p {
+    font-size: 18px;
+    color: #d1d5db;
+    line-height: 1.5;
+    margin-bottom: 40px;
+    font-weight: 450;
+    max-width: 750px;
+}
+
+.btn-cotizar-soporte {
+    background-color: #A3E635;
+    color: #0c1432;
+    border: none;
+    padding: 22px 40px;
+    border-radius: 12px;
+    font-size: 16px;
+    font-weight: 700;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    transition: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+    box-shadow: 0 10px 20px rgba(163, 230, 53, 0.2);
+}
+
+.btn-cotizar-soporte:hover {
+    transform: translateY(-5px) scale(1.05);
+    background-color: #bef264;
+    box-shadow: 0 20px 30px rgba(163, 230, 53, 0.3);
+}
+
+.btn-icon {
+    font-size: 24px;
+}
+
+/* Decoraciones de fondo */
+.soporte-decoration {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    pointer-events: none;
+}
+
+.circle-glow {
+    position: absolute;
+    top: -20%;
+    right: -10%;
+    width: 60%;
+    height: 80%;
+    background: radial-gradient(circle, rgba(54, 166, 235, 0.15) 0%, transparent 70%);
+    filter: blur(80px);
+}
+
+.tech-pattern {
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 100%;
+    height: 100%;
+    background-image: radial-gradient(#36A6EB 0.5px, transparent 0.5px);
+    background-size: 30px 30px;
+    opacity: 0.1;
+    mask-image: linear-gradient(to left, rgba(0,0,0,1) 0%, rgba(0,0,0,0) 100%);
+}
+
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(30px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* Sección de Servicios */
+.soporte-services {
+    padding: 120px 20px;
+    background-color: #f8fafc;
+}
+
+.services-container {
+    max-width: 1400px;
+    margin: 0 auto;
+    width: 90%;
+}
+
+.services-header {
+    text-align: center;
+    margin-bottom: 80px;
+}
+
+.services-subtitle {
+    display: block;
+    color: #36A6EB;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    font-size: 14px;
+    margin-bottom: 15px;
+}
+
+.services-header h2 {
+    font-size: 46px;
+    font-weight: 650;
+    color: #000000;
+    margin-bottom: 20px;
+}
+
+.services-header p {
+    font-size: 16px;
+    color: #666666;
+    max-width: 700px;
+    margin: 0 auto;
+    font-weight: normal;
+}
+
+.services-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+    gap: 30px;
+}
+
+.service-card {
+    background: white;
+    padding: 50px 40px;
+    border-radius: 24px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.05);
+    border: 1px solid #e2e8f0;
+    transition: all 0.4s ease;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.service-card:hover {
+    transform: translateY(-12px);
+    box-shadow: 0 30px 50px rgba(18, 51, 97, 0.1);
+    border-color: #36A6EB;
+}
+
+.service-icon-box {
+    width: 70px;
+    height: 70px;
+    background-color: #f1f5f9;
+    color: #123361;
+    border-radius: 18px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 32px;
+    margin-bottom: 30px;
+    transition: all 0.4s ease;
+}
+
+.service-card:hover .service-icon-box {
+    background-color: #123361;
+    color: #ffffff;
+    transform: scale(1.1);
+}
+
+.service-card h3 {
+    font-size: 22px;
+    font-weight: 700;
+    color: #123361;
+    margin-bottom: 20px;
+}
+
+.service-card p {
+    font-size: 16px;
+    color: #666666;
+    line-height: 1.7;
+    margin-bottom: 25px;
+}
+
+.service-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    width: 100%;
+}
+
+.service-list li {
+    font-size: 15px;
+    color: #475569;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    padding-left: 25px;
+    position: relative;
+}
+
+.service-list li::before {
+    content: '✓';
+    position: absolute;
+    left: 0;
+    color: #36A6EB;
+    font-weight: 800;
+}
+
+/* Responsive */
+@media (max-width: 1024px) {
+    .soporte-hero {
+        min-height: 600px;
+        padding: 100px 5%;
+        text-align: center;
+        justify-content: center;
+    }
+    .soporte-hero-text {
+        margin: 0 auto;
+    }
+    .soporte-hero-text h1 {
+        font-size: 48px;
+    }
+    .soporte-hero-actions {
+        display: flex;
+        justify-content: center;
+    }
+}
+
+@media (max-width: 768px) {
+    .soporte-hero {
+        min-height: 500px;
+        padding-top: 140px;
+    }
+    .soporte-hero-text h1 {
+        font-size: 38px;
+    }
+    .soporte-hero-text p {
+        font-size: 16px;
+    }
+    .btn-cotizar-soporte {
+        width: 100%;
+        justify-content: center;
+    }
+    .services-grid {
+        grid-template-columns: 1fr;
+    }
+    .service-card {
+        padding: 40px 30px;
+    }
+    .services-header h2 {
+        font-size: 32px;
+    }
+}
+
+@media (max-width: 480px) {
+    .soporte-hero-text h1 {
+        font-size: 32px;
+    }
+    .services-header h2 {
+        font-size: 28px;
+    }
+}

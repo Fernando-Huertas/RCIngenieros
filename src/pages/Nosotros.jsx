@@ -10,14 +10,12 @@ export default function Nosotros() {
     
     // Lista de certificaciones para el grid
     const certificacionesList = [
-        { id: 1, name: 'ISO 9001:2015', src: null, placeholder: 'ISO 9001' },
-        { id: 2, name: 'ISO 27001', src: iso27001 },
-        { id: 3, name: 'Verificado por SUNAT', src: sunat },
-        { id: 4, name: 'Osinergmin', src: null, placeholder: 'Osinergmin' },
-        { id: 5, name: 'ISO 9001:2015', src: null, placeholder: 'ISO 9001' },
-        { id: 6, name: 'ISO 27001', src: iso27001 },
-        { id: 7, name: 'Verificado por SUNAT', src: sunat },
-        { id: 8, name: 'Osinergmin', src: null, placeholder: 'Osinergmin' },
+        { id: 1, name: 'ISO 9001', desc: 'Calidad Global', src: null, placeholder: 'ISO 9001' },
+        { id: 2, name: 'ISO 27001', desc: 'Seguridad Info', src: iso27001 },
+        { id: 3, name: 'SUNAT', desc: 'Verificado por SUNAT', src: sunat },
+        { id: 4, name: 'OSINERGMIN', desc: 'Supervisión Técnica', src: null, placeholder: 'Osinergmin' },
+        { id: 5, name: 'ISO 45001', desc: 'Salud y Seguridad', src: null, placeholder: 'ISO 45001' },
+        { id: 6, name: 'ISO 14001', desc: 'Gestión Ambiental', src: null, placeholder: 'ISO 14001' },
     ];
 
     return (
@@ -89,36 +87,45 @@ export default function Nosotros() {
             <section className="nosotros-values">
                 <div className="values-container">
                     <div className="values-header">
+                        <span className="values-subtitle">Nuestra Esencia</span>
                         <h2>Pilares de Nuestra Empresa</h2>
-                        <p>Los valores y objetivos que impulsan nuestra excelencia operativa diaria.</p>
+                        <p>Los valores y objetivos que impulsan nuestra excelencia operativa diaria y el compromiso con cada proyecto.</p>
                     </div>
                     <div className="values-grid">
                         
                         <div className="value-card">
-                            <div className="value-icon">🎯</div>
+                            <div className="value-card-glow"></div>
+                            <div className="value-icon-container">
+                                <Icon icon="solar:target-bold-duotone" className="v-icon" />
+                            </div>
                             <h3>Misión</h3>
                             <p>
-                                Brindar soluciones tecnológicas más innovadoras a medida de las necesidades de nuestros clientes,
-                                con el objetivo de incrementar la productividad y complejidad en el desarrollo de su empresa.
+                                Brindar soluciones tecnológicas innovadoras a medida, incrementando la productividad 
+                                y eficiencia en el desarrollo de cada uno de nuestros socios estratégicos.
                             </p>
                         </div>
 
                         <div className="value-card">
-                            <div className="value-icon">👁️</div>
+                            <div className="value-card-glow"></div>
+                            <div className="value-icon-container">
+                                <Icon icon="solar:eye-bold-duotone" className="v-icon" />
+                            </div>
                             <h3>Visión</h3>
                             <p>
-                                Ser reconocidos como el socio estratégico líder a nivel nacional  en el sector tecnológico,
-                                 innovando continuamente en la implementación y gestión, garantizando la máxima eficiencia y
-                                  crecimiento sostenible para el futuro de nuestros clientes.
+                                Ser el referente líder nacional en innovación tecnológica, garantizando crecimiento 
+                                sostenible y excelencia en la gestión de servicios industriales para el futuro.
                             </p>
                         </div>
 
                         <div className="value-card">
-                            <div className="value-icon">💎</div>
+                            <div className="value-card-glow"></div>
+                            <div className="value-icon-container">
+                                <Icon icon="solar:star-bold-duotone" className="v-icon" />
+                            </div>
                             <h3>Valores</h3>
                             <p>
-                                Integridad en cada acción, compromiso con el cliente, innovación constante y excelencia técnica 
-                                en cada proyecto realizado.
+                                Nuestra cultura se basa en la integridad innegociable, el compromiso total con el 
+                                éxito del cliente y la búsqueda constante de la perfección técnica.
                             </p>
                         </div>
 
@@ -136,14 +143,19 @@ export default function Nosotros() {
                     <div className="certificaciones-grid">
                         {certificacionesList.map((item) => (
                             <div className="certificacion-item" key={item.id}>
-                                {item.src ? (
-                                    <img src={item.src} alt={item.name} />
-                                ) : (
-                                    <div className="logo-placeholder">
-                                        <Icon icon="solar:medal-ribbon-bold-duotone" style={{fontSize: '40px', color: '#123361'}} />
-                                        <span>{item.placeholder}</span>
+                                <div className="cert-card-inner">
+                                    <div className="cert-icon">
+                                        {item.src ? (
+                                            <img src={item.src} alt={item.name} />
+                                        ) : (
+                                            <Icon icon="solar:medal-ribbon-bold-duotone" />
+                                        )}
                                     </div>
-                                )}
+                                    <div className="cert-info">
+                                        <h3 className="cert-name">{item.name}</h3>
+                                        <p className="cert-desc">{item.desc}</p>
+                                    </div>
+                                </div>
                             </div>
                         ))}
                     </div>
