@@ -23,7 +23,7 @@ export default function Nosotros() {
             {/* ... resto del código ... */}
             {/* Hero Section para Nosotros */}
             <section className="nosotros-hero">
-                <h1>Sobre Nosotros</h1>
+                <h1>¿Quiénes somos?</h1>
                 <p>
                     Innovación y excelencia en soluciones tecnológicas para la industria del combustible.
                 </p>

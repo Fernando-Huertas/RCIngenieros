@@ -13,14 +13,14 @@
 }
 
 .nosotros-hero h1 {
-    font-size: clamp(33px, 6vw, 70px);
-    font-weight: 800;
+    font-size: 70px;
+    font-weight: 700;
     margin-bottom: 20px;
     letter-spacing: -1px;
 }
 
 .nosotros-hero p {
-    font-size: clamp(16px, 2vw, 20px);
+    font-size: 20px;
     max-width: 800px;
     margin: 0 auto;
     opacity: 0.9;
@@ -378,6 +378,14 @@
 ========================================================================== */
 
 @media (max-width: 1024px) {
+    .nosotros-hero h1 {
+        font-size: 56px;
+    }
+
+    .nosotros-hero p {
+        font-size: 19px;
+    }
+
     .nosotros-grid {
         grid-template-columns: 1fr;
         gap: 60px;
@@ -405,6 +413,14 @@
 }
 
 @media (max-width: 768px) {
+    .nosotros-hero h1 {
+        font-size: 42px;
+    }
+
+    .nosotros-hero p {
+        font-size: 18px;
+    }
+
     .nosotros-hero {
         padding: 80px 20px;
     }
@@ -456,11 +472,11 @@
 
 @media (max-width: 480px) {
     .nosotros-hero h1 {
-        font-size: 28px;
+        font-size: 32px;
     }
 
     .nosotros-hero p {
-        font-size: 15px;
+        font-size: 16px;
     }
 
     .nosotros-titulo1, .nosotros-highlight {

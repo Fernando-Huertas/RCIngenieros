@@ -1,5 +1,6 @@
 import { Icon } from '@iconify/react'
 import './SoporteTecnico.css'
+import soporteabout from '../assets/soporteabout.jpeg'
 
 export default function SoporteTecnico() {
     return (
@@ -7,31 +8,45 @@ export default function SoporteTecnico() {
             <section className="soporte-hero">
                 <div className="soporte-hero-container">
                     <div className="soporte-hero-text">
-                        {/*<span className="soporte-badge">Personal Especializado</span>*/}
+                       
                         <h1>
                             Soporte Técnico a Estaciones <br />
                             <span className="soporte-highlight">GNV GLP GNL y Líquidos</span>
                         </h1>
-                        {/*
-                        <p>
-                            Optimizamos la operatividad de su negocio con soluciones de ingeniería avanzada, 
-                            mantenimiento preventivo y soporte especializado 24/7 en todo el territorio nacional.
-                        </p>
-                        */}
-                        {/*
-                        <div className="soporte-hero-actions">
-                            <button className="btn-cotizar-soporte">
-                                <Icon icon="solar:chat-round-dots-bold-duotone" className="btn-icon" />
-                                Cotizar Ahora
-                            </button>
-                        </div>
-                        */}
+                                   
                     </div>
                 </div>
             </section>
-                
-                {/* Elementos decorativos de fondo 
-            <section className="soporte-services">
+            <section className="soporte-about">
+                <div className="soporte-about-container">
+                    <div className="soporte-about-image">                                                                
+                        <img src={soporteabout} alt="Técnico de servicio" />
+                    </div>
+                    
+                    <div className="soporte-about-content">
+                        <span className="soporte-about-subtitle">Soporte Técnico</span>
+                        <h2>Estaciones de servicio GNV/GLP/GNL Líquidos y Urea</h2>
+                        <p>
+                            Nuestro servicio de Soporte y Mantenimiento garantiza la continuidad total de su operación.
+                             Entendemos que su negocio nunca se detiene, por ello, ofrecemos atención 24 horas al día,
+                              los 7 días de la semana. Brindamos un soporte personalizado que se adapta a su necesidad,
+                               ya sea mediante asistencia presencial inmediata en sitio o a través de una asistencia remota
+                                eficiente para resolver cualquier incidencia con rapidez.
+                        </p>
+            
+                        <div className="soporte-about-features">
+                            {[1, 2, 3, 4, 5, 6].map((item) => (
+                                <div key={item} className="about-feature-item">
+                                    <Icon icon="solar:check-circle-bold" className="feature-check-icon" />
+                                    <span>Personal altamente capacitado para resolver incidencias.</span>
+                                </div>
+                            ))}
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            {/* <section className="soporte-services">
                 <div className="services-container">
                     <div className="services-header">
                         <span className="services-subtitle">Especialistas a su Servicio</span>
@@ -80,7 +95,7 @@ export default function SoporteTecnico() {
                         </div>
                     </div>
                 </div>
-            </section>*/}
+            </section> */}
         </div>
     )
 }
