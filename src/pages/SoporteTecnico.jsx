@@ -46,6 +46,72 @@ export default function SoporteTecnico() {
                 </div>
             </section>
 
+            {/* SECCIÓN PREMIUM: GALERÍA DE TRABAJOS (16:9) */}
+            <section className="soporte-gallery">
+                <div className="gallery-container">
+                    <div className="gallery-header">
+                        <span className="gallery-subtitle">Nuestro Trabajo</span>
+                        <h2>Excelencia en Acción</h2>
+                        <p>Descubra la calidad y precisión técnica que aplicamos en cada uno de nuestros proyectos de mantenimiento e instalación.</p>
+                    </div>
+
+                    <div className="gallery-grid">
+                        {/* Placeholder 1 */}
+                        <div className="gallery-item">
+                            <div className="gallery-image-wrapper">
+                                {/* Cuando tengas la foto, cambia el src por tu imagen importada */}
+                                <img src="https://placehold.co/1920x1080/1a2b4c/ffffff?text=FOTO+1+(16:9)" alt="Trabajo en estación 1" />
+                                <div className="gallery-overlay">
+                                    <div className="overlay-content">
+                                        <Icon icon="solar:camera-bold-duotone" className="overlay-icon" />
+                                        <h3>Mantenimiento de Surtidores</h3>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        {/* Placeholder 2 */}
+                        <div className="gallery-item">
+                            <div className="gallery-image-wrapper">
+                                <img src="https://placehold.co/1920x1080/2a3b5c/ffffff?text=FOTO+2+(16:9)" alt="Trabajo en estación 2" />
+                                <div className="gallery-overlay">
+                                    <div className="overlay-content">
+                                        <Icon icon="solar:settings-bold-duotone" className="overlay-icon" />
+                                        <h3>Configuración de Software</h3>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        {/* Placeholder 3 */}
+                        <div className="gallery-item">
+                            <div className="gallery-image-wrapper">
+                                <img src="https://placehold.co/1920x1080/10b981/ffffff?text=FOTO+3+(16:9)" alt="Trabajo en estación 3" />
+                                <div className="gallery-overlay">
+                                    <div className="overlay-content">
+                                        <Icon icon="solar:shield-check-bold-duotone" className="overlay-icon" />
+                                        <h3>Calibración de Equipos</h3>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        {/* Placeholder 4 */}
+                        <div className="gallery-item">
+                            <div className="gallery-image-wrapper">
+                                <img src="https://placehold.co/1920x1080/36A6EB/ffffff?text=FOTO+4+(16:9)" alt="Trabajo en estación 4" />
+                                <div className="gallery-overlay">
+                                    <div className="overlay-content">
+                                        <Icon icon="solar:bolt-bold-duotone" className="overlay-icon" />
+                                        <h3>Asistencia Técnica</h3>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
             {/* <section className="soporte-services">
                 <div className="services-container">
                     <div className="services-header">
