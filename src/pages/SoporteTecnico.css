@@ -496,6 +496,68 @@
     text-shadow: 0 2px 4px rgba(0, 0, 0, 0.5);
 }
 
+/* Sección Integración APUGESCOM Y APUFACT */
+.soporte-apufact {
+    padding: 100px 20px;
+    background-color: #ffffff;
+    position: relative;
+}
+
+.apufact-container {
+    max-width: 1400px;
+    margin: 0 auto;
+    width: 90%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.apufact-header {
+    text-align: center;
+    margin-bottom: 60px;
+    animation: fadeInUp 0.8s ease-out forwards;
+}
+
+.apufact-header h2 {
+    font-size: 46px;
+    font-weight: 700;
+    color: #000000;
+    margin-bottom: 20px;
+}
+
+.apufact-highlight {
+    color: #36A6EB; /* Color azul de la web */
+}
+
+.apufact-header p {
+    font-size: 18px;
+    color: #666666;
+    max-width: 700px;
+    margin: 0 auto;
+    line-height: 1.6;
+}
+
+.apufact-image-wrapper {
+    width: 100%;
+    border-radius: 24px;
+    overflow: hidden;
+    box-shadow: 0 25px 50px -12px rgba(54, 166, 235, 0.25);
+    border: 1px solid rgba(54, 166, 235, 0.1);
+    transition: transform 0.5s ease, box-shadow 0.5s ease;
+}
+
+.apufact-image-wrapper:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 35px 60px -15px rgba(54, 166, 235, 0.4);
+}
+
+.apufact-image-wrapper img {
+    width: 100%;
+    height: auto;
+    display: block;
+    object-fit: cover;
+}
+
 /* Responsive */
 @media (max-width: 1366px) {
     .soporte-hero {
@@ -563,6 +625,10 @@
     .gallery-header h2 {
         font-size: 38px;
     }
+
+    .apufact-header h2 {
+        font-size: 38px;
+    }
 }
 
 @media (max-width: 768px) {
@@ -611,6 +677,14 @@
         font-size: 32px;
     }
 
+    .apufact-header h2 {
+        font-size: 32px;
+    }
+
+    .soporte-apufact {
+        padding: 80px 20px;
+    }
+
     .gallery-overlay {
         opacity: 1; /* Siempre visible en móviles para mejor UX táctil */
         background: linear-gradient(to top, rgba(10, 15, 44, 0.95) 0%, rgba(10, 15, 44, 0.2) 60%, transparent 100%);
@@ -639,6 +713,10 @@
     }
 
     .gallery-header h2 {
+        font-size: 28px;
+    }
+
+    .apufact-header h2 {
         font-size: 28px;
     }
 

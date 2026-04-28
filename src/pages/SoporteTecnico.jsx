@@ -1,6 +1,7 @@
 import { Icon } from '@iconify/react'
 import './SoporteTecnico.css'
 import soporteabout from '../assets/soporteabout.jpeg'
+import integracion from '../assets/integracion.jpg'
 
 export default function SoporteTecnico() {
     return (
@@ -35,10 +36,17 @@ export default function SoporteTecnico() {
                         </p>
             
                         <div className="soporte-about-features">
-                            {[1, 2, 3, 4, 5, 6].map((item) => (
-                                <div key={item} className="about-feature-item">
+                            {[
+                                "Personal altamente capacitado para resolver incidencias.",
+                                "Asistencia técnica remota 24 x 7.",
+                                "Asistencia técnica presencial, realizado por medio de herramientas automatizadas.",
+                                "Personal motorizados para un asistencia rápida donde se requiera.",
+                                "Especialistas en el sistema GAS STATION, APUGESCOM y APUFACT",
+                                "Contamos con Backup de equipos."                              
+                            ].map((texto, index) => (
+                                <div key={index} className="about-feature-item">
                                     <Icon icon="solar:check-circle-bold" className="feature-check-icon" />
-                                    <span>Personal altamente capacitado para resolver incidencias.</span>
+                                    <span>{texto}</span>
                                 </div>
                             ))}
                         </div>
@@ -108,6 +116,18 @@ export default function SoporteTecnico() {
                                 </div>
                             </div>
                         </div>
+                    </div>
+                </div>
+            </section>
+
+            <section className="soporte-apufact">
+                <div className="apufact-container">
+                    <div className="apufact-header">
+                        <h2>Integración con <span className="apufact-highlight">APUGESCOM</span> <strong>Y</strong> <span className="apufact-highlight">APUFACT</span></h2>
+                        <p>Sistemas avanzados para el control total y facturación electrónica de su estación de servicio.</p>
+                    </div>
+                    <div className="apufact-image-wrapper">
+                        <img src={integracion} alt="Integración APUGESCOM y APUFACT" />
                     </div>
                 </div>
             </section>

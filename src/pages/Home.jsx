@@ -403,7 +403,10 @@ export default function Home() {
               <div ref={headerRef} className={`servicios-titulo ${isHeaderVisible ? "animate" : ""}`}>
                   <div className="servicios-titulo-izq">
                       <h2 className="servicios-titulo-texto">Tu Socio Estratégico en Transformación Digital</h2>
-                      <p className="servicios-descripcion-texto">Somos una empresa peruana líder en el mercado, dedicada a ofrecer soluciones innovadoras y confiables para el control de ventas y gestión de combustible. Con más de 15 años de experiencia, hemos ayudado a cientos de clientes a optimizar sus operaciones y cumplir con las normativas vigentes.</p>
+                      <p className="servicios-descripcion-texto">En RC Ingenieros S.A.C., nos especializamos en modernizar la infraestructura
+                         tecnológica de las estaciones de servicio en todo el Perú. Nuestro compromiso es garantizar que tu negocio nunca se 
+                         detenga, integrando sistemas de facturación electrónica de alta precisión y soporte técnico especializado disponible
+                         en todo momento.</p>
                   </div>
                   <div className="servicios-botones-der">
                       <a style={{ textDecoration: 'none' }} href="#">
