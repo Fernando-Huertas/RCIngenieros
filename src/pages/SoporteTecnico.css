@@ -729,3 +729,348 @@
         font-size: 18px;
     }
 }
+
+/* Sección Call To Action (CTA) */
+.soporte-cta {
+    background: linear-gradient(to right, rgba(10, 15, 44, 0.9) 0%, rgba(10, 15, 44, 0.7) 50%, rgba(10, 15, 44, 0.4) 100%), url('../assets/accion2.jpg');
+    background-size: cover;
+    background-position: 0% 20%;
+    padding: 80px 20px;
+    position: relative;
+}
+
+.cta-container {
+    max-width: 1400px;
+    margin: 0 auto;
+    width: 90%;
+}
+
+.cta-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 40px;
+}
+
+.cta-text {
+    max-width: 700px;
+}
+
+.cta-text h2 {
+    color: #ffffff;
+    font-size: 36px;
+    font-weight: 700;
+    margin-bottom: 15px;
+    text-transform: uppercase;
+}
+
+.cta-text p {
+    color: #e2e8f0;
+    font-size: 24px;
+    font-weight: 400;
+    line-height: 1.4;
+}
+
+.cta-button-phone {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    text-decoration: none;
+    transition: transform 0.3s ease;
+}
+
+.cta-button-phone:hover {
+    transform: scale(1.05);
+}
+
+.cta-icon-wrapper {
+    background-color: #ffffff;
+    color: #000000;
+    width: 70px;
+    height: 70px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 40px;
+    box-shadow: 0 10px 25px rgba(0,0,0,0.2);
+}
+
+.cta-button-phone span {
+    color: #ffffff;
+    font-size: 36px;
+    font-weight: 600;
+}
+
+/* Sección Sistema Inteligente GNV */
+.soporte-gnv {
+    padding: 100px 20px;
+    background-color: #ffffff;
+}
+
+.gnv-container {
+    max-width: 1400px;
+    margin: 0 auto;
+    width: 90%;
+}
+
+.gnv-header {
+    text-align: center;
+    margin-bottom: 70px;
+}
+
+.gnv-header h2 {
+    font-size: 42px;
+    font-weight: 700;
+    color: #000000;
+    margin-bottom: 15px;
+}
+
+.gnv-subtitle {
+    display: block;
+    color: #36A6EB;
+    font-size: 16px;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+.gnv-content-grid {
+    display: grid;
+    grid-template-columns: 0.8fr 1.2fr;
+    gap: 60px;
+    align-items: center;
+}
+
+.gnv-image {
+    text-align: center;
+}
+
+.gnv-image img {
+    max-width: 100%;
+    height: auto;
+    /* transition: transform 0.5s ease; si se quiere efecto */
+}
+
+.gnv-intro {
+    font-size: 16px;
+    color: #555555;
+    line-height: 1.7;
+    margin-bottom: 40px;
+}
+
+.gnv-features {
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+}
+
+.gnv-feature-item {
+    display: flex;
+    gap: 20px;
+    align-items: flex-start;
+}
+
+.gnv-feature-icon {
+    color: #36A6EB;
+    font-size: 28px;
+    min-width: 28px;
+    margin-top: 2px;
+}
+
+.gnv-feature-text {
+    font-size: 15px;
+    color: #555555;
+    line-height: 1.6;
+    margin: 0;
+}
+
+.gnv-feature-text strong {
+    color: #000000;
+    font-weight: 700;
+}
+
+@media (max-width: 1024px) {
+    .gnv-content-grid {
+        grid-template-columns: 1fr;
+        gap: 40px;
+    }
+    
+    .gnv-image {
+        max-width: 500px;
+        margin: 0 auto;
+    }
+
+    .cta-content {
+        flex-direction: column;
+        text-align: center;
+        justify-content: center;
+    }
+
+    .cta-text p {
+        font-size: 20px;
+    }
+    
+    .cta-button-phone {
+        justify-content: center;
+    }
+}
+
+@media (max-width: 768px) {
+    .soporte-cta {
+        padding: 60px 20px;
+    }
+    
+    .cta-text h2 {
+        font-size: 28px;
+    }
+
+    .cta-text p {
+        font-size: 18px;
+    }
+
+    .cta-button-phone span {
+        font-size: 28px;
+    }
+
+    .cta-icon-wrapper {
+        width: 60px;
+        height: 60px;
+        font-size: 28px;
+    }
+
+    .soporte-gnv {
+        padding: 80px 20px;
+    }
+
+    .gnv-header h2 {
+        font-size: 32px;
+    }
+    
+    .gnv-subtitle {
+        font-size: 14px;
+    }
+}
+
+@media (max-width: 480px) {
+    .cta-text h2 {
+        font-size: 24px;
+    }
+
+    .cta-button-phone span {
+        font-size: 24px;
+    }
+
+    .gnv-header h2 {
+        font-size: 28px;
+    }
+
+    .gnv-feature-item {
+        gap: 15px;
+    }
+}
+
+/* Sección Soporte y Mantenimiento EESS */
+.soporte-mantenimiento {
+    padding: 100px 20px;
+    background-color: #ffffff;
+}
+
+.mantenimiento-container {
+    max-width: 1400px;
+    margin: 0 auto;
+    width: 90%;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 60px;
+    align-items: center;
+}
+
+.mantenimiento-content h2 {
+    font-size: 46px;
+    font-weight: 700;
+    color: #000000;
+    line-height: 1.2;
+    margin-bottom: 30px;
+}
+
+.mantenimiento-subtitle {
+    font-size: 20px;
+    font-weight: 700;
+    color: #000000;
+    margin-bottom: 25px;
+}
+
+.mantenimiento-features-list {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.mantenimiento-feature-item {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+.mantenimiento-feature-icon {
+    color: #36A6EB;
+    font-size: 24px;
+    display: flex;
+    align-items: center;
+}
+
+.mantenimiento-feature-item span {
+    font-size: 16px;
+    color: #555555;
+    font-weight: 400;
+}
+
+.mantenimiento-image {
+    width: 100%;
+}
+
+.mantenimiento-image img {
+    width: 100%;
+    height: auto;
+    border-radius: 24px;
+    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.1);
+    object-fit: cover;
+}
+
+@media (max-width: 1024px) {
+    .mantenimiento-container {
+        grid-template-columns: 1fr;
+        gap: 50px;
+    }
+
+    .mantenimiento-content h2 {
+        font-size: 38px;
+        text-align: center;
+    }
+
+    .mantenimiento-subtitle {
+        text-align: center;
+    }
+    
+    .mantenimiento-features-list {
+        max-width: 500px;
+        margin: 0 auto;
+    }
+
+    .mantenimiento-image {
+        max-width: 700px;
+        margin: 0 auto;
+    }
+}
+
+@media (max-width: 768px) {
+    .soporte-mantenimiento {
+        padding: 80px 20px;
+    }
+
+    .mantenimiento-content h2 {
+        font-size: 32px;
+    }
+}

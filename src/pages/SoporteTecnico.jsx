@@ -2,6 +2,11 @@ import { Icon } from '@iconify/react'
 import './SoporteTecnico.css'
 import soporteabout from '../assets/soporteabout.jpeg'
 import integracion from '../assets/integracion.jpg'
+import accion2 from '../assets/accion2.jpg'
+import logognv from '../assets/gnvcontainer.jpg'
+import eess from '../assets/EESS.webp'
+
+
 
 export default function SoporteTecnico() {
     return (
@@ -182,6 +187,99 @@ export default function SoporteTecnico() {
                     </div>
                 </div>
             </section> */}
+            <section className="soporte-cta">
+                <div className="cta-container">
+                    <div className="cta-content">
+                        <div className="cta-text">
+                            <h2>INVIERTE CON SEGURIDAD:</h2>
+                            <p>Más de 15 años de experiencia nos respaldan como pioneros en EESS.</p>
+                        </div>
+                        <div className="cta-action">
+                            <a href="tel:+51943853234" className="cta-button-phone">
+                                <div className="cta-icon-wrapper">
+                                    <Icon icon="solar:phone-bold" />
+                                </div>
+                                <span>+51 943853234</span>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section className="soporte-gnv">
+                <div className="gnv-container">
+                    <div className="gnv-header">
+                        <h2>Sistema de Carga Inteligente de GNV</h2>
+                        <span className="gnv-subtitle">SISTEMA GAS STATION – AUTORIZADO POR COFIDE-INFOGAS</span>
+                    </div>
+                    
+                    <div className="gnv-content-grid">
+                        <div className="gnv-image">
+                            <img src={logognv} alt="Gas Natural Vehicular GNV" />
+                        </div>
+                        
+                        <div className="gnv-info">
+                            <p className="gnv-intro">
+                                Somos pioneros en la Instalación del Sistema de Carga Inteligente de GNV en el mercado peruano, el sistema Gas Station con una base de datos centralizada que permite brindar información fidedigna a la entidad competente con la finalidad de permitir el despacho de GNV en tiempo real.
+                            </p>
+                            
+                            <div className="gnv-features">
+                                {[
+                                    "Beneficios Ecológicos: El GNV es un combustible ecoamigable porque permite al vehículo generar menos emisiones CO2 por cada kilómetro recorrido. De esta manera contribuye a la conservación de la naturaleza y el medio ambiente.",
+                                    "Beneficios Económicos:  Con el GNV se ahorra en promedio 60% frente a la gasolina de 90 octanos.",
+                                    "Beneficios de Seguridad: Se distribuye y comercializa en un sistema seguro, controlado por un software informático que le da confianza a los usuarios, lo realizan con los parámetros de seguridad que dicta la norma."
+                                ].map((feature, index) => {
+                                    const [title, desc] = feature.split(': ');
+                                    return (
+                                        <div key={index} className="gnv-feature-item">
+                                            <div className="gnv-feature-icon">
+                                                <Icon icon="el:check" />
+                                            </div>
+                                            <p className="gnv-feature-text">
+                                                <strong>{title}:</strong> {desc}
+                                            </p>
+                                        </div>
+                                    );
+                                })}
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            {/* Sección Soporte y Mantenimiento para EESS */}
+            <section className="soporte-mantenimiento">
+                <div className="mantenimiento-container">
+                    <div className="mantenimiento-content">
+                        <h2>Soporte y Mantenimiento<br/>para EESS</h2>
+                        
+                        <h3 className="mantenimiento-subtitle">Beneficios:</h3>
+                        
+                        <div className="mantenimiento-features-list">
+                            {[
+                                "Servicio de Soporte 24 x 7.",
+                                "Backup de Equipos y Suministros de computo",
+                                "Backup de Equipos y Suministros Eléctricos.",
+                                "Impresoras de backups.",
+                                "Monitoreo constante de las EESS.",
+                                "Realizamos migraciones y actualizaciones."
+                            ].map((item, index) => (
+                                <div key={index} className="mantenimiento-feature-item">
+                                    <div className="mantenimiento-feature-icon">
+                                        <Icon icon="solar:verified-check-bold" />
+                                    </div>
+                                    <span>{item}</span>
+                                </div>
+                            ))}
+                        </div>
+                    </div>
+                    
+                    <div className="mantenimiento-image">
+                        {/* Reemplazar con la imagen real de la estación de servicio */}
+                        <img src={eess} alt="Soporte y Mantenimiento EESS" />
+                    </div>
+                </div>
+            </section>
         </div>
     )
 }
