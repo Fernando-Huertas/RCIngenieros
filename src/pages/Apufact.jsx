@@ -4,7 +4,7 @@ import heroImg from '../assets/servicio247.jpeg'
 import bgCardImg from '../assets/imgapufact.png'
 import heroapufact from '../assets/heroapufact.jpg'
 import apufactmain from '../assets/apufactmain.jpg'
-import logoApufact from '../assets/logoAPUFACT.webp'
+import logoAPUFACT from '../assets/logoAPUFACT.webp'
 
 export default function Apufact() {
     return (
@@ -31,7 +31,7 @@ export default function Apufact() {
                             <h3 className="apufact-brand-title">APUFACT</h3>
                             
                             <div className="apufact-logo-container">
-                                <img src={logoApufact} alt="Logo APUFACT" className="apufact-logo" />
+                                <img src={logoAPUFACT} alt="Logo APUFACT" className="apufact-logo" />
                             </div>
                             
                             <p className="apufact-description">
