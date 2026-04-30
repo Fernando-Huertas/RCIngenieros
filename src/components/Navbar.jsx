@@ -148,12 +148,12 @@ export default function Navbar() {
                                 <span>Soporte Técnico a Estaciones GNV GLP GNL y Líquidos</span>
                             </Link>
 
-                            <div className="item">
+                            <Link to="/servicios/facturacion-electronica" className="item">
                                 <div className="icon-servicio">
                                     <Icon icon="fluent:money-calculator-24-regular" />
                                 </div>
                                 <span>Facturación Electrónica APUFACT</span>
-                            </div>
+                            </Link>
 
                             <div className="item">
                                 <div className="icon-servicio">

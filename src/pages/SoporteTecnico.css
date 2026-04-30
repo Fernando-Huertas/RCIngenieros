@@ -45,8 +45,8 @@
 }
 
 .soporte-hero-text h1 {
-    font-size: 70px;
-    font-weight: 700;
+    font-size: clamp(33px, 6vw, 70px);
+    font-weight: 800;
     color: #ffffff;
     line-height: 1.1;
     margin-bottom: 30px;
@@ -58,7 +58,7 @@
 }
 
 .soporte-hero-text p {
-    font-size: 18px;
+    font-size: clamp(16px, 2vw, 20px);
     color: #d1d5db;
     line-height: 1.5;
     margin-bottom: 40px;
@@ -67,25 +67,25 @@
 }
 
 .btn-cotizar-soporte {
-    background-color: #A3E635;
-    color: #0c1432;
+    background-color: #36A6EB;
+    color: white;
     border: none;
-    padding: 22px 40px;
-    border-radius: 12px;
-    font-size: 16px;
+    padding: 20px 35px;
+    border-radius: 55px;
+    font-size: 15px;
     font-weight: 700;
     cursor: pointer;
     display: flex;
     align-items: center;
     gap: 12px;
     transition: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
-    box-shadow: 0 10px 20px rgba(163, 230, 53, 0.2);
+    box-shadow: 0 10px 20px rgba(54, 166, 235, 0.2);
 }
 
 .btn-cotizar-soporte:hover {
-    transform: translateY(-5px) scale(1.05);
-    background-color: #bef264;
-    box-shadow: 0 20px 30px rgba(163, 230, 53, 0.3);
+    transform: scale(1.05);
+    background-color: #3ea1df;
+    box-shadow: 0 20px 30px rgba(54, 166, 235, 0.3);
 }
 
 .btn-icon {
@@ -310,7 +310,7 @@
 
 .soporte-about-content h2 {
     font-size: 46px;
-    font-weight: 700;
+    font-weight: 650;
     color: #000000;
     line-height: 1.2;
     margin-bottom: 30px;
@@ -396,7 +396,7 @@
 
 .gallery-header h2 {
     font-size: 46px;
-    font-weight: 700;
+    font-weight: 650;
     color: #ffffff;
     margin-bottom: 20px;
 }
@@ -520,7 +520,7 @@
 
 .apufact-header h2 {
     font-size: 46px;
-    font-weight: 700;
+    font-weight: 650;
     color: #000000;
     margin-bottom: 20px;
 }
