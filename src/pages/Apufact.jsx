@@ -4,7 +4,7 @@ import heroImg from '../assets/servicio247.jpeg'
 import bgCardImg from '../assets/imgapufact.png'
 import heroapufact from '../assets/heroapufact.jpg'
 import apufactmain from '../assets/apufactmain.jpg'
-import logoAPUFACT from '../assets/logoAPUFACT.webp'
+import logoAPUFACT from '../assets/LogoAPUFACT.webp'
 
 export default function Apufact() {
     return (
