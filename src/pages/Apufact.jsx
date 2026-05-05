@@ -5,6 +5,9 @@ import bgCardImg from '../assets/imgapufact.png'
 import heroapufact from '../assets/heroapufact.jpg'
 import apufactmain from '../assets/apufactmain.jpg'
 import logoAPUFACT from '../assets/LogoAPUFACT.webp'
+import imgFeatures from '../assets/apufactfeatures.jpg'
+import funcionaApufact from '../assets/funcionapufact.jpg'
+import logoSunat from '../assets/verificado-por-sunat.webp'
 
 export default function Apufact() {
     return (
@@ -43,6 +46,88 @@ export default function Apufact() {
                             </a>
                         </div>
                     </div>
+                </div>
+            </section>
+
+            {/* CARACTERISTICAS DE APUFACT */}
+            <section className="apufact-features-section">
+                <div className="apufact-features-container">
+                    <div className="apufact-features-text">
+                        <h2 className="apufact-features-subtitle">Caracteristicas de</h2>
+                        <h1 className="apufact-features-maintitle">APUFACT</h1>
+                        <p className="apufact-features-description">
+                            APUFACT es un sistema de Gestión de Comprobantes Electrónicos (CPE) perfecto para tu empresa, el cual permite la emisión y el envío de los CPE a SUNAT de la manera más fácil y dinámica, el sistema es cloud y está hecho para todo tipo de negocios y empresas
+                        </p>
+                        <h3 className="apufact-features-benefits-title">Beneficios:</h3>
+                        <ul className="apufact-features-list">
+                            <li><Icon icon="mdi:check-decagram-outline" className="apufact-feature-icon" /> Optimiza y agiliza el proceso de envío de tus CPE.</li>
+                            <li><Icon icon="mdi:check-decagram-outline" className="apufact-feature-icon" /> Visualiza tu información desde tu celular, tablet o PC</li>
+                            <li><Icon icon="mdi:check-decagram-outline" className="apufact-feature-icon" /> Integracion con tu punyo de venta o ERP</li>
+                            <li><Icon icon="mdi:check-decagram-outline" className="apufact-feature-icon" /> Autorizados por SUNAT, somos proveedor de servicios electrónicos(PSE-OSE)</li>
+                            <li><Icon icon="mdi:check-decagram-outline" className="apufact-feature-icon" /> Certificación ISO 27001(seguridad de la información)</li>
+                            <li><Icon icon="mdi:check-decagram-outline" className="apufact-feature-icon" /> Información segura en Amazon Web Service (AWS)</li>
+                        </ul>
+                    </div>
+                    <div className="apufact-features-image">
+                        <img src={imgFeatures} alt="Sistema APUFACT en monitor" />
+                    </div>
+                </div>
+            </section>
+
+            {/* COMO FUNCIONA APUFACT */}
+            <section className="apufact-how-it-works-section">
+                <div className="apufact-how-it-works-bg-decoration dec-left"></div>
+                <div className="apufact-how-it-works-bg-decoration dec-right"></div>
+                
+                <div className="apufact-how-it-works-container">
+                    <div className="how-it-works-header">
+                        <span className="how-it-works-badge">Flujo de Trabajo</span>
+                        <h2 className="how-it-works-title">
+                            Como funciona <span className="highlight-blue">APUFACT</span>
+                        </h2>
+                        <p className="how-it-works-subtitle">
+                            Descubre lo fácil que es gestionar tus comprobantes electrónicos en tiempo real y con total seguridad.
+                        </p>
+                    </div>
+                    
+                    <div className="how-it-works-image-wrapper">
+                        <div className="how-it-works-glass-card">
+                            <img src={funcionaApufact} alt="Flujo de cómo funciona APUFACT" />
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            {/* SECCIÓN RESPALDOS Y CERTIFICACIONES */}
+            <section className="apufact-trust-section">
+                <div className="apufact-trust-container">
+                    
+                    {/* Tarjeta 1: SUNAT */}
+                    <div className="trust-card">
+                        <div className="trust-card-image">
+                            <img src={logoSunat} alt="Verificado por SUNAT" className="trust-logo-sunat" />
+                        </div>
+                        <div className="trust-card-content">
+                            <h3 className="trust-card-title">Certificados por SUNAT</h3>
+                            <p className="trust-card-text">
+                                Somos Proveedor de Servicios Electrónicos (PSE), autorizados por SUNAT para el servicio de Facturación Electrónica, contamos con Certificación ISO 27001 garantizando así la seguridad de su información.
+                            </p>
+                        </div>
+                    </div>
+
+                    {/* Tarjeta 2: AWS */}
+                    <div className="trust-card reverse">
+                        <div className="trust-card-image">
+                            <img src="https://upload.wikimedia.org/wikipedia/commons/9/93/Amazon_Web_Services_Logo.svg" alt="Amazon Web Services" className="trust-logo-aws" />
+                        </div>
+                        <div className="trust-card-content">
+                            <h3 className="trust-card-title">Infraestructura de Clase Mundial</h3>
+                            <p className="trust-card-text">
+                                Nuestra plataforma está alojada en la infraestructura cloud de Amazon Web Services (AWS), garantizando disponibilidad 24/7, escalabilidad y protección de datos a nivel mundial.
+                            </p>
+                        </div>
+                    </div>
+
                 </div>
             </section>
         </div>
