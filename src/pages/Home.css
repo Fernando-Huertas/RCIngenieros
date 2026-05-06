@@ -2083,5 +2083,126 @@
   }
 }
 
+/* ==========================================================================
+    REVEAL ANIMATIONS (NUEVAS ANIMACIONES AL SCROLL)
+========================================================================== */
 
+/* Nosotros */
+.info-nosotros .nosotros-izq {
+    opacity: 0;
+    transform: translateX(-80px);
+    transition: all 1s ease-out;
+}
+.info-nosotros.animate .nosotros-izq {
+    opacity: 1;
+    transform: translateX(0);
+}
+
+.info-nosotros .nosotros-der {
+    opacity: 0;
+    transform: translateX(80px);
+    transition: all 1s ease-out;
+    transition-delay: 0.2s;
+}
+.info-nosotros.animate .nosotros-der {
+    opacity: 1;
+    transform: translateX(0);
+}
+
+.info-nosotros .lista-item {
+    opacity: 0;
+    transform: translateY(20px);
+    transition: all 0.5s ease-out;
+}
+.info-nosotros.animate .lista-item:nth-child(1) { transition-delay: 0.6s; opacity: 1; transform: translateY(0); }
+.info-nosotros.animate .lista-item:nth-child(2) { transition-delay: 0.8s; opacity: 1; transform: translateY(0); }
+.info-nosotros.animate .lista-item:nth-child(3) { transition-delay: 1.0s; opacity: 1; transform: translateY(0); }
+
+
+/* Apugescom */
+.info-apugescom .apugescom-text-side {
+    opacity: 0;
+    transform: translateY(50px);
+    transition: all 1s ease-out;
+}
+.info-apugescom.animate .apugescom-text-side {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+.info-apugescom .feature-item {
+    opacity: 0;
+    transform: translateY(40px);
+    transition: all 0.6s ease-out;
+}
+.info-apugescom.animate .feature-item:nth-child(1) { transition-delay: 0.3s; opacity: 1; transform: translateY(0); }
+.info-apugescom.animate .feature-item:nth-child(2) { transition-delay: 0.5s; opacity: 1; transform: translateY(0); }
+.info-apugescom.animate .feature-item:nth-child(3) { transition-delay: 0.7s; opacity: 1; transform: translateY(0); }
+
+
+/* Llamada Acción */
+.info-llamada-accion .llamada-accion-izq {
+    opacity: 0;
+    transform: scale(0.9);
+    transition: all 1s ease-out;
+}
+.info-llamada-accion.animate .llamada-accion-izq {
+    opacity: 1;
+    transform: scale(1);
+}
+
+.info-llamada-accion .llamada-accion-der {
+    opacity: 0;
+    transform: translateY(30px);
+    transition: all 1s ease-out;
+    transition-delay: 0.4s;
+}
+.info-llamada-accion.animate .llamada-accion-der {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+
+/* Apufact */
+.info-apufact .apufact-text-side {
+    opacity: 0;
+    transform: translateY(50px);
+    transition: all 1s ease-out;
+}
+.info-apufact.animate .apufact-text-side {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+.info-apufact .apufact-images img {
+    opacity: 0;
+    transform: scale(0.8);
+    transition: all 0.6s ease-out;
+}
+.info-apufact.animate .apufact-images img:nth-child(1) { transition-delay: 0.5s; opacity: 1; transform: scale(1); }
+.info-apufact.animate .apufact-images img:nth-child(2) { transition-delay: 0.7s; opacity: 1; transform: scale(1); }
+
+
+/* Clientes */
+.info-clientes {
+    opacity: 0;
+    transform: translateY(30px);
+    transition: all 1s ease-out;
+}
+.info-clientes.animate {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+
+/* Video */
+.info-video {
+    opacity: 0;
+    transform: translateY(60px);
+    transition: all 1.2s ease-out;
+}
+.info-video.animate {
+    opacity: 1;
+    transform: translateY(0);
+}
 

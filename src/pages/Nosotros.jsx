@@ -1,3 +1,4 @@
+import React, { useState, useEffect, useRef } from 'react'
 import { Icon } from '@iconify/react'
 import './Nosotros.css'
 
@@ -10,13 +11,39 @@ export default function Nosotros() {
     
     // Lista de certificaciones para el grid
     const certificacionesList = [
-        { id: 1, name: 'ISO 9001', desc: 'Calidad Global', src: null, placeholder: 'ISO 9001' },
-        { id: 2, name: 'ISO 27001', desc: 'Seguridad Info', src: iso27001 },
-        { id: 3, name: 'SUNAT', desc: 'Verificado por SUNAT', src: sunat },
-        { id: 4, name: 'OSINERGMIN', desc: 'Supervisión Técnica', src: null, placeholder: 'Osinergmin' },
-        { id: 5, name: 'ISO 45001', desc: 'Salud y Seguridad', src: null, placeholder: 'ISO 45001' },
-        { id: 6, name: 'ISO 14001', desc: 'Gestión Ambiental', src: null, placeholder: 'ISO 14001' },
+        { id: 1, name: 'ISO 27001', desc: 'Seguridad Info', src: iso27001 },
+        { id: 2, name: 'SUNAT', desc: 'Verificado por SUNAT', src: sunat },
     ];
+
+    const [isContentVisible, setIsContentVisible] = useState(false);
+    const [isValuesVisible, setIsValuesVisible] = useState(false);
+    const [isCertificacionesVisible, setIsCertificacionesVisible] = useState(false);
+
+    const contentRef = useRef(null);
+    const valuesRef = useRef(null);
+    const certificacionesRef = useRef(null);
+
+    useEffect(() => {
+        const observerOptions = { threshold: 0.15 };
+        
+        const handleIntersect = (entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    if (entry.target === contentRef.current) setIsContentVisible(true);
+                    if (entry.target === valuesRef.current) setIsValuesVisible(true);
+                    if (entry.target === certificacionesRef.current) setIsCertificacionesVisible(true);
+                }
+            });
+        };
+
+        const observer = new IntersectionObserver(handleIntersect, observerOptions);
+
+        if (contentRef.current) observer.observe(contentRef.current);
+        if (valuesRef.current) observer.observe(valuesRef.current);
+        if (certificacionesRef.current) observer.observe(certificacionesRef.current);
+
+        return () => observer.disconnect();
+    }, []);
 
     return (
         <div className="nosotros-page">
@@ -30,8 +57,8 @@ export default function Nosotros() {
             </section>
 
             {/* Contenido Principal */}
-            <section className="nosotros-content">
-                <div className="nosotros-grid">
+            <section className="nosotros-content" ref={contentRef}>
+                <div className={`nosotros-grid ${isContentVisible ? 'animate' : ''}`}>
                     <div className="nosotros-text">
                         <h1 className='nosotros-titulo1'>
                             Comprometidos con la<br />
@@ -84,8 +111,8 @@ export default function Nosotros() {
             </section>
 
             {/* Misión, Visión, Valores con Card Design */}
-            <section className="nosotros-values">
-                <div className="values-container">
+            <section className="nosotros-values" ref={valuesRef}>
+                <div className={`values-container ${isValuesVisible ? 'animate' : ''}`}>
                     <div className="values-header">
                         <span className="values-subtitle">Nuestra Esencia</span>
                         <h2>Pilares de Nuestra Empresa</h2>
@@ -134,8 +161,8 @@ export default function Nosotros() {
             </section>
 
             {/* Sección Certificaciones */}
-            <section className='certificaciones'>
-                <div className="certificaciones-container">
+            <section className='certificaciones' ref={certificacionesRef}>
+                <div className={`certificaciones-container ${isCertificacionesVisible ? 'animate' : ''}`}>
                     <div className="certificaciones-header">
                         <h2>Certificaciones y Reconocimientos</h2>
                         <p>Respaldados por los más altos estándares de calidad</p>

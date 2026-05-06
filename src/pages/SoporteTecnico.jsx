@@ -1,3 +1,4 @@
+import React, { useState, useEffect, useRef } from 'react'
 import { Icon } from '@iconify/react'
 import './SoporteTecnico.css'
 import soporteabout from '../assets/soporteabout.jpeg'
@@ -9,6 +10,48 @@ import eess from '../assets/EESS.webp'
 
 
 export default function SoporteTecnico() {
+    const [isAboutVisible, setIsAboutVisible] = useState(false);
+    const [isGalleryVisible, setIsGalleryVisible] = useState(false);
+    const [isApufactVisible, setIsApufactVisible] = useState(false);
+    const [isCtaVisible, setIsCtaVisible] = useState(false);
+    const [isGnvVisible, setIsGnvVisible] = useState(false);
+    const [isMantenimientoVisible, setIsMantenimientoVisible] = useState(false);
+
+    const aboutRef = useRef(null);
+    const galleryRef = useRef(null);
+    const apufactRef = useRef(null);
+    const ctaRef = useRef(null);
+    const gnvRef = useRef(null);
+    const mantenimientoRef = useRef(null);
+
+    useEffect(() => {
+        const observerOptions = { threshold: 0.15 };
+        
+        const handleIntersect = (entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    if (entry.target === aboutRef.current) setIsAboutVisible(true);
+                    if (entry.target === galleryRef.current) setIsGalleryVisible(true);
+                    if (entry.target === apufactRef.current) setIsApufactVisible(true);
+                    if (entry.target === ctaRef.current) setIsCtaVisible(true);
+                    if (entry.target === gnvRef.current) setIsGnvVisible(true);
+                    if (entry.target === mantenimientoRef.current) setIsMantenimientoVisible(true);
+                }
+            });
+        };
+
+        const observer = new IntersectionObserver(handleIntersect, observerOptions);
+
+        if (aboutRef.current) observer.observe(aboutRef.current);
+        if (galleryRef.current) observer.observe(galleryRef.current);
+        if (apufactRef.current) observer.observe(apufactRef.current);
+        if (ctaRef.current) observer.observe(ctaRef.current);
+        if (gnvRef.current) observer.observe(gnvRef.current);
+        if (mantenimientoRef.current) observer.observe(mantenimientoRef.current);
+
+        return () => observer.disconnect();
+    }, []);
+
     return (
         <div className="soporte-page">
             <section className="soporte-hero">
@@ -23,8 +66,8 @@ export default function SoporteTecnico() {
                     </div>
                 </div>
             </section>
-            <section className="soporte-about">
-                <div className="soporte-about-container">
+            <section className="soporte-about" ref={aboutRef}>
+                <div className={`soporte-about-container ${isAboutVisible ? 'animate' : ''}`}>
                     <div className="soporte-about-image">                                                                
                         <img src={soporteabout} alt="Técnico de servicio" />
                     </div>
@@ -60,8 +103,8 @@ export default function SoporteTecnico() {
             </section>
 
             {/* SECCIÓN PREMIUM: GALERÍA DE TRABAJOS (16:9) */}
-            <section className="soporte-gallery">
-                <div className="gallery-container">
+            <section className="soporte-gallery" ref={galleryRef}>
+                <div className={`gallery-container ${isGalleryVisible ? 'animate' : ''}`}>
                     <div className="gallery-header">
                         <span className="gallery-subtitle">Nuestro Trabajo</span>
                         <h2>Excelencia en Acción</h2>
@@ -125,8 +168,8 @@ export default function SoporteTecnico() {
                 </div>
             </section>
 
-            <section className="soporte-apufact">
-                <div className="apufact-container">
+            <section className="soporte-apufact" ref={apufactRef}>
+                <div className={`apufact-container ${isApufactVisible ? 'animate' : ''}`}>
                     <div className="apufact-header">
                         <h2>Integración con <span className="apufact-highlight">APUGESCOM</span> <strong>Y</strong> <span className="apufact-highlight">APUFACT</span></h2>
                         <p>Sistemas avanzados para el control total y facturación electrónica de su estación de servicio.</p>
@@ -187,8 +230,8 @@ export default function SoporteTecnico() {
                     </div>
                 </div>
             </section> */}
-            <section className="soporte-cta">
-                <div className="cta-container">
+            <section className="soporte-cta" ref={ctaRef}>
+                <div className={`cta-container ${isCtaVisible ? 'animate' : ''}`}>
                     <div className="cta-content">
                         <div className="cta-text">
                             <h2>INVIERTE CON SEGURIDAD:</h2>
@@ -206,8 +249,8 @@ export default function SoporteTecnico() {
                 </div>
             </section>
 
-            <section className="soporte-gnv">
-                <div className="gnv-container">
+            <section className="soporte-gnv" ref={gnvRef}>
+                <div className={`gnv-container ${isGnvVisible ? 'animate' : ''}`}>
                     <div className="gnv-header">
                         <h2>Sistema de Carga Inteligente de GNV</h2>
                         <span className="gnv-subtitle">SISTEMA GAS STATION – AUTORIZADO POR COFIDE-INFOGAS</span>
@@ -248,8 +291,8 @@ export default function SoporteTecnico() {
             </section>
 
             {/* Sección Soporte y Mantenimiento para EESS */}
-            <section className="soporte-mantenimiento">
-                <div className="mantenimiento-container">
+            <section className="soporte-mantenimiento" ref={mantenimientoRef}>
+                <div className={`mantenimiento-container ${isMantenimientoVisible ? 'animate' : ''}`}>
                     <div className="mantenimiento-content">
                         <h2>Soporte y Mantenimiento<br/>para EESS</h2>
                         

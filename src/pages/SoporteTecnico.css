@@ -1074,3 +1074,161 @@
         font-size: 32px;
     }
 }
+
+/* ==========================================================================
+    REVEAL ANIMATIONS (NUEVAS ANIMACIONES AL SCROLL)
+========================================================================== */
+
+/* Soporte About */
+.soporte-about-container .soporte-about-image {
+    opacity: 0;
+    transform: translateX(-50px);
+    transition: all 1s ease-out;
+}
+.soporte-about-container.animate .soporte-about-image {
+    opacity: 1;
+    transform: translateX(0);
+}
+
+.soporte-about-container .soporte-about-content {
+    opacity: 0;
+    transform: translateX(50px);
+    transition: all 1s ease-out;
+    transition-delay: 0.2s;
+}
+.soporte-about-container.animate .soporte-about-content {
+    opacity: 1;
+    transform: translateX(0);
+}
+
+.soporte-about-container .about-feature-item {
+    opacity: 0;
+    transform: translateY(20px);
+    transition: all 0.5s ease-out;
+}
+.soporte-about-container.animate .about-feature-item:nth-child(1) { transition-delay: 0.3s; opacity: 1; transform: translateY(0); }
+.soporte-about-container.animate .about-feature-item:nth-child(2) { transition-delay: 0.4s; opacity: 1; transform: translateY(0); }
+.soporte-about-container.animate .about-feature-item:nth-child(3) { transition-delay: 0.5s; opacity: 1; transform: translateY(0); }
+.soporte-about-container.animate .about-feature-item:nth-child(4) { transition-delay: 0.6s; opacity: 1; transform: translateY(0); }
+.soporte-about-container.animate .about-feature-item:nth-child(5) { transition-delay: 0.7s; opacity: 1; transform: translateY(0); }
+.soporte-about-container.animate .about-feature-item:nth-child(6) { transition-delay: 0.8s; opacity: 1; transform: translateY(0); }
+
+/* Soporte Gallery */
+.gallery-container .gallery-header {
+    opacity: 0;
+    transform: translateY(30px);
+    transition: all 0.8s ease-out;
+}
+.gallery-container.animate .gallery-header {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+.gallery-container .gallery-item {
+    opacity: 0;
+    transform: scale(0.9);
+    transition: all 0.6s ease-out;
+}
+.gallery-container.animate .gallery-item:nth-child(1) { transition-delay: 0.2s; opacity: 1; transform: scale(1); }
+.gallery-container.animate .gallery-item:nth-child(2) { transition-delay: 0.4s; opacity: 1; transform: scale(1); }
+.gallery-container.animate .gallery-item:nth-child(3) { transition-delay: 0.6s; opacity: 1; transform: scale(1); }
+.gallery-container.animate .gallery-item:nth-child(4) { transition-delay: 0.8s; opacity: 1; transform: scale(1); }
+
+/* Soporte Apufact Integration */
+.apufact-container .apufact-header {
+    opacity: 0;
+    transform: translateX(-50px);
+    transition: all 1s ease-out;
+}
+.apufact-container.animate .apufact-header {
+    opacity: 1;
+    transform: translateX(0);
+}
+
+.apufact-container .apufact-image-wrapper {
+    opacity: 0;
+    transform: translateX(50px);
+    transition: all 1s ease-out;
+    transition-delay: 0.2s;
+}
+.apufact-container.animate .apufact-image-wrapper {
+    opacity: 1;
+    transform: translateX(0);
+}
+
+/* Soporte CTA */
+.cta-container .cta-text {
+    opacity: 0;
+    transform: translateY(30px);
+    transition: all 0.8s ease-out;
+}
+.cta-container.animate .cta-text {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+.cta-container .cta-action {
+    opacity: 0;
+    transform: translateY(30px);
+    transition: all 0.8s ease-out;
+    transition-delay: 0.3s;
+}
+.cta-container.animate .cta-action {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+/* Soporte GNV */
+.gnv-container .gnv-header {
+    opacity: 0;
+    transform: translateY(30px);
+    transition: all 0.8s ease-out;
+}
+.gnv-container.animate .gnv-header {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+.gnv-container .gnv-image {
+    opacity: 0;
+    transform: scale(0.9);
+    transition: all 0.8s ease-out;
+    transition-delay: 0.2s;
+}
+.gnv-container.animate .gnv-image {
+    opacity: 1;
+    transform: scale(1);
+}
+
+.gnv-container .gnv-info {
+    opacity: 0;
+    transform: translateX(50px);
+    transition: all 1s ease-out;
+    transition-delay: 0.4s;
+}
+.gnv-container.animate .gnv-info {
+    opacity: 1;
+    transform: translateX(0);
+}
+
+/* Soporte Mantenimiento */
+.mantenimiento-container .mantenimiento-content {
+    opacity: 0;
+    transform: translateX(-50px);
+    transition: all 1s ease-out;
+}
+.mantenimiento-container.animate .mantenimiento-content {
+    opacity: 1;
+    transform: translateX(0);
+}
+
+.mantenimiento-container .mantenimiento-image {
+    opacity: 0;
+    transform: translateX(50px);
+    transition: all 1s ease-out;
+    transition-delay: 0.3s;
+}
+.mantenimiento-container.animate .mantenimiento-image {
+    opacity: 1;
+    transform: translateX(0);
+}

@@ -47,10 +47,22 @@ export default function Home() {
   // Estados para la Animación al Scroll
   const [isHeaderVisible, setIsHeaderVisible] = useState(false);
   const [isCuadroVisible, setIsCuadroVisible] = useState(false);
+  const [isNosotrosVisible, setIsNosotrosVisible] = useState(false);
+  const [isApugescomVisible, setIsApugescomVisible] = useState(false);
+  const [isCtaVisible, setIsCtaVisible] = useState(false);
+  const [isApufactVisible, setIsApufactVisible] = useState(false);
+  const [isClientesVisible, setIsClientesVisible] = useState(false);
+  const [isVideoVisible, setIsVideoVisible] = useState(false);
 
   // Referencias para el Observer
   const headerRef = useRef(null);
   const cuadroRef = useRef(null);
+  const nosotrosRef = useRef(null);
+  const apugescomRef = useRef(null);
+  const ctaRef = useRef(null);
+  const apufactRef = useRef(null);
+  const clientesRef = useRef(null);
+  const videoRef = useRef(null);
 
   // Estados para el Carrousel de Clientes (Draggable & Infinite)
   const [isClientsHeaderVisible, setIsClientsHeaderVisible] = useState(false);
@@ -114,28 +126,34 @@ export default function Home() {
   
   useEffect(() => {
     const observerOptions = {
-      threshold: 0.2 // Se activa cuando el 20% del elemento entra en vista
+      threshold: 0.15 // Se activa cuando el 15% del elemento entra en vista
     };
 
     const handleIntersect = (entries) => {
       entries.forEach(entry => {
         if (entry.isIntersecting) {
-          // Identificamos qué elemento entró en pantalla por su referencia
-          if (entry.target === headerRef.current) {
-            setIsHeaderVisible(true);
-          }
-          if (entry.target === cuadroRef.current) {
-            setIsCuadroVisible(true);
-          }
+          if (entry.target === headerRef.current) setIsHeaderVisible(true);
+          if (entry.target === cuadroRef.current) setIsCuadroVisible(true);
+          if (entry.target === nosotrosRef.current) setIsNosotrosVisible(true);
+          if (entry.target === apugescomRef.current) setIsApugescomVisible(true);
+          if (entry.target === ctaRef.current) setIsCtaVisible(true);
+          if (entry.target === apufactRef.current) setIsApufactVisible(true);
+          if (entry.target === clientesRef.current) setIsClientesVisible(true);
+          if (entry.target === videoRef.current) setIsVideoVisible(true);
         }
       });
     };
 
     const observer = new IntersectionObserver(handleIntersect, observerOptions);
 
-    // Empezamos a vigilar ambos elementos por separado
     if (headerRef.current) observer.observe(headerRef.current);
     if (cuadroRef.current) observer.observe(cuadroRef.current);
+    if (nosotrosRef.current) observer.observe(nosotrosRef.current);
+    if (apugescomRef.current) observer.observe(apugescomRef.current);
+    if (ctaRef.current) observer.observe(ctaRef.current);
+    if (apufactRef.current) observer.observe(apufactRef.current);
+    if (clientesRef.current) observer.observe(clientesRef.current);
+    if (videoRef.current) observer.observe(videoRef.current);
 
     return () => observer.disconnect();
   }, []);
@@ -460,8 +478,8 @@ export default function Home() {
           </div>
       </section>
 
-      <section className='container-nosotros'>
-        <div className='info-nosotros'>
+      <section className='container-nosotros' ref={nosotrosRef}>
+        <div className={`info-nosotros ${isNosotrosVisible ? 'animate' : ''}`}>
             <div className='nosotros-izq'>
               <div className='img-principal'>
                 <img src={imgnostros} alt="#" />
@@ -510,8 +528,8 @@ export default function Home() {
         </div>
       </section>
 
-      <section className='container-apugescom'>
-          <div className='info-apugescom'>
+      <section className='container-apugescom' ref={apugescomRef}>
+          <div className={`info-apugescom ${isApugescomVisible ? 'animate' : ''}`}>
             <div className='apugescom-content-wrapper'>
               <div className='apugescom-text-side'>
                 <h1 className='apugescom-titulo'>
@@ -567,8 +585,8 @@ export default function Home() {
       </section>
 
 
-      <section className='llamada-accion'>
-        <div className='info-llamada-accion'>
+      <section className='llamada-accion' ref={ctaRef}>
+        <div className={`info-llamada-accion ${isCtaVisible ? 'animate' : ''}`}>
           <div className='llamada-accion-izq'>
             <h1 className='llamada-accion-titulo'>Construyamos algo Juntos</h1>
             <p className='llamada-accion-descripcion'>Contáctanos hoy mismo para una consulta gratuita y déjanos
@@ -583,8 +601,8 @@ export default function Home() {
       </section>
 
 
-       <section className='container-apufact'>
-          <div className='info-apufact'>
+       <section className='container-apufact' ref={apufactRef}>
+          <div className={`info-apufact ${isApufactVisible ? 'animate' : ''}`}>
             <div className='apufact-content-wrapper'>
               <div className='apufact-text-side'>
                 <h1 className='apufact-titulo'>
@@ -614,8 +632,8 @@ export default function Home() {
           </div>
       </section>
 
-      <section className='clientes'>
-        <div className='info-clientes'>
+      <section className='clientes' ref={clientesRef}>
+        <div className={`info-clientes ${isClientesVisible ? 'animate' : ''}`}>
           <h2 className='clientes-titulo'>Nuestros Clientes</h2>
           <div 
             className="clientes-carousel"
@@ -639,8 +657,8 @@ export default function Home() {
         </div>
       </section>
 
-      <section className='video'>
-        <div className='info-video'>
+      <section className='video' ref={videoRef}>
+        <div className={`info-video ${isVideoVisible ? 'animate' : ''}`}>
           <h1 className='video-titulo'>Video Corporativo RC INGENIEROS</h1>
           <p className='video-descripcion'>Transformamos tus desafíos en soluciones. Conoce nuestra experiencia 
             integral en infraestructura y gestión administrativa, y el compromiso con el futuro de tu negocio.</p>

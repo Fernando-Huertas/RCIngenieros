@@ -1,3 +1,4 @@
+import React, { useState, useEffect, useRef } from 'react'
 import { Icon } from '@iconify/react'
 import './Apufact.css'
 import heroImg from '../assets/servicio247.jpeg'
@@ -10,6 +11,40 @@ import funcionaApufact from '../assets/funcionapufact.jpg'
 import logoSunat from '../assets/verificado-por-sunat.webp'
 
 export default function Apufact() {
+    const [isMainVisible, setIsMainVisible] = useState(false);
+    const [isFeaturesVisible, setIsFeaturesVisible] = useState(false);
+    const [isHowItWorksVisible, setIsHowItWorksVisible] = useState(false);
+    const [isTrustVisible, setIsTrustVisible] = useState(false);
+
+    const mainRef = useRef(null);
+    const featuresRef = useRef(null);
+    const howItWorksRef = useRef(null);
+    const trustRef = useRef(null);
+
+    useEffect(() => {
+        const observerOptions = { threshold: 0.15 };
+        
+        const handleIntersect = (entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    if (entry.target === mainRef.current) setIsMainVisible(true);
+                    if (entry.target === featuresRef.current) setIsFeaturesVisible(true);
+                    if (entry.target === howItWorksRef.current) setIsHowItWorksVisible(true);
+                    if (entry.target === trustRef.current) setIsTrustVisible(true);
+                }
+            });
+        };
+
+        const observer = new IntersectionObserver(handleIntersect, observerOptions);
+
+        if (mainRef.current) observer.observe(mainRef.current);
+        if (featuresRef.current) observer.observe(featuresRef.current);
+        if (howItWorksRef.current) observer.observe(howItWorksRef.current);
+        if (trustRef.current) observer.observe(trustRef.current);
+
+        return () => observer.disconnect();
+    }, []);
+
     return (
         <div className="apufact-page">
             {/* HERO SECTION - Igual al de Soporte Técnico según la imagen */}
@@ -23,8 +58,8 @@ export default function Apufact() {
             </section>
 
             {/* SECCIÓN PRINCIPAL: GESTIÓN DE FACTURACIÓN */}
-            <section className="apufact-main-section">
-                <div className="apufact-main-container">
+            <section className="apufact-main-section" ref={mainRef}>
+                <div className={`apufact-main-container ${isMainVisible ? 'animate' : ''}`}>
                     {/* El contenedor con fondo de imagen y overlay oscuro */}
                     <div className="apufact-card" style={{ backgroundImage: `url(${apufactmain})` }}>
                         <div className="apufact-card-overlay"></div>
@@ -50,8 +85,8 @@ export default function Apufact() {
             </section>
 
             {/* CARACTERISTICAS DE APUFACT */}
-            <section className="apufact-features-section">
-                <div className="apufact-features-container">
+            <section className="apufact-features-section" ref={featuresRef}>
+                <div className={`apufact-features-container ${isFeaturesVisible ? 'animate' : ''}`}>
                     <div className="apufact-features-text">
                         <h2 className="apufact-features-subtitle">Caracteristicas de</h2>
                         <h1 className="apufact-features-maintitle">APUFACT</h1>
@@ -75,11 +110,11 @@ export default function Apufact() {
             </section>
 
             {/* COMO FUNCIONA APUFACT */}
-            <section className="apufact-how-it-works-section">
+            <section className="apufact-how-it-works-section" ref={howItWorksRef}>
                 <div className="apufact-how-it-works-bg-decoration dec-left"></div>
                 <div className="apufact-how-it-works-bg-decoration dec-right"></div>
                 
-                <div className="apufact-how-it-works-container">
+                <div className={`apufact-how-it-works-container ${isHowItWorksVisible ? 'animate' : ''}`}>
                     <div className="how-it-works-header">
                         <span className="how-it-works-badge">Flujo de Trabajo</span>
                         <h2 className="how-it-works-title">
@@ -99,8 +134,8 @@ export default function Apufact() {
             </section>
 
             {/* SECCIÓN RESPALDOS Y CERTIFICACIONES */}
-            <section className="apufact-trust-section">
-                <div className="apufact-trust-container">
+            <section className="apufact-trust-section" ref={trustRef}>
+                <div className={`apufact-trust-container ${isTrustVisible ? 'animate' : ''}`}>
                     
                     {/* Tarjeta 1: SUNAT */}
                     <div className="trust-card">

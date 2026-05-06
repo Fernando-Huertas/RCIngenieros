@@ -693,3 +693,83 @@
         font-size: 16px;
     }
 }
+
+/* ==========================================================================
+    REVEAL ANIMATIONS (NUEVAS ANIMACIONES AL SCROLL)
+========================================================================== */
+
+/* Apufact Main */
+.apufact-main-container .apufact-card {
+    opacity: 0;
+    transform: translateY(40px);
+    transition: all 1s ease-out;
+}
+.apufact-main-container.animate .apufact-card {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+/* Apufact Features */
+.apufact-features-container .apufact-features-text {
+    opacity: 0;
+    transform: translateX(-50px);
+    transition: all 1s ease-out;
+}
+.apufact-features-container.animate .apufact-features-text {
+    opacity: 1;
+    transform: translateX(0);
+}
+
+.apufact-features-container .apufact-features-image {
+    opacity: 0;
+    transform: translateX(50px);
+    transition: all 1s ease-out;
+    transition-delay: 0.2s;
+}
+.apufact-features-container.animate .apufact-features-image {
+    opacity: 1;
+    transform: translateX(0);
+}
+
+.apufact-features-container .apufact-features-list li {
+    opacity: 0;
+    transform: translateY(15px);
+    transition: all 0.4s ease-out;
+}
+.apufact-features-container.animate .apufact-features-list li:nth-child(1) { transition-delay: 0.4s; opacity: 1; transform: translateY(0); }
+.apufact-features-container.animate .apufact-features-list li:nth-child(2) { transition-delay: 0.5s; opacity: 1; transform: translateY(0); }
+.apufact-features-container.animate .apufact-features-list li:nth-child(3) { transition-delay: 0.6s; opacity: 1; transform: translateY(0); }
+.apufact-features-container.animate .apufact-features-list li:nth-child(4) { transition-delay: 0.7s; opacity: 1; transform: translateY(0); }
+.apufact-features-container.animate .apufact-features-list li:nth-child(5) { transition-delay: 0.8s; opacity: 1; transform: translateY(0); }
+.apufact-features-container.animate .apufact-features-list li:nth-child(6) { transition-delay: 0.9s; opacity: 1; transform: translateY(0); }
+
+/* How It Works */
+.apufact-how-it-works-container .how-it-works-header {
+    opacity: 0;
+    transform: translateY(30px);
+    transition: all 0.8s ease-out;
+}
+.apufact-how-it-works-container.animate .how-it-works-header {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+.apufact-how-it-works-container .how-it-works-image-wrapper {
+    opacity: 0;
+    transform: scale(0.9);
+    transition: all 0.8s ease-out;
+    transition-delay: 0.3s;
+}
+.apufact-how-it-works-container.animate .how-it-works-image-wrapper {
+    opacity: 1;
+    transform: scale(1);
+}
+
+/* Trust Section */
+.apufact-trust-container .trust-card {
+    opacity: 0;
+    transform: translateY(40px);
+    transition: all 0.8s ease-out;
+}
+.apufact-trust-container.animate .trust-card:nth-child(1) { transition-delay: 0.2s; opacity: 1; transform: translateY(0); }
+.apufact-trust-container.animate .trust-card:nth-child(2) { transition-delay: 0.4s; opacity: 1; transform: translateY(0); }

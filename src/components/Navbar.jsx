@@ -155,12 +155,12 @@ export default function Navbar() {
                                 <span>Facturación Electrónica APUFACT</span>
                             </Link>
 
-                            <div className="item">
+                            <Link to="/servicios/apugescom" className="item">
                                 <div className="icon-servicio">
                                     <Icon icon="mdi:gasoline" />
                                 </div>
                                 <span>Sistema de Gestión de Combustible APUGESCOM</span>
-                            </div>
+                            </Link>
 
                             <div className="item">
                                 <div className="icon-servicio">
