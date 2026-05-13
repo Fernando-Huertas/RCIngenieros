@@ -95,7 +95,7 @@ export default function Apugescom() {
                             </div>
                             <div className="highlight-pill">
                                 <Icon icon="solar:chart-2-bold-duotone" />
-                                <span>Reportes Centralizados</span>
+                                <span>No usamos Controladores</span>
                             </div>
                             <div className="highlight-pill">
                                 <Icon icon="solar:link-round-bold-duotone" />

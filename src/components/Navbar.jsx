@@ -162,12 +162,12 @@ export default function Navbar() {
                                 <span>Sistema de Gestión de Combustible APUGESCOM</span>
                             </Link>
 
-                            <div className="item">
+                            <Link to="/servicios/pozos-a-tierra" className="item">
                                 <div className="icon-servicio">
                                     <Icon icon="pepicons-pop:electricity-circle" />
                                 </div>
                                 <span>Medición y Construcción de Pozos a Tierra</span>
-                            </div>
+                            </Link>
 
                         </div>
                     </li>

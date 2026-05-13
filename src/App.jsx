@@ -4,6 +4,7 @@ import Nosotros from './pages/Nosotros'
 import SoporteTecnico from './pages/SoporteTecnico'
 import Apufact from './pages/Apufact'
 import Apugescom from './pages/Apugescom'
+import PozosTierra from './pages/PozosTierra'
 import Navbar from './components/Navbar'
 import Footer from './components/Footer'
 
@@ -18,6 +19,7 @@ function App() {
         <Route path="/servicios/soporte-tecnico" element={<SoporteTecnico />} />
         <Route path="/servicios/facturacion-electronica" element={<Apufact />} />
         <Route path="/servicios/apugescom" element={<Apugescom />} />
+        <Route path="/servicios/pozos-a-tierra" element={<PozosTierra />} />
       </Routes>
       <Footer />
     </Router>
