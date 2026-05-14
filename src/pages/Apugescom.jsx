@@ -4,11 +4,11 @@ import './Apugescom.css'
 
 // Assets
 import sectionBg from '../assets/sectionapugescom.png'
-import aboutImg from '../assets/img1header.jfif'
+import aboutImg from '../assets/apugescomabout.jpeg'
 import diagramImg from '../assets/funcionapufact.jpg'
 import soporteImg from '../assets/soporteabout.jpeg'
 import eessImg from '../assets/EESS.webp'
-import imgApugescom from '../assets/imgapugescom.png'
+import imgApugescom from '../assets/Logo_Apugescom2.webp'
 
 export default function Apugescom() {
     const [isAboutVisible, setIsAboutVisible] = useState(false);

@@ -13,9 +13,9 @@
    HERO SECTION
    ========================================= */
 .apugescom-hero {
-    background: linear-gradient(rgba(10, 15, 44, 0.65), rgba(10, 15, 44, 0.65)), url('../assets/sectionapugescom.png');
+    background: linear-gradient(rgba(10, 15, 44, 0.65), rgba(10, 15, 44, 0.65)), url('../assets/fondoapugescom.jpeg');
     background-size: cover;
-    background-position: center;
+    background-position: 0% 210%;
     background-attachment: fixed;
     min-height: 450px;
     display: flex;
@@ -98,7 +98,7 @@
     bottom: -30px;
     right: -30px;
     background: #ffffff;
-    padding: 25px;
+    padding: 15px;
     border-radius: 20px;
     box-shadow: 0 15px 40px rgba(0,0,0,0.15);
     z-index: 2;
