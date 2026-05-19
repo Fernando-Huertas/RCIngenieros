@@ -62,7 +62,7 @@ export default function Nosotros() {
                     <div className="nosotros-text">
                         <h1 className='nosotros-titulo1'>
                             Comprometidos con la<br />
-                            <span className="nosotros-highlight">Excelencia</span>
+                            <span className="nosotros-highlight">EXCELENCIA</span>
                         </h1>
                         <p>
                             Ricardo Calderón Ingenieros S.A.C., es una empresa peruana que ofrece servicios 
@@ -115,7 +115,7 @@ export default function Nosotros() {
                 <div className={`values-container ${isValuesVisible ? 'animate' : ''}`}>
                     <div className="values-header">
                         <span className="values-subtitle">Nuestra Esencia</span>
-                        <h2>Pilares de Nuestra Empresa</h2>
+                        <h1>Pilares de Nuestra Empresa</h1>
                         <p>Los valores y objetivos que impulsan nuestra excelencia operativa diaria y el compromiso con cada proyecto.</p>
                     </div>
                     <div className="values-grid">
@@ -164,7 +164,7 @@ export default function Nosotros() {
             <section className='certificaciones' ref={certificacionesRef}>
                 <div className={`certificaciones-container ${isCertificacionesVisible ? 'animate' : ''}`}>
                     <div className="certificaciones-header">
-                        <h2>Certificaciones y Reconocimientos</h2>
+                        <h1>Certificaciones y Reconocimientos</h1>
                         <p>Respaldados por los más altos estándares de calidad</p>
                     </div>
                     <div className="certificaciones-grid">

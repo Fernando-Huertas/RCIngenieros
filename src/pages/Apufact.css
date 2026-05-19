@@ -154,7 +154,7 @@
 }
 
 .apufact-description {
-    font-size: 16px;
+    font-size: 17px;
     font-weight: normal;
     color: #e2e8f0;
     line-height: 1.6;
@@ -320,7 +320,7 @@
 .apufact-features-list li {
     display: flex;
     align-items: center;
-    font-size: 14px;
+    font-size: 15px;
     line-height: 1.4;
     color: #6b7280;
     gap: 15px;
@@ -501,8 +501,7 @@
 }
 
 .how-it-works-title {
-    font-size: 55px;
-    font-weight: 800;
+    font-size: 46px;
     color: #111827;
     margin-top: 0;
     margin-bottom: 20px;
@@ -512,6 +511,7 @@
 
 .how-it-works-title .highlight-blue {
     color: #36A6EB; /* Celeste corporativo */
+    font-weight: 900;
     background: linear-gradient(90deg, #17386d, #36A6EB);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
@@ -519,7 +519,7 @@
 }
 
 .how-it-works-subtitle {
-    font-size: 18px;
+    font-size: 17px;
     color: #64748b;
     line-height: 1.6;
     margin: 0;

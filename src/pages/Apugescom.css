@@ -123,14 +123,14 @@
     display: block;
 }
 
-.apugescom-about-text-side h2 {
-    font-size: 42px;
+.apugescom-about-text-side h1 {
+    font-size: 46px;
     color: #0f172a;
     line-height: 1.2;
     margin-bottom: 25px;
 }
 
-.apugescom-about-text-side h2 strong {
+.apugescom-about-text-side h1 strong {
     color: #1e3a8a;
     font-weight: 900;
 }
@@ -207,19 +207,27 @@
 
 .apugescom-features-header h2 {
     font-size: 48px;
-    font-weight: 800;
+    color: #0f172a;
+    margin-bottom: 15px;
+}
+
+.apugescom-how-header h1 {
+    font-size: 46px;
     color: #0f172a;
     margin-bottom: 15px;
 }
 
 .apugescom-gradient-text {
     background: linear-gradient(90deg, #1e3a8a, #36A6EB);
+    font-size: 46px;
+    font-weight: 900;
+    background-clip: text;
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
 }
 
 .apugescom-features-header p {
-    font-size: 18px;
+    font-size: 17px;
     color: #64748b;
     max-width: 700px;
     margin: 0 auto;

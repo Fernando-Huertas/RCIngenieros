@@ -6,7 +6,7 @@ import './PozosTierra.css'
 import heroBg from '../assets/hero3.jpg'
 import measuringImg from '../assets/soporteabout.jpeg'
 import riskImg from '../assets/accion2.jpg'
-import normativeImg from '../assets/EESS.webp'
+import normativeImg from '../assets/EESS2.jpeg'
 import equipmentImg from '../assets/gnvcontainer.jpg'
 import ctaBg from '../assets/slide4.png'
 
@@ -163,7 +163,7 @@ export default function PozosTierra() {
                 <div className="pozos-benefits-bg-pattern"></div>
                 <div className={`pozos-premium-benefits-container ${isVisible.benefits ? 'is-visible' : ''}`}>
                     <div className="pozos-benefits-header">
-                        <h2>Pilares de nuestro servicio</h2>
+                        <h1>Pilares de nuestro servicio</h1>
                         <p>Diseñados para otorgar máxima protección y eficiencia en infraestructuras críticas.</p>
                     </div>
                     

@@ -117,9 +117,9 @@ export default function Apufact() {
                 <div className={`apufact-how-it-works-container ${isHowItWorksVisible ? 'animate' : ''}`}>
                     <div className="how-it-works-header">
                         <span className="how-it-works-badge">Flujo de Trabajo</span>
-                        <h2 className="how-it-works-title">
+                        <h1 className="how-it-works-title">
                             Como funciona <span className="highlight-blue">APUFACT</span>
-                        </h2>
+                        </h1>
                         <p className="how-it-works-subtitle">
                             Descubre lo fácil que es gestionar tus comprobantes electrónicos en tiempo real y con total seguridad.
                         </p>

@@ -46,7 +46,6 @@
 
 .nosotros-titulo1 {
     font-size: 46px;
-    font-weight: 650;
     line-height: 1.1;
     color: #000000;
     margin-bottom: 25px;
@@ -54,12 +53,12 @@
 
 .nosotros-highlight {
     font-size: 46px;
-    font-weight: 800;
+    font-weight: 900;
     color: #36A6EB;
 }
 
 .nosotros-text p {
-    font-size: 16px;
+    font-size: 17px;
     line-height: 1.6;
     color: #666666;
     margin-bottom: 40px;
@@ -102,7 +101,7 @@
 }
 
 .feature-info p {
-    font-size: 16px;
+    font-size: 15px;
     line-height: 1.6;
     color: #666666;
     margin-bottom: 0;
@@ -170,16 +169,15 @@
     margin-bottom: 15px;
 }
 
-.values-header h2 {
+.values-header h1 {
     font-size: 46px;
     color: #000000;
     margin-bottom: 25px;
-    font-weight: 650;
 }
 
 .values-header p {
     color: #666666;
-    font-size: 16px;
+    font-size: 17px;
     max-width: 700px;
     margin: 0 auto;
     line-height: 1.6;
@@ -288,9 +286,8 @@
     margin-bottom: 60px;
 }
 
-.certificaciones-header h2 {
+.certificaciones-header h1 {
     font-size: 46px;
-    font-weight: 650;
     color: #000000;
     margin-bottom: 15px;
     letter-spacing: -0.5px;
@@ -298,7 +295,7 @@
 
 .certificaciones-header p {
     color: #666666;
-    font-size: 16px;
+    font-size: 17px;
     font-weight: normal;
 }
 
@@ -359,7 +356,7 @@
 }
 
 .cert-name {
-    font-size: 18px;
+    font-size: 20px;
     font-weight: 700;
     color: #1a1a1a;
     margin: 0;
@@ -367,7 +364,7 @@
 }
 
 .cert-desc {
-    font-size: 14px;
+    font-size: 15px;
     color: #666666;
     margin: 4px 0 0 0;
     font-weight: 500;
@@ -478,13 +475,28 @@
     .nosotros-hero p {
         font-size: 16px;
     }
+    .values-header h1{
+        font-size: 32px;
+    }
+    .values-header p{
+        font-size: 15px;
+    }
+    .nosotros-text p{
+        font-size: 15px;
+    }
 
     .nosotros-titulo1, .nosotros-highlight {
-        font-size: 28px;
+        font-size: 32px;
     }
 
     .value-card {
         padding: 40px 25px;
+    }
+    .certificaciones-header h1{
+        font-size: 32px;
+    }
+    .certificaciones-header p{
+        font-size: 15px;
     }
 
     .certificacion-item {

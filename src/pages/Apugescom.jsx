@@ -6,8 +6,8 @@ import './Apugescom.css'
 import sectionBg from '../assets/sectionapugescom.png'
 import aboutImg from '../assets/apugescomabout.jpeg'
 import diagramImg from '../assets/funcionapufact.jpg'
-import soporteImg from '../assets/soporteabout.jpeg'
-import eessImg from '../assets/EESS.webp'
+import soporteImg from '../assets/soporte-y-mantenimiento-rc.jpg'
+import eessImg from '../assets/EESS2.jpeg'
 import imgApugescom from '../assets/Logo_Apugescom2.webp'
 
 export default function Apugescom() {
@@ -81,7 +81,7 @@ export default function Apugescom() {
                     </div>
                     <div className="apugescom-about-text-side">
                         <span className="apugescom-about-label">Sobre APUGESCOM</span>
-                        <h2>Sistemas de Gestión de Combustibles <strong>APUGESCOM</strong></h2>
+                        <h1>Sistemas de Gestión de Combustibles <strong>APUGESCOM</strong></h1>
                         <p>
                             El sistema de gestión de combustibles APUGESCOM es un programa diseñado de manera
                             exclusiva con la finalidad de automatizar y administrar las Estaciones de Servicio.
@@ -123,7 +123,7 @@ export default function Apugescom() {
                             { icon: "solar:chart-bold-duotone", title: "Reportes de Ventas", desc: "Variedad de reportes de ventas, recaudaciones y control de ingresos." },
                             { icon: "solar:cart-large-2-bold-duotone", title: "Punto de Venta", desc: "Integración completa para el Punto de Venta (Market) de la estación." },
                             { icon: "solar:users-group-rounded-bold-duotone", title: "Fidelización", desc: "Control del Criss o Fidelización de Flotas para sus clientes frecuentes." },
-                            { icon: "solar:settings-bold-duotone", title: "Multimarca", desc: "Compatible con Wayne, Gilbarco, Tokheim, Tatsumo, Datacontrol y Kraus." }
+                            { icon: "solar:settings-bold-duotone", title: "Multimarca", desc: "Compatible con Wayne, Gilbarco, Tokheim, Tatsumo, Datacontrol, Kraus y más." }
                         ].map((item, index) => (
                             <div className="apugescom-feature-card" key={index}>
                                 <div className="apugescom-feature-card-icon">
@@ -144,7 +144,7 @@ export default function Apugescom() {
                 <div className={`apugescom-how-wrapper ${isDiagramVisible ? 'animate' : ''}`}>
                     <div className="apugescom-how-header">
                         <span className="apugescom-section-badge">Flujo de Trabajo</span>
-                        <h2>Como funciona <span className="apugescom-gradient-text">APUGESCOM</span></h2>
+                        <h1>Como funciona <span className="apugescom-gradient-text">APUGESCOM</span></h1>
                         <p>Descubre cómo nuestro sistema gestiona de forma integral cada proceso operativo de su estación de servicio.</p>
                     </div>
                     <div className="apugescom-how-img-wrap">
