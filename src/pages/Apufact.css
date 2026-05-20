@@ -380,7 +380,10 @@
         font-size: 36px;
     }
     .apufact-features-maintitle {
-        font-size: 60px;
+        font-size: 55px;
+    }
+    .how-it-works-title {
+        font-size: 38px;
     }
 }
 
@@ -420,7 +423,7 @@
         font-size: 30px;
     }
     .apufact-features-maintitle {
-        font-size: 45px;
+        font-size: 38px;
     }
     .apufact-features-list li {
         font-size: 15px;
@@ -557,7 +560,10 @@
 
 @media (max-width: 900px) {
     .how-it-works-title {
-        font-size: 45px;
+        font-size: 32px;
+    }
+    .apufact-title {
+        font-size: 28px;
     }
     .how-it-works-glass-card {
         padding: 20px;
@@ -570,7 +576,7 @@
         padding: 4rem 1.5rem;
     }
     .how-it-works-title {
-        font-size: 35px;
+        font-size: 28px;
     }
     .how-it-works-subtitle {
         font-size: 16px;

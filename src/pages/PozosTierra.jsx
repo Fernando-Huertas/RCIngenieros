@@ -163,7 +163,7 @@ export default function PozosTierra() {
                 <div className="pozos-benefits-bg-pattern"></div>
                 <div className={`pozos-premium-benefits-container ${isVisible.benefits ? 'is-visible' : ''}`}>
                     <div className="pozos-benefits-header">
-                        <h1>Pilares de nuestro servicio</h1>
+                        <h2>Pilares de nuestro servicio</h2>
                         <p>Diseñados para otorgar máxima protección y eficiencia en infraestructuras críticas.</p>
                     </div>
                     

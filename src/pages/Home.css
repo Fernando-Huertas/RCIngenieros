@@ -933,7 +933,7 @@
     width: 197px;
   }
   .nosotros-titulo {
-    font-size: 48px;
+    font-size: 38px;
   }
   .nosotros-bottom {
     gap: 15px;
@@ -964,7 +964,7 @@
         padding-top: 12px;
     }
     .nosotros-titulo{
-      font-size: 34px;
+      font-size: 38px;
     }
     .nosotros-der {
         width: 55%;
@@ -1019,7 +1019,7 @@
         position: relative;
     }
     .nosotros-titulo {
-        font-size: 34px;
+        font-size: 32px;
     }
     .nosotros-descripcion {
         font-size: 15px;
@@ -1090,7 +1090,7 @@
     padding: 0 !important;
   }
   .nosotros-titulo{
-    font-size: 32px;
+    font-size: 28px;
   }
   .nosotros-descripcion{
     font-size: 15px;
@@ -1336,7 +1336,7 @@
 }
 
 @media (max-width: 1200px) {
-  .apugescom-titulo { font-size: 54px; }
+  .apugescom-titulo { font-size: 38px; }
   .apugescom-features-row { gap: 0px; }
   .feature-icon{
     font-size: 70px;
@@ -1353,7 +1353,7 @@
 }
 
 @media (max-width: 992px) {
-  .apugescom-titulo { font-size: 46px; }
+  .apugescom-titulo { font-size: 32px; }
   .apugescom-text-side { width: 90%; }
 }
 
@@ -1378,7 +1378,7 @@
     max-width: none;
   }
   
-  .apugescom-titulo { font-size: 38px; }
+  .apugescom-titulo { font-size: 32px; }
 
   .apugescom-buttons {
     justify-content: center;
@@ -1417,7 +1417,7 @@
   .info-apugescom{
     gap: 10px;
   }
-  .apugescom-titulo { font-size: 32px; }
+  .apugescom-titulo { font-size: 28px; }
   .apugescom-highlight { font-size: 40px; }
   .apugescom-descripcion { font-size: 15px; }
   .btn-cotizar, .btn-ver-mas { font-size: 14px; }
@@ -1536,7 +1536,7 @@
     padding: 40px 60px;
   }
   .llamada-accion-titulo {
-    font-size: 40px;
+    font-size: 38px;
   }
 }
 
@@ -1546,7 +1546,7 @@
     gap: 20px;
   }
   .llamada-accion-titulo {
-    font-size: 36px;
+    font-size: 38px;
   }
 }
 
@@ -1723,7 +1723,7 @@
 }
 
 @media (max-width: 1200px) {
-  .apufact-titulo { font-size: 54px; }
+  .apufact-titulo { font-size: 38px; }
   .apufact-features-row { gap: 0px; }
   .feature-icon{
     font-size: 70px;
@@ -1740,7 +1740,7 @@
 }
 
 @media (max-width: 992px) {
-  .apufact-titulo { font-size: 46px; }
+  .apufact-titulo { font-size: 32px; }
   .apufact-text-side { width: 90%; }
 }
 
@@ -1760,7 +1760,7 @@
     max-width: none;
   }
   
-  .apufact-titulo { font-size: 38px; }
+  .apufact-titulo { font-size: 32px; }
 
   .apufact-buttons {
     justify-content: center;
@@ -1776,7 +1776,7 @@
 }
 
 @media (max-width: 480px) {
-  .apufact-titulo { font-size: 32px; }
+  .apufact-titulo { font-size: 28px; }
   .apufact-highlight { font-size: 46px; }
   .apufact-descripcion { font-size: 15px; }
   .apufact-images {
@@ -1919,7 +1919,7 @@
 }
 
 .video-titulo {
-  font-size: clamp(32px, 5vw, 48px); /* Uso moderado de clamp para títulos grandes */
+  font-size: 46px;
   color: #1a1a1a;
   line-height: 1.2;
   margin: 0;
@@ -2070,6 +2070,12 @@
   .video-content {
     border-radius: 16px; /* Bordes más pequeños en móviles */
     margin-top: 0;
+  }
+}
+
+@media (max-width: 480px) {
+  .video-titulo {
+    font-size: 28px;
   }
 }
 

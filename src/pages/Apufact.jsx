@@ -89,7 +89,7 @@ export default function Apufact() {
                 <div className={`apufact-features-container ${isFeaturesVisible ? 'animate' : ''}`}>
                     <div className="apufact-features-text">
                         <h2 className="apufact-features-subtitle">Caracteristicas de</h2>
-                        <h1 className="apufact-features-maintitle">APUFACT</h1>
+                        <h2 className="apufact-features-maintitle">APUFACT</h2>
                         <p className="apufact-features-description">
                             APUFACT es un sistema de Gestión de Comprobantes Electrónicos (CPE) perfecto para tu empresa, el cual permite la emisión y el envío de los CPE a SUNAT de la manera más fácil y dinámica, el sistema es cloud y está hecho para todo tipo de negocios y empresas
                         </p>
@@ -117,9 +117,9 @@ export default function Apufact() {
                 <div className={`apufact-how-it-works-container ${isHowItWorksVisible ? 'animate' : ''}`}>
                     <div className="how-it-works-header">
                         <span className="how-it-works-badge">Flujo de Trabajo</span>
-                        <h1 className="how-it-works-title">
+                        <h2 className="how-it-works-title">
                             Como funciona <span className="highlight-blue">APUFACT</span>
-                        </h1>
+                        </h2>
                         <p className="how-it-works-subtitle">
                             Descubre lo fácil que es gestionar tus comprobantes electrónicos en tiempo real y con total seguridad.
                         </p>

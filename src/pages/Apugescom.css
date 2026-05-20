@@ -123,14 +123,14 @@
     display: block;
 }
 
-.apugescom-about-text-side h1 {
+.apugescom-about-text-side h2 {
     font-size: 46px;
     color: #0f172a;
     line-height: 1.2;
     margin-bottom: 25px;
 }
 
-.apugescom-about-text-side h1 strong {
+.apugescom-about-text-side h2 strong {
     color: #1e3a8a;
     font-weight: 900;
 }
@@ -206,12 +206,12 @@
 }
 
 .apugescom-features-header h2 {
-    font-size: 48px;
+    font-size: 46px;
     color: #0f172a;
     margin-bottom: 15px;
 }
 
-.apugescom-how-header h1 {
+.apugescom-how-header h2 {
     font-size: 46px;
     color: #0f172a;
     margin-bottom: 15px;
@@ -219,7 +219,6 @@
 
 .apugescom-gradient-text {
     background: linear-gradient(90deg, #1e3a8a, #36A6EB);
-    font-size: 46px;
     font-weight: 900;
     background-clip: text;
     -webkit-background-clip: text;
@@ -540,15 +539,33 @@
     .apugescom-about-accent-box { display: none; }
     .apugescom-module-body, .apugescom-module-body.reverse { flex-direction: column; }
     .apugescom-module-img { height: 300px; }
+    
+    .apugescom-about-text-side h2,
+    .apugescom-how-header h2,
+    .apugescom-features-header h2 {
+        font-size: 38px;
+    }
 }
 
 @media (max-width: 768px) {
     .apugescom-hero { min-height: 350px; }
-    .apugescom-about-text-side h2 { font-size: 32px; }
-    .apugescom-features-header h2 { font-size: 36px; }
-    .apugescom-how-title { font-size: 36px; }
+    
+    .apugescom-about-text-side h2,
+    .apugescom-how-header h2,
+    .apugescom-features-header h2 {
+        font-size: 32px;
+    }
+    
     .apugescom-module-info { padding: 40px 30px; }
     .apugescom-module-info h3 { font-size: 26px; }
     .apugescom-quote-text { font-size: 20px; }
     .apugescom-cta-container h2 { font-size: 30px; }
+}
+
+@media (max-width: 480px) {
+    .apugescom-about-text-side h2,
+    .apugescom-how-header h2,
+    .apugescom-features-header h2 {
+        font-size: 28px;
+    }
 }

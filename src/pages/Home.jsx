@@ -485,7 +485,7 @@ export default function Home() {
                 <img src={imgnostros} alt="#" />
               </div>
               <div className='img-info'>
-                <h1>15+</h1>
+                <h2>15+</h2>
                 <span>Años de Experiencia</span>
               </div>
               <div className='img-secundaria'>
@@ -494,7 +494,7 @@ export default function Home() {
             </div>
             <div className='nosotros-der'>
               <h2 className='nosotros-subtitulo'>SOBRE NOSOTROS</h2>
-              <h1 className='nosotros-titulo'>Soluciones Tecnológicas, Eléctricas e Informaticas</h1>
+              <h2 className='nosotros-titulo'>Soluciones Tecnológicas, Eléctricas e Informaticas</h2>
               <p className='nosotros-descripcion'>Somos una empresa peruana líder que brinda soluciones
                  innovadoras y confiables para el control de ventas y gestión de combustible, con más de 
                  15 años de experiencia ayudando a optimizar operaciones y cumplir normativas.</p>
@@ -532,10 +532,10 @@ export default function Home() {
           <div className={`info-apugescom ${isApugescomVisible ? 'animate' : ''}`}>
             <div className='apugescom-content-wrapper'>
               <div className='apugescom-text-side'>
-                <h1 className='apugescom-titulo'>
+                <h2 className='apugescom-titulo'>
                   Sistema de Gestión de Combustible <br />
                   <span className="apugescom-highlight">APUGESCOM</span>
-                </h1>
+                </h2>
                 <p className='apugescom-descripcion'>
                   APUGESCOM es su solución completa para el control total de sus Estaciones de Servicios en GLP,
                    GNL, UREA y Líquidos. Permite la gestión integral de inventarios, dipensadores, ventas y reportes
@@ -588,7 +588,7 @@ export default function Home() {
       <section className='llamada-accion' ref={ctaRef}>
         <div className={`info-llamada-accion ${isCtaVisible ? 'animate' : ''}`}>
           <div className='llamada-accion-izq'>
-            <h1 className='llamada-accion-titulo'>Construyamos algo Juntos</h1>
+            <h2 className='llamada-accion-titulo'>Construyamos algo Juntos</h2>
             <p className='llamada-accion-descripcion'>Contáctanos hoy mismo para una consulta gratuita y déjanos
                ayudarte a llevar tu proyecto al siguiente nivel.</p>
           </div>
@@ -605,10 +605,10 @@ export default function Home() {
           <div className={`info-apufact ${isApufactVisible ? 'animate' : ''}`}>
             <div className='apufact-content-wrapper'>
               <div className='apufact-text-side'>
-                <h1 className='apufact-titulo'>
+                <h2 className='apufact-titulo'>
                   Facturación Electronica 100% Segura<br />
                   <span className="apufact-highlight">APUFACT</span>
-                </h1>
+                </h2>
                 <p className='apufact-descripcion'>
                   Transforme la administración de su empresa con Apufact, el facturador electrónico diseñado para 
                   adaptarse a cualquier sector comercial. Cumpla con las normativas de SUNAT de forma rápida, sencilla
@@ -659,7 +659,7 @@ export default function Home() {
 
       <section className='video' ref={videoRef}>
         <div className={`info-video ${isVideoVisible ? 'animate' : ''}`}>
-          <h1 className='video-titulo'>Video Corporativo RC INGENIEROS</h1>
+          <h2 className='video-titulo'>Video Corporativo RC INGENIEROS</h2>
           <p className='video-descripcion'>Transformamos tus desafíos en soluciones. Conoce nuestra experiencia 
             integral en infraestructura y gestión administrativa, y el compromiso con el futuro de tu negocio.</p>
           <div className='video-content'>

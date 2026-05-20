@@ -60,10 +60,10 @@ export default function Nosotros() {
             <section className="nosotros-content" ref={contentRef}>
                 <div className={`nosotros-grid ${isContentVisible ? 'animate' : ''}`}>
                     <div className="nosotros-text">
-                        <h1 className='nosotros-titulo1'>
+                        <h2 className='nosotros-titulo1'>
                             Comprometidos con la<br />
                             <span className="nosotros-highlight">EXCELENCIA</span>
-                        </h1>
+                        </h2>
                         <p>
                             Ricardo Calderón Ingenieros S.A.C., es una empresa peruana que ofrece servicios 
                             orientados a las Telecomunicaciones, Electricidad y Servicios de Informática a diversas
@@ -115,7 +115,7 @@ export default function Nosotros() {
                 <div className={`values-container ${isValuesVisible ? 'animate' : ''}`}>
                     <div className="values-header">
                         <span className="values-subtitle">Nuestra Esencia</span>
-                        <h1>Pilares de Nuestra Empresa</h1>
+                        <h2>Pilares de Nuestra Empresa</h2>
                         <p>Los valores y objetivos que impulsan nuestra excelencia operativa diaria y el compromiso con cada proyecto.</p>
                     </div>
                     <div className="values-grid">
@@ -164,7 +164,7 @@ export default function Nosotros() {
             <section className='certificaciones' ref={certificacionesRef}>
                 <div className={`certificaciones-container ${isCertificacionesVisible ? 'animate' : ''}`}>
                     <div className="certificaciones-header">
-                        <h1>Certificaciones y Reconocimientos</h1>
+                        <h2>Certificaciones y Reconocimientos</h2>
                         <p>Respaldados por los más altos estándares de calidad</p>
                     </div>
                     <div className="certificaciones-grid">

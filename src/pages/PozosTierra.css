@@ -138,7 +138,7 @@
 }
 
 .pozos-about-content h2 {
-    font-size: 42px;
+    font-size: 46px;
     font-weight: 800;
     color: #0f172a;
     margin-bottom: 25px;
@@ -275,7 +275,7 @@
 }
 
 .pozos-services-text h2 {
-    font-size: 48px;
+    font-size: 46px;
     font-weight: 800;
     color: #0f172a;
     line-height: 1.2;
@@ -376,9 +376,9 @@
     margin-bottom: 60px;
 }
 
-.pozos-benefits-header h1 {
+.pozos-benefits-header h2 {
     color: #ffffff;
-    font-size: 48px;
+    font-size: 46px;
     font-weight: 800;
     margin-bottom: 15px;
 }
@@ -522,7 +522,7 @@
 
 .pozos-cta-inner h2 {
     color: white;
-    font-size: 42px;
+    font-size: 46px;
     font-weight: 800;
     margin-bottom: 25px;
     line-height: 1.2;
@@ -572,6 +572,13 @@
     .pozos-about-stats {
         gap: 30px;
     }
+    
+    .pozos-about-content h2,
+    .pozos-services-text h2,
+    .pozos-benefits-header h2,
+    .pozos-cta-inner h2 {
+        font-size: 38px;
+    }
 }
 
 @media (max-width: 768px) {
@@ -587,8 +594,12 @@
         padding: 40px 20px;
     }
     
-    .pozos-about-content h2 { font-size: 32px; }
-    .pozos-services-text h2 { font-size: 36px; }
+    .pozos-about-content h2,
+    .pozos-services-text h2,
+    .pozos-benefits-header h2,
+    .pozos-cta-inner h2 {
+        font-size: 32px;
+    }
     
     .pozos-services-cards {
         grid-template-columns: 1fr;
@@ -598,9 +609,16 @@
         padding: 40px 20px;
     }
     
-    .pozos-cta-inner h2 { font-size: 30px; }
-    
     .pozos-stat h3 {
         font-size: 2.5rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .pozos-about-content h2,
+    .pozos-services-text h2,
+    .pozos-benefits-header h2,
+    .pozos-cta-inner h2 {
+        font-size: 28px;
     }
 }

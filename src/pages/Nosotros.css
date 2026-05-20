@@ -52,7 +52,6 @@
 }
 
 .nosotros-highlight {
-    font-size: 46px;
     font-weight: 900;
     color: #36A6EB;
 }
@@ -169,7 +168,7 @@
     margin-bottom: 15px;
 }
 
-.values-header h1 {
+.values-header h2 {
     font-size: 46px;
     color: #000000;
     margin-bottom: 25px;
@@ -286,7 +285,7 @@
     margin-bottom: 60px;
 }
 
-.certificaciones-header h1 {
+.certificaciones-header h2 {
     font-size: 46px;
     color: #000000;
     margin-bottom: 15px;
@@ -395,7 +394,15 @@
         margin: 0 auto;
     }
 
-    .nosotros-titulo1, .nosotros-highlight {
+    .nosotros-titulo1 {
+        font-size: 38px;
+    }
+
+    .values-header h2 {
+        font-size: 38px;
+    }
+
+    .certificaciones-header h2 {
         font-size: 38px;
     }
 
@@ -426,7 +433,7 @@
         padding: 30px 0 0 0;
     }
 
-    .nosotros-titulo1, .nosotros-highlight {
+    .nosotros-titulo1 {
         font-size: 32px;
         text-align: center;
     }
@@ -475,8 +482,8 @@
     .nosotros-hero p {
         font-size: 16px;
     }
-    .values-header h1{
-        font-size: 32px;
+    .values-header h2 {
+        font-size: 28px;
     }
     .values-header p{
         font-size: 15px;
@@ -485,15 +492,15 @@
         font-size: 15px;
     }
 
-    .nosotros-titulo1, .nosotros-highlight {
-        font-size: 32px;
+    .nosotros-titulo1 {
+        font-size: 28px;
     }
 
     .value-card {
         padding: 40px 25px;
     }
-    .certificaciones-header h1{
-        font-size: 32px;
+    .certificaciones-header h2 {
+        font-size: 28px;
     }
     .certificaciones-header p{
         font-size: 15px;

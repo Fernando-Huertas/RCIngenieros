@@ -310,7 +310,6 @@
 
 .soporte-about-content h2 {
     font-size: 46px;
-    font-weight: 650;
     color: #000000;
     line-height: 1.2;
     margin-bottom: 30px;
@@ -318,7 +317,7 @@
 }
 
 .soporte-about-content p {
-    font-size: 16px;
+    font-size: 17px;
     color: #666666;
     line-height: 1.7;
     margin-bottom: 40px;
@@ -396,13 +395,12 @@
 
 .gallery-header h2 {
     font-size: 46px;
-    font-weight: 650;
     color: #ffffff;
     margin-bottom: 20px;
 }
 
 .gallery-header p {
-    font-size: 16px;
+    font-size: 17px;
     color: #94a3b8;
     max-width: 700px;
     margin: 0 auto;
@@ -520,7 +518,6 @@
 
 .apufact-header h2 {
     font-size: 46px;
-    font-weight: 650;
     color: #000000;
     margin-bottom: 20px;
 }
@@ -530,7 +527,7 @@
 }
 
 .apufact-header p {
-    font-size: 18px;
+    font-size: 17px;
     color: #666666;
     max-width: 700px;
     margin: 0 auto;
@@ -708,6 +705,10 @@
         font-size: 28px;
     }
 
+    .soporte-about-content p {
+        font-size: 15px;
+    }
+
     .soporte-about-features {
         padding: 0 10px;
     }
@@ -715,9 +716,15 @@
     .gallery-header h2 {
         font-size: 28px;
     }
+    .gallery-header p {
+        font-size: 15px;
+    }
 
     .apufact-header h2 {
         font-size: 28px;
+    }
+    .apufact-header p {
+        font-size: 15px;
     }
 
     .overlay-icon {
@@ -821,8 +828,7 @@
 }
 
 .gnv-header h2 {
-    font-size: 42px;
-    font-weight: 700;
+    font-size: 46px;
     color: #000000;
     margin-bottom: 15px;
 }
@@ -854,7 +860,7 @@
 }
 
 .gnv-intro {
-    font-size: 16px;
+    font-size: 17px;
     color: #555555;
     line-height: 1.7;
     margin-bottom: 40px;
@@ -964,6 +970,9 @@
 
     .gnv-header h2 {
         font-size: 28px;
+    }
+    .gnv-intro {
+        font-size: 15px;
     }
 
     .gnv-feature-item {
