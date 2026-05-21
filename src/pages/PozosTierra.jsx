@@ -3,11 +3,11 @@ import { Icon } from '@iconify/react'
 import './PozosTierra.css'
 
 // Assets
-import heroBg from '../assets/hero3.jpg'
-import measuringImg from '../assets/soporteabout.jpeg'
-import riskImg from '../assets/accion2.jpg'
-import normativeImg from '../assets/EESS2.jpeg'
-import equipmentImg from '../assets/gnvcontainer.jpg'
+import heroBg from '../assets/hero-pozotierra.jpg'
+import measuringImg from '../assets/measuring.jpeg'
+import riskImg from '../assets/pozo-1.webp'
+import normativeImg from '../assets/pozo-cumplimiento.jpg'
+import equipmentImg from '../assets/pozo-vidautil.webp'
 import ctaBg from '../assets/slide4.png'
 
 export default function PozosTierra() {
@@ -113,7 +113,8 @@ export default function PozosTierra() {
                         <div className="pozos-services-text">
                             <span className="pozos-section-label">Nuestros Servicios</span>
                             <h2>Soluciones integrales en <span>Sistemas de Puesta a Tierra</span></h2>
-                            <p className="pozos-services-desc">Ofrecemos un espectro completo de servicios para garantizar la disipación óptima de corrientes eléctricas.</p>
+                            <p className="pozos-services-desc">Ofrecemos un espectro completo de servicios para garantizar la disipación óptima
+                                 de corrientes eléctricas.</p>
                             
                             <div className="pozos-services-cards">
                                 <div className="pozos-service-item">

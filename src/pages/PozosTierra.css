@@ -33,7 +33,7 @@
 .pozos-hero {
     background-size: cover;
     background-position: center;
-    background-attachment: fixed;
+    /* background-attachment: fixed; */
     min-height: 450px;
     display: flex;
     align-items: center;
