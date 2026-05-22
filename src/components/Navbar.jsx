@@ -171,7 +171,7 @@ export default function Navbar() {
 
                         </div>
                     </li>
-                    <li>Productos</li>
+                    <li><Link to="/productos">Productos</Link></li>
                     <li>Contacto</li>
                 </ul>
 
