@@ -111,7 +111,7 @@ export default function PozosTierra() {
                             </div>
                         </div>
                         <div className="pozos-services-text">
-                            <span className="pozos-section-label">Nuestros Servicios</span>
+                            <span className="pozos-section-badge">Nuestros Servicios</span>
                             <h2>Soluciones integrales en <span>Sistemas de Puesta a Tierra</span></h2>
                             <p className="pozos-services-desc">Ofrecemos un espectro completo de servicios para garantizar la disipación óptima
                                  de corrientes eléctricas.</p>

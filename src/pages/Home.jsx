@@ -218,10 +218,10 @@ export default function Home() {
                         puesta a tierra.</p>
                 </div>
                 <div className="botones-hero">
-                    <a href="#">
+                    <a href="/contacto">
                       <button className="boton-hero-1">Solicitar Cotizacion <Icon icon="line-md:arrow-right" style={{fontSize: "22px"}} /></button>
                     </a>
-                    <a href="#">
+                    <a href="/productos">
                       <button className="boton-hero-2">Nuestros Servicios</button>
                     </a>
                 </div>
@@ -265,10 +265,10 @@ export default function Home() {
                     <p className="hero-descripcion">Optimiza la gestión de tus ventas con nuestro sistema automatizado adaptado a la normativa vigente en todo el Perú.</p>
                 </div>
                 <div className="botones-hero">
-                    <a href="#">
+                    <a href="/contacto">
                       <button className="boton-hero-1">Solicitar Cotizacion <Icon icon="line-md:arrow-right" style={{fontSize: "22px"}} /></button>
                     </a>
-                    <a href="#">
+                    <a href="/productos">
                       <button className="boton-hero-2">Nuestros Servicios</button>
                     </a>
                 </div>
@@ -313,10 +313,10 @@ export default function Home() {
                        en acero inoxidable y galvanizado, garantizando durabilidad y eficiencia en cada proyecto a nivel nacional.</p>
                 </div>
                 <div className="botones-hero">
-                    <a href="#">
+                    <a href="/contacto">
                       <button className="boton-hero-1">Solicitar Cotizacion <Icon icon="line-md:arrow-right" style={{fontSize: "22px"}} /></button>
                     </a>
-                    <a href="#">
+                    <a href="/productos">
                       <button className="boton-hero-2">Nuestros Servicios</button>
                     </a>
                 </div>
@@ -361,10 +361,10 @@ export default function Home() {
                       nuestros equipos de última generación. Soluciones robustas diseñadas para resistir el trabajo pesado con máxima eficiencia.</p>
                 </div>
                 <div className="botones-hero">
-                    <a href="#">
+                    <a href="/contacto">
                       <button className="boton-hero-1">Solicitar Cotizacion <Icon icon="line-md:arrow-right" style={{fontSize: "22px"}} /></button>
                     </a>
-                    <a href="#">
+                    <a href="/productos">
                       <button className="boton-hero-2">Nuestros Servicios</button>
                     </a>
                 </div>
@@ -427,10 +427,10 @@ export default function Home() {
                          en todo momento.</p>
                   </div>
                   <div className="servicios-botones-der">
-                      <a style={{ textDecoration: 'none' }} href="#">
+                      <a style={{ textDecoration: 'none' }} href="/productos">
                         <button className="servicios-boton-1">Ver más Servicios</button>
                       </a>
-                      <a style={{ textDecoration: 'none' }} href="#">
+                      <a style={{ textDecoration: 'none' }} href="/contacto">
                         <button className="servicios-boton-2">Contáctanos</button>
                       </a>
                   </div>
@@ -447,7 +447,7 @@ export default function Home() {
                           <Icon icon="carbon:service-levels" />
                       </div>
                       <h2 className="servicios-titulo-texto">Soporte Técnico a Estaciones de Servicio 24/7</h2>
-                      <a style={{ textDecoration: 'none' }} href="#">
+                      <a style={{ textDecoration: 'none' }} href="/servicios/soporte-tecnico">
                         <button className="boton">Ver más<Icon icon="line-md:arrow-right" className="flechita1" /></button>
                       </a>
                   </div>
@@ -458,7 +458,7 @@ export default function Home() {
                           <Icon icon="fluent:money-calculator-24-regular" />
                       </div>
                       <h2 className="servicios-titulo-texto">Gestión de Facturación Electronica Apufact</h2>
-                      <a style={{ textDecoration: 'none' }} href="#">
+                      <a style={{ textDecoration: 'none' }} href="/servicios/facturacion-electronica">
                         <button className="boton">Ver más<Icon icon="line-md:arrow-right" className="flechita1" /></button>
                       </a>
                   </div>
@@ -469,7 +469,7 @@ export default function Home() {
                           <Icon icon="pepicons-pop:electricity-circle" />
                       </div>
                       <h2 className="servicios-titulo-texto">Sistema de Gestión de Combustible APUGESCOM</h2>
-                      <a style={{ textDecoration: 'none' }} href="#">
+                      <a style={{ textDecoration: 'none' }} href="/servicios/apugescom">
                         <button className="boton">Ver más<Icon icon="line-md:arrow-right" className="flechita1" /></button>
                       </a>
                   </div>

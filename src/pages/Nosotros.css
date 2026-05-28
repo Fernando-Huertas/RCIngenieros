@@ -158,13 +158,16 @@
     margin-bottom: 80px;
 }
 
-.values-subtitle {
-    display: block;
+.nosotros-section-badge {
+    background: rgba(54, 166, 235, 0.1);
     color: #36A6EB;
+    padding: 8px 20px;
+    border-radius: 50px;
+    font-size: 13px;
     font-weight: 700;
     text-transform: uppercase;
-    letter-spacing: 1px;
-    font-size: 14px;
+    letter-spacing: 1.5px;
+    display: inline-block;
     margin-bottom: 15px;
 }
 
@@ -263,7 +266,7 @@
 
 .value-card p {
     color: #666666;
-    line-height: 1.8;
+    line-height: 1.6;
     font-size: 16px;
     margin: 0;
 }

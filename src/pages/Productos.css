@@ -83,7 +83,7 @@
 .productos-hero-description {
     font-size: 18px;
     color: #e2e8f0;
-    line-height: 1.8;
+    line-height: 1.6;
     max-width: 700px;
     margin-bottom: 40px;
 }
@@ -177,7 +177,7 @@
     color: #64748b;
     max-width: 700px;
     margin: 0 auto;
-    line-height: 1.7;
+    line-height: 1.6;
 }
 
 .productos-categories-grid {
@@ -279,6 +279,7 @@
     align-items: center;
     gap: 8px;
     transition: all 0.3s ease;
+    text-decoration: none;
 }
 
 .category-view-btn:hover {
@@ -367,7 +368,7 @@
 .productos-cta-content > p {
     font-size: 18px;
     color: #cbd5e1;
-    line-height: 1.8;
+    line-height: 1.6;
     max-width: 700px;
     margin: 0 auto 40px;
 }

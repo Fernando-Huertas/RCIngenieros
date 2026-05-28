@@ -17,16 +17,16 @@ export default function Footer() {
             Electricidad y Servicios de Informática a diversas empresas.
           </p>
           <div className="footer-socials">
-            <a href="#" className="social-icon" aria-label="Facebook">
+            <a href="https://www.facebook.com/profile.php?id=61567695884528" className="social-icon" aria-label="Facebook">
               <Icon icon="ri:facebook-fill" />
             </a>
-            <a href="#" className="social-icon" aria-label="Instagram">
+            <a href="https://www.instagram.com/rcingenierosof/" className="social-icon" aria-label="Instagram">
               <Icon icon="ri:instagram-line" />
             </a>
-            <a href="#" className="social-icon" aria-label="TikTok">
+            <a href="https://www.tiktok.com/@rcingenierosoficial" className="social-icon" aria-label="TikTok">
               <Icon icon="ic:baseline-tiktok" />
             </a>
-            <a href="#" className="social-icon" aria-label="YouTube">
+            <a href="https://www.youtube.com/@RICARDOCALDERONINGENIEROSSAC" className="social-icon" aria-label="YouTube">
               <Icon icon="mingcute:youtube-line" />
             </a>
           </div>
@@ -39,7 +39,7 @@ export default function Footer() {
             <li><a href="/">Inicio</a></li>
             <li><a href="/nosotros">Nosotros</a></li>
             <li><a href="/productos">Productos</a></li>
-            <li><a href="#">Contacto</a></li>
+            <li><a href="/contacto">Contacto</a></li>
           </ul>
         </div>
 
@@ -47,10 +47,10 @@ export default function Footer() {
         <div className="footer-col-enlaces">
           <h3 className="footer-subtitle">Servicios</h3>
           <ul className="footer-links">
-            <li><a href="#">Soporte GNV/GLP</a></li>
-            <li><a href="#">Facturación Electronica</a></li>
-            <li><a href="#">Gestión de Combustibles</a></li>
-            <li><a href="#">Pozos a Tierra</a></li>
+            <li><a href="/servicios/soporte-tecnico">Soporte GNV/GLP</a></li>
+            <li><a href="/servicios/facturacion-electronica">Facturación Electronica</a></li>
+            <li><a href="/servicios/apugescom">Gestión de Combustibles</a></li>
+            <li><a href="/servicios/pozos-a-tierra">Pozos a Tierra</a></li>
           </ul>
         </div>
 

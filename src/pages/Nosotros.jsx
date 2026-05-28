@@ -114,7 +114,7 @@ export default function Nosotros() {
             <section className="nosotros-values" ref={valuesRef}>
                 <div className={`values-container ${isValuesVisible ? 'animate' : ''}`}>
                     <div className="values-header">
-                        <span className="values-subtitle">Nuestra Esencia</span>
+                        <span className="nosotros-section-badge">Nuestra Esencia</span>
                         <h2>Pilares de Nuestra Empresa</h2>
                         <p>Los valores y objetivos que impulsan nuestra excelencia operativa diaria y el compromiso con cada proyecto.</p>
                     </div>

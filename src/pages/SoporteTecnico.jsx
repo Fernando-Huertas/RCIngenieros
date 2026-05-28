@@ -73,7 +73,7 @@ export default function SoporteTecnico() {
                     </div>
                     
                     <div className="soporte-about-content">
-                        <span className="soporte-about-subtitle">Soporte Técnico</span>
+                        <span className="soporte-section-badge">Soporte Técnico</span>
                         <h2>Estaciones de servicio GNV/GLP/GNL Líquidos y Urea</h2>
                         <p>
                             Nuestro servicio de Soporte y Mantenimiento garantiza la continuidad total de su operación.
@@ -106,7 +106,7 @@ export default function SoporteTecnico() {
             <section className="soporte-gallery" ref={galleryRef}>
                 <div className={`gallery-container ${isGalleryVisible ? 'animate' : ''}`}>
                     <div className="gallery-header">
-                        <span className="gallery-subtitle">Nuestro Trabajo</span>
+                        <span className="soporte-section-badge">Nuestro Trabajo</span>
                         <h2>Excelencia en Acción</h2>
                         <p>Descubra la calidad y precisión técnica que aplicamos en cada uno de nuestros proyectos de mantenimiento e instalación.</p>
                     </div>
@@ -253,7 +253,7 @@ export default function SoporteTecnico() {
                 <div className={`gnv-container ${isGnvVisible ? 'animate' : ''}`}>
                     <div className="gnv-header">
                         <h2>Sistema de Carga Inteligente de GNV</h2>
-                        <span className="gnv-subtitle">SISTEMA GAS STATION – AUTORIZADO POR COFIDE-INFOGAS</span>
+                        <span className="soporte-section-badge">SISTEMA GAS STATION – AUTORIZADO POR COFIDE-INFOGAS</span>
                     </div>
                     
                     <div className="gnv-content-grid">

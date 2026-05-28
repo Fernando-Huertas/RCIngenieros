@@ -60,7 +60,7 @@
 .soporte-hero-text p {
     font-size: clamp(16px, 2vw, 20px);
     color: #d1d5db;
-    line-height: 1.5;
+    line-height: 1.6;
     margin-bottom: 40px;
     font-weight: 450;
     max-width: 750px;
@@ -231,7 +231,7 @@
 .service-card p {
     font-size: 16px;
     color: #666666;
-    line-height: 1.7;
+    line-height: 1.6;
     margin-bottom: 25px;
 }
 
@@ -298,14 +298,17 @@
     transform: scale(1.05);
 }
 
-.soporte-about-subtitle {
-    display: block;
+.soporte-section-badge {
+    background: rgba(54, 166, 235, 0.1);
     color: #36A6EB;
+    padding: 8px 20px;
+    border-radius: 50px;
+    font-size: 13px;
     font-weight: 700;
     text-transform: uppercase;
     letter-spacing: 1.5px;
-    font-size: 14px;
-    margin-bottom: 20px;
+    display: inline-block;
+    margin-bottom: 15px;
 }
 
 .soporte-about-content h2 {
@@ -319,7 +322,7 @@
 .soporte-about-content p {
     font-size: 17px;
     color: #666666;
-    line-height: 1.7;
+    line-height: 1.6;
     margin-bottom: 40px;
     max-width: 600px;
 }
@@ -381,16 +384,6 @@
 .gallery-header {
     text-align: center;
     margin-bottom: 70px;
-}
-
-.gallery-subtitle {
-    display: block;
-    color: #36A6EB;
-    font-weight: 700;
-    text-transform: uppercase;
-    letter-spacing: 2px;
-    font-size: 14px;
-    margin-bottom: 15px;
 }
 
 .gallery-header h2 {
@@ -605,7 +598,7 @@
         margin-right: auto;
     }
 
-    .soporte-about-subtitle {
+    .soporte-section-badge {
         text-align: center;
     }
 
@@ -833,15 +826,6 @@
     margin-bottom: 15px;
 }
 
-.gnv-subtitle {
-    display: block;
-    color: #36A6EB;
-    font-size: 16px;
-    font-weight: 700;
-    text-transform: uppercase;
-    letter-spacing: 1px;
-}
-
 .gnv-content-grid {
     display: grid;
     grid-template-columns: 0.8fr 1.2fr;
@@ -862,7 +846,7 @@
 .gnv-intro {
     font-size: 17px;
     color: #555555;
-    line-height: 1.7;
+    line-height: 1.6;
     margin-bottom: 40px;
 }
 
@@ -954,8 +938,8 @@
         font-size: 32px;
     }
     
-    .gnv-subtitle {
-        font-size: 14px;
+    .soporte-section-badge {
+        font-size: 12px;
     }
 }
 

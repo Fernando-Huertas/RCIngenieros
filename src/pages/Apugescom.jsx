@@ -126,6 +126,7 @@ export default function Apugescom() {
                             { icon: "solar:settings-bold-duotone", title: "Multimarca", desc: "Compatible con Wayne, Gilbarco, Tokheim, Tatsumo, Datacontrol, Kraus y más." }
                         ].map((item, index) => (
                             <div className="apugescom-feature-card" key={index}>
+                                <div className="apugescom-feature-number">0{index + 1}</div>
                                 <div className="apugescom-feature-card-icon">
                                     <Icon icon={item.icon} />
                                 </div>

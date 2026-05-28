@@ -172,7 +172,7 @@ export default function Navbar() {
                         </div>
                     </li>
                     <li><Link to="/productos">Productos</Link></li>
-                    <li>Contacto</li>
+                    <li><Link to="/contacto">Contacto</Link></li>
                 </ul>
 
                 {/*Sección de contacto en el Sidebar*/}
@@ -224,16 +224,16 @@ export default function Navbar() {
                 </div>
 
                 <div className="redes-sociales">
-                    <a href="#" target="_blank" className="facebook-icon">
+                    <a href="https://www.facebook.com/profile.php?id=61567695884528" target="_blank" className="facebook-icon">
                         <Icon icon="line-md:facebook" />
                     </a>
-                    <a href="#" target="_blank" className="ig-icon">
+                    <a href="https://www.instagram.com/rcingenierosof/" target="_blank" className="ig-icon">
                         <Icon icon="line-md:instagram" />
                     </a>
-                    <a href="#" target="_blank" className="tiktok-icon">
+                    <a href="https://www.tiktok.com/@rcingenierosoficial" target="_blank" className="tiktok-icon">
                         <Icon icon="line-md:tiktok" />
                     </a>
-                    <a href="#" target="_blank" className="youtube-icon">
+                    <a href="https://www.youtube.com/@RICARDOCALDERONINGENIEROSSAC" target="_blank" className="youtube-icon">
                         <Icon icon="line-md:youtube" />
                     </a>
                 </div>

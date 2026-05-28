@@ -1,5 +1,6 @@
 import React, { useState, useEffect, useRef } from 'react'
 import { Icon } from '@iconify/react'
+import { Link } from 'react-router-dom'
 import './Productos.css'
 
 // Assets
@@ -159,9 +160,15 @@ export default function Productos() {
                                 <p className="category-description">{category.description}</p>
                                 <div className="category-footer">
                                     <span className="category-products-count">{category.products}</span>
-                                    <button className="category-view-btn">
-                                        Ver productos <Icon icon="line-md:arrow-right" />
-                                    </button>
+                                    {category.name === 'Surtidores' ? (
+                                        <Link to="/productos/surtidores" className="category-view-btn">
+                                            Ver productos <Icon icon="line-md:arrow-right" />
+                                        </Link>
+                                    ) : (
+                                        <button className="category-view-btn">
+                                            Ver productos <Icon icon="line-md:arrow-right" />
+                                        </button>
+                                    )}
                                 </div>
                             </div>
                         ))}

@@ -1,0 +1,367 @@
+.surtidores-page {
+    display: flex;
+    flex-direction: column;
+    background-color: #ffffff;
+    font-family: 'Inter', sans-serif;
+}
+
+/* =========================================
+   BRAND SECTION
+   ========================================= */
+.surtidores-brand {
+    padding: 100px 5%;
+    background: linear-gradient(135deg, #f8fafc 0%, #e2e8f0 100%);
+    display: flex;
+    justify-content: center;
+}
+
+.surtidores-brand-container {
+    max-width: 1400px;
+    width: 100%;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 60px;
+    align-items: center;
+    opacity: 0;
+    transform: translateY(40px);
+    transition: all 1s cubic-bezier(0.2, 0.8, 0.2, 1);
+}
+
+.surtidores-brand-container.animate {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+.surtidores-brand-content {
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+}
+
+.surtidores-section-badge {
+    background: rgba(54, 166, 235, 0.1);
+    color: #36A6EB;
+    padding: 8px 20px;
+    border-radius: 50px;
+    font-size: 13px;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 1.5px;
+    display: inline-block;
+    align-self: flex-start;
+}
+
+.surtidores-brand h1 {
+    font-size: 56px;
+    font-weight: 800;
+    color: #0f172a;
+    line-height: 1.1;
+    margin: 0;
+}
+
+.surtidores-brand p {
+    font-size: 18px;
+    color: #64748b;
+    line-height: 1.6;
+    margin: 0;
+}
+
+.surtidores-brand-image {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.surtidores-brand-image img {
+    max-width: 500px;
+    height: auto;
+    border-radius: 20px;
+    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.1);
+}
+
+/* =========================================
+   FEATURES SECTION
+   ========================================= */
+.surtidores-features {
+    padding: 100px 5%;
+    background-color: #ffffff;
+    display: flex;
+    justify-content: center;
+}
+
+.surtidores-features-container {
+    max-width: 1400px;
+    width: 100%;
+    opacity: 0;
+    transform: translateY(40px);
+    transition: all 1s cubic-bezier(0.2, 0.8, 0.2, 1);
+}
+
+.surtidores-features-container.animate {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+.surtidores-features-header {
+    text-align: center;
+    margin-bottom: 60px;
+}
+
+.surtidores-features-header h2 {
+    font-size: 46px;
+    font-weight: 700;
+    color: #0f172a;
+    margin-bottom: 15px;
+}
+
+.surtidores-gradient-text {
+    background: linear-gradient(135deg, #36A6EB, #0284c7);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+}
+
+.surtidores-features-header p {
+    font-size: 18px;
+    color: #64748b;
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+.surtidores-features-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 30px;
+}
+
+.surtidores-feature-card {
+    background: #ffffff;
+    padding: 40px 30px;
+    border-radius: 20px;
+    border: 1px solid #f1f5f9;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.02);
+    transition: all 0.3s ease;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.surtidores-feature-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.08);
+    border-color: #36A6EB;
+}
+
+.surtidores-feature-icon {
+    width: 60px;
+    height: 60px;
+    background: rgba(54, 166, 235, 0.1);
+    border-radius: 15px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 28px;
+    color: #36A6EB;
+}
+
+.surtidores-feature-card h3 {
+    font-size: 22px;
+    font-weight: 700;
+    color: #0f172a;
+    margin: 0;
+}
+
+.surtidores-feature-card p {
+    font-size: 16px;
+    color: #64748b;
+    line-height: 1.6;
+    margin: 0;
+}
+
+/* =========================================
+   PRODUCTS SECTION
+   ========================================= */
+.surtidores-products {
+    padding: 100px 5%;
+    background: linear-gradient(135deg, #f8fafc 0%, #e2e8f0 100%);
+    display: flex;
+    justify-content: center;
+}
+
+.surtidores-products-container {
+    max-width: 1400px;
+    width: 100%;
+    opacity: 0;
+    transform: translateY(40px);
+    transition: all 1s cubic-bezier(0.2, 0.8, 0.2, 1);
+}
+
+.surtidores-products-container.animate {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+.surtidores-products-header {
+    text-align: center;
+    margin-bottom: 60px;
+}
+
+.surtidores-products-header h2 {
+    font-size: 46px;
+    font-weight: 700;
+    color: #0f172a;
+    margin-bottom: 15px;
+}
+
+.surtidores-products-header p {
+    font-size: 18px;
+    color: #64748b;
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+.surtidores-products-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 30px;
+}
+
+.surtidores-product-card {
+    background: #ffffff;
+    border-radius: 20px;
+    overflow: hidden;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.02);
+    transition: all 0.3s ease;
+}
+
+.surtidores-product-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.1);
+}
+
+.surtidores-product-image {
+    width: 100%;
+    height: 250px;
+    background: #f8fafc;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.surtidores-product-placeholder {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 15px;
+    color: #94a3b8;
+}
+
+.surtidores-product-placeholder svg {
+    font-size: 48px;
+}
+
+.surtidores-product-placeholder span {
+    font-size: 14px;
+    font-weight: 500;
+}
+
+.surtidores-product-info {
+    padding: 30px;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.surtidores-product-info h3 {
+    font-size: 20px;
+    font-weight: 700;
+    color: #0f172a;
+    margin: 0;
+}
+
+.surtidores-product-info p {
+    font-size: 15px;
+    color: #64748b;
+    line-height: 1.6;
+    margin: 0;
+}
+
+.surtidores-product-price {
+    margin-top: auto;
+}
+
+.surtidores-product-price span {
+    font-size: 18px;
+    font-weight: 700;
+    color: #36A6EB;
+}
+
+/* =========================================
+   RESPONSIVE DESIGN
+   ========================================= */
+@media (max-width: 1024px) {
+    .surtidores-brand-container {
+        grid-template-columns: 1fr;
+        gap: 40px;
+    }
+    
+    .surtidores-features-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+    
+    .surtidores-products-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (max-width: 768px) {
+    .surtidores-brand {
+        padding: 60px 5%;
+    }
+    
+    .surtidores-brand h1 {
+        font-size: 36px;
+    }
+    
+    .surtidores-brand p {
+        font-size: 16px;
+    }
+    
+    .surtidores-features {
+        padding: 60px 5%;
+    }
+    
+    .surtidores-features-header h2 {
+        font-size: 32px;
+    }
+    
+    .surtidores-features-grid {
+        grid-template-columns: 1fr;
+    }
+    
+    .surtidores-products {
+        padding: 60px 5%;
+    }
+    
+    .surtidores-products-header h2 {
+        font-size: 32px;
+    }
+    
+    .surtidores-products-grid {
+        grid-template-columns: 1fr;
+    }
+}
+
+@media (max-width: 480px) {
+    .surtidores-brand h1 {
+        font-size: 28px;
+    }
+    
+    .surtidores-features-header h2 {
+        font-size: 24px;
+    }
+    
+    .surtidores-products-header h2 {
+        font-size: 24px;
+    }
+}

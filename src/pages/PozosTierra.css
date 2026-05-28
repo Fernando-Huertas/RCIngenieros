@@ -152,7 +152,7 @@
 .pozos-about-content p {
     font-size: 17px;
     color: #64748b;
-    line-height: 1.8;
+    line-height: 1.6;
     max-width: 800px;
     margin: 0 auto 50px;
 }
@@ -264,13 +264,16 @@
     flex: 1.2;
 }
 
-.pozos-section-label {
-    display: inline-block;
+.pozos-section-badge {
+    background: rgba(54, 166, 235, 0.1);
     color: #36A6EB;
+    padding: 8px 20px;
+    border-radius: 50px;
+    font-size: 13px;
     font-weight: 700;
-    font-size: 14px;
     text-transform: uppercase;
-    letter-spacing: 2px;
+    letter-spacing: 1.5px;
+    display: inline-block;
     margin-bottom: 15px;
 }
 
@@ -549,6 +552,11 @@
     padding: 18px 40px;
     font-size: 1.1rem;
     border-radius: 12px;
+    text-decoration: none;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
 }
 
 .pozos-btn-cta:hover {
