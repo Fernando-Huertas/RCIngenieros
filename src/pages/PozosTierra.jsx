@@ -3,7 +3,7 @@ import { Icon } from '@iconify/react'
 import './PozosTierra.css'
 
 // Assets
-import heroBg from '../assets/hero-pozotierra.jpg'
+import heroBg from '../assets/heropozoatierra.jpg'
 import measuringImg from '../assets/measuring.jpeg'
 import riskImg from '../assets/pozo-1.webp'
 import normativeImg from '../assets/pozo-cumplimiento.jpg'
@@ -47,7 +47,7 @@ export default function PozosTierra() {
     return (
         <div className="pozos-premium-page">
             {/* HERO */}
-            <section className="pozos-hero" style={{ backgroundImage: `linear-gradient(rgba(10, 15, 44, 0.65), rgba(10, 15, 44, 0.65)), url(${heroBg})` }}>
+            <section className="pozos-hero">
                 <div className="pozos-hero-overlay"></div>
                 <div className="pozos-hero-container">
                     <div className="pozos-hero-text">

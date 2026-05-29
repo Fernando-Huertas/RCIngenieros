@@ -52,7 +52,10 @@ export default function Apufact() {
                 <div className="apufact-hero-overlay"></div>
                 <div className="apufact-hero-container">
                     <div className="apufact-hero-text">
-                        <h1>Soporte Tecnico 24/7 a estaciones de servicio</h1>
+                        <h1>
+                            Facturación Electrónica{' '}
+                            <span className="apufact-hero-highlight">APUFACT</span>
+                        </h1>
                     </div>
                 </div>
             </section>

@@ -116,23 +116,29 @@ export default function Apugescom() {
                     </div>
                     <div className="apugescom-features-grid">
                         {[
-                            { icon: "solar:server-bold-duotone", title: "Ventas Centralizadas", desc: "Centraliza las ventas de todas las islas de dispensadores en un solo panel." },
-                            { icon: "solar:gas-station-bold-duotone", title: "Control de Inventario", desc: "Control exacto del inventario del combustible en tiempo real." },
-                            { icon: "solar:tag-price-bold-duotone", title: "Cambio de Precios", desc: "Cambio de precios al instante en todos los dispensadores conectados." },
-                            { icon: "solar:printer-bold-duotone", title: "Emisión de Tickets", desc: "Emisión automática de tickets al finalizar despacho en las islas." },
-                            { icon: "solar:chart-bold-duotone", title: "Reportes de Ventas", desc: "Variedad de reportes de ventas, recaudaciones y control de ingresos." },
-                            { icon: "solar:cart-large-2-bold-duotone", title: "Punto de Venta", desc: "Integración completa para el Punto de Venta (Market) de la estación." },
-                            { icon: "solar:users-group-rounded-bold-duotone", title: "Fidelización", desc: "Control del Criss o Fidelización de Flotas para sus clientes frecuentes." },
-                            { icon: "solar:settings-bold-duotone", title: "Multimarca", desc: "Compatible con Wayne, Gilbarco, Tokheim, Tatsumo, Datacontrol, Kraus y más." }
+                            { image: "https://images.unsplash.com/photo-1551288049-bebda4e38f71?w=600&h=400&fit=crop", title: "Ventas Centralizadas", desc: "Centraliza las ventas de todas las islas de dispensadores en un solo panel.", link: "/servicios/apugescom/ventas-centralizadas" },
+                            { image: "https://images.unsplash.com/photo-1586771107445-d3ca888129ff?w=600&h=400&fit=crop", title: "Control de Inventario", desc: "Control exacto del inventario del combustible en tiempo real.", link: "/servicios/apugescom/control-inventario" },
+                            { image: "https://images.unsplash.com/photo-1556742049-0cfed4f7a07d?w=600&h=400&fit=crop", title: "Cambio de Precios", desc: "Cambio de precios al instante en todos los dispensadores conectados.", link: "/servicios/apugescom/cambio-precios" },
+                            { image: "https://images.unsplash.com/photo-1557804506-669a67965ba0?w=600&h=400&fit=crop", title: "Emisión de Tickets", desc: "Emisión automática de tickets al finalizar despacho en las islas.", link: "/servicios/apugescom/emision-tickets" },
+                            { image: "https://images.unsplash.com/photo-1460925895917-afdab827c52f?w=600&h=400&fit=crop", title: "Reportes de Ventas", desc: "Variedad de reportes de ventas, recaudaciones y control de ingresos.", link: "/servicios/apugescom/reportes-ventas" },
+                            { image: "https://images.unsplash.com/photo-1556742502-ec7270b4d5d2?w=600&h=400&fit=crop", title: "Punto de Venta", desc: "Integración completa para el Punto de Venta (Market) de la estación.", link: "/servicios/apugescom/punto-venta" },
+                            { image: "https://images.unsplash.com/photo-1522071820081-009f0129c71c?w=600&h=400&fit=crop", title: "Fidelización", desc: "Control del Criss o Fidelización de Flotas para sus clientes frecuentes.", link: "/servicios/apugescom/fidelizacion" },
+                            { image: "https://images.unsplash.com/photo-1519389950473-47ba0277781c?w=600&h=400&fit=crop", title: "Multimarca", desc: "Compatible con Wayne, Gilbarco, Tokheim, Tatsumo, Datacontrol, Kraus y más.", link: "/servicios/apugescom/multimarca" }
                         ].map((item, index) => (
-                            <div className="apugescom-feature-card" key={index}>
-                                <div className="apugescom-feature-number">0{index + 1}</div>
-                                <div className="apugescom-feature-card-icon">
-                                    <Icon icon={item.icon} />
+                            <a href={item.link} className="apugescom-feature-card" key={index}>
+                                <div className="apugescom-feature-image">
+                                    <img src={item.image} alt={item.title} />
+                                    <div className="apugescom-feature-overlay"></div>
                                 </div>
-                                <h3>{item.title}</h3>
-                                <p>{item.desc}</p>
-                            </div>
+                                <div className="apugescom-feature-content">
+                                    <h3>{item.title}</h3>
+                                    <p>{item.desc}</p>
+                                    <div className="apugescom-feature-btn">
+                                        <span>Ver más</span>
+                                        <Icon icon="line-md:arrow-right" />
+                                    </div>
+                                </div>
+                            </a>
                         ))}
                     </div>
                 </div>

@@ -11,44 +11,60 @@
    HERO SECTION
    ========================================= */
 .apufact-hero {
-    width: 100%;
-    min-height: 50vh; /* Aproximadamente la altura de la imagen superior */
+    min-height: 450px;
     position: relative;
     display: flex;
     align-items: center;
-    justify-content: center;
-    /* Placeholder para la imagen de la mujer con la tablet */
-    background: linear-gradient(rgba(10, 15, 44, 0), rgba(10, 15, 44, 0.11)), url('../assets/heroapufact.jpg');
+    background: linear-gradient(rgba(10, 15, 44, 0.65), rgba(10, 15, 44, 0.65)), url('../assets/heroapufact2.jpg');
     background-size: cover;
     background-position: center;
-    /*background-attachment: fixed;  Efecto parallax suave */
+    background-repeat: no-repeat;
+    padding: 120px 5%;
 }
 
 .apufact-hero-overlay {
     position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background: rgba(10, 20, 35, 0.7); /* Overlay oscuro */
+    top: 0; left: 0; width: 100%; height: 100%;
+    background: radial-gradient(circle at center, transparent, rgba(0,0,0,0.4));
     z-index: 1;
 }
 
 .apufact-hero-container {
+    max-width: 1400px;
+    width: 90%;
+    margin: 0 auto;
     position: relative;
-    z-index: 2;
-    text-align: center;
-    padding: 0 20px;
-    max-width: 1200px;
+    z-index: 10;
 }
 
 .apufact-hero-text h1 {
-    font-size: 70px;
+    font-size: clamp(35px, 6vw, 65px);
+    font-weight: 800;
     color: #ffffff;
-    font-weight: 700;
-    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
-    margin: 0;
-    line-height: 1.2;
+    line-height: 1.1;
+    max-width: 900px;
+}
+
+.apufact-hero-highlight {
+    color: #36A6EB;
+    display: block;
+    margin-top: 10px;
+}
+
+/* =========================================
+   HERO RESPONSIVE
+   ========================================= */
+@media (max-width: 768px) {
+    .apufact-hero {
+        min-height: 300px;
+        padding: 80px 5%;
+    }
+}
+
+@media (max-width: 480px) {
+    .apufact-hero-text h1 {
+        font-size: 28px;
+    }
 }
 
 

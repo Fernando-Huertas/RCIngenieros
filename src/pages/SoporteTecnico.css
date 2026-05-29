@@ -4,12 +4,12 @@
 }
 
 .soporte-hero {
-    background: linear-gradient(rgba(10, 15, 44, 0.596), rgba(10, 15, 44, 0.596)), url('/src/assets/servicio247.jpeg');
+    background: linear-gradient(rgba(10, 15, 44, 0.65), rgba(10, 15, 44, 0.65)), url('/src/assets/servicio247.jpeg');
     background-size: cover;
     background-position: 0% 100%;
     background-attachment: fixed;
     background-repeat: no-repeat;
-    min-height: 400px;
+    min-height: 450px;
     display: flex;
     align-items: center;
     position: relative;
@@ -45,7 +45,7 @@
 }
 
 .soporte-hero-text h1 {
-    font-size: clamp(33px, 6vw, 70px);
+    font-size: clamp(35px, 6vw, 65px);
     font-weight: 800;
     color: #ffffff;
     line-height: 1.1;
@@ -623,11 +623,11 @@
 
 @media (max-width: 768px) {
     .soporte-hero {
-        min-height: 500px;
-        padding-top: 140px;
+        min-height: 300px;
+        padding: 80px 5%;
     }
     .soporte-hero-text h1 {
-        font-size: 38px;
+        font-size: 36px;
     }
     .soporte-hero-text p {
         font-size: 16px;
@@ -688,7 +688,7 @@
 
 @media (max-width: 480px) {
     .soporte-hero-text h1 {
-        font-size: 32px;
+        font-size: 28px;
     }
     .services-header h2 {
         font-size: 28px;
