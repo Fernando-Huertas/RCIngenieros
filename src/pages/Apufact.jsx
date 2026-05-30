@@ -79,7 +79,7 @@ export default function Apufact() {
                                 La Gestión de Facturación Electrónica es el camino más seguro para mejorar la eficiencia de sus procesos contables y logísticos, este proceso implica la emisión, envío y validación segura de comprobantes de pago electrónicos (como facturas, boletas y guías de remisión) frente a la SUNAT. Con APUFACT tendrás la facturación de manera fácil, rápida y segura.
                             </p>
                             
-                            <a href="#contacto" className="apufact-cta-button">
+                            <a href="/contacto#contacto-formulario" className="apufact-cta-button">
                                 Contáctanos
                             </a>
                         </div>

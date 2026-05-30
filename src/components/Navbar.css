@@ -427,6 +427,13 @@ header {
   .sidebar-socials {
     display: block !important;
   }
+  .dropdown .item {
+    color: white;
+  }
+
+  .dropdown .item:hover {
+    background-color: #123361;
+  }
   
   .sidebar-contact { display: flex !important; }
   .sidebar-socials { display: flex !important; }
@@ -547,8 +554,9 @@ header {
     position: static;
     width: 100%;
     box-shadow: none;
-    background: #0a1e3b;
+    background: #123361;
     display: none; /* Se maneja con Javascript al hacer clic */
+    color: white;
   }
 
   .servicios.activo .dropdown {

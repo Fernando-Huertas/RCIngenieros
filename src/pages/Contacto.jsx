@@ -165,7 +165,7 @@ export default function Contacto() {
                         </div>
 
                         {/* CONTACT FORM */}
-                        <div className="contacto-form-wrapper">
+                        <div className="contacto-form-wrapper" id="contacto-formulario">
                             <h3>Envíanos un Mensaje</h3>
                             <form className="contacto-form" onSubmit={handleSubmit}>
                                 <div className="form-row">

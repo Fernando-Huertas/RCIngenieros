@@ -218,11 +218,11 @@ export default function Home() {
                         puesta a tierra.</p>
                 </div>
                 <div className="botones-hero">
-                    <a href="/contacto">
+                    <a href="/contacto#contacto-formulario">
                       <button className="boton-hero-1">Solicitar Cotizacion <Icon icon="line-md:arrow-right" style={{fontSize: "22px"}} /></button>
                     </a>
-                    <a href="/productos">
-                      <button className="boton-hero-2">Nuestros Servicios</button>
+                    <a href="/servicios/soporte-tecnico">
+                      <button className="boton-hero-2">Ver mas</button>
                     </a>
                 </div>
             </div>
@@ -265,11 +265,11 @@ export default function Home() {
                     <p className="hero-descripcion">Optimiza la gestión de tus ventas con nuestro sistema automatizado adaptado a la normativa vigente en todo el Perú.</p>
                 </div>
                 <div className="botones-hero">
-                    <a href="/contacto">
+                    <a href="/contacto#contacto-formulario">
                       <button className="boton-hero-1">Solicitar Cotizacion <Icon icon="line-md:arrow-right" style={{fontSize: "22px"}} /></button>
                     </a>
-                    <a href="/productos">
-                      <button className="boton-hero-2">Nuestros Servicios</button>
+                    <a href="/servicios/facturacion-electronica">
+                      <button className="boton-hero-2">Ver mas</button>
                     </a>
                 </div>
             </div>
@@ -313,11 +313,11 @@ export default function Home() {
                        en acero inoxidable y galvanizado, garantizando durabilidad y eficiencia en cada proyecto a nivel nacional.</p>
                 </div>
                 <div className="botones-hero">
-                    <a href="/contacto">
+                    <a href="/contacto#contacto-formulario">
                       <button className="boton-hero-1">Solicitar Cotizacion <Icon icon="line-md:arrow-right" style={{fontSize: "22px"}} /></button>
                     </a>
-                    <a href="/productos">
-                      <button className="boton-hero-2">Nuestros Servicios</button>
+                    <a href="/servicios/apugescom">
+                      <button className="boton-hero-2">Ver mas</button>
                     </a>
                 </div>
             </div>
@@ -361,11 +361,11 @@ export default function Home() {
                       nuestros equipos de última generación. Soluciones robustas diseñadas para resistir el trabajo pesado con máxima eficiencia.</p>
                 </div>
                 <div className="botones-hero">
-                    <a href="/contacto">
+                    <a href="/contacto#contacto-formulario">
                       <button className="boton-hero-1">Solicitar Cotizacion <Icon icon="line-md:arrow-right" style={{fontSize: "22px"}} /></button>
                     </a>
-                    <a href="/productos">
-                      <button className="boton-hero-2">Nuestros Servicios</button>
+                    <a href="/servicios/pozos-a-tierra">
+                      <button className="boton-hero-2">Ver mas</button>
                     </a>
                 </div>
             </div>
@@ -430,7 +430,7 @@ export default function Home() {
                       <a style={{ textDecoration: 'none' }} href="/productos">
                         <button className="servicios-boton-1">Ver más Servicios</button>
                       </a>
-                      <a style={{ textDecoration: 'none' }} href="/contacto">
+                      <a style={{ textDecoration: 'none' }} href="/contacto#contacto-formulario">
                         <button className="servicios-boton-2">Contáctanos</button>
                       </a>
                   </div>
@@ -521,7 +521,7 @@ export default function Home() {
                   <span>+51 987 654 321</span>
                 </div>
                 <div className='nosotros-bottom-boton'>
-                  <button className='boton'>Ver más</button>
+                  <a style={{ textDecoration: 'none' }} href="/nosotros" className='boton'>Ver más</a>
                 </div>
               </div>
             </div>
@@ -542,12 +542,12 @@ export default function Home() {
                     en tiempo real, maximizando la presición, eficiencia operativa y la rentabilidad de su negocio de combustibles.
                 </p>
                 <div className='apugescom-buttons'>
-                  <button className='btn-cotizar'>
+                 <a style={{ textDecoration: 'none' }} href="/contacto#contacto-formulario" className='btn-cotizar'>
                     Solicitar Cotización <Icon icon="line-md:arrow-right" />
-                  </button>
-                  <button className='btn-ver-mas'>
+                  </a>
+                  <a style={{ textDecoration: 'none' }} href="/servicios/apugescom" className='btn-ver-mas'>
                     Ver Más
-                  </button>
+                  </a>
                 </div>
               </div>
             </div>
@@ -593,9 +593,9 @@ export default function Home() {
                ayudarte a llevar tu proyecto al siguiente nivel.</p>
           </div>
           <div className='llamada-accion-der'>
-            <button className='btn-cotizar'>
+           <a style={{ textDecoration: 'none' }} href="/contacto#contacto-formulario" className='btn-cotizar'>
               Solicitar Cotización {/* <Icon icon="line-md:arrow-right" /> */}
-            </button>
+            </a>
           </div>
         </div>
       </section>
@@ -620,12 +620,12 @@ export default function Home() {
                   <img src={iso27000} alt="" />
                   </div>
                 <div className='apufact-buttons'>
-                  <button className='btn-cotizar'>
+                  <a style={{ textDecoration: 'none' }} href="/contacto#contacto-formulario" className='btn-cotizar'>
                     Solicitar Cotización <Icon icon="line-md:arrow-right" />
-                  </button>
-                  <button className='btn-ver-mas'>
+                  </a>
+                  <a style={{ textDecoration: 'none' }} href="/servicios/facturacion-electronica" className='btn-ver-mas'>
                     Ver Más
-                  </button>
+                  </a>
                 </div>
               </div>
             </div>

@@ -95,8 +95,8 @@ export default function Footer() {
           <span>&copy; {new Date().getFullYear()} RC Ingenieros S.A.C. Todos los derechos reservados.</span>
         </div>
         <div className="footer-legal-links">
-          <a href="#">Términos y Condiciones</a>
-          <a href="#">Políticas de Privacidad</a>
+          <a href="/terminos-condiciones">Términos y Condiciones</a>
+          <a href="/politica-privacidad">Políticas de Privacidad</a>
           <a href="#">Libro de Reclamaciones</a>
         </div>
       </div>

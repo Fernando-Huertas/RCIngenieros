@@ -1,0 +1,274 @@
+/* =========================================
+   TERMINOS Y CONDICIONES PAGE
+   ========================================= */
+
+.terminos-page {
+  width: 100%;
+  min-height: 100vh;
+  background: #ffffff;
+}
+
+/* =========================================
+   HERO SECTION
+   ========================================= */
+.terminos-hero {
+  position: relative;
+  min-height: 400px;
+  background: linear-gradient(rgba(10, 15, 44, 0.85), rgba(10, 15, 44, 0.85)), url('https://images.unsplash.com/photo-1450101499163-c8848c66ca85?w=1920&h=800&fit=crop');
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 120px 5%;
+}
+
+.terminos-hero-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(135deg, rgba(54, 166, 235, 0.1) 0%, rgba(30, 58, 138, 0.1) 100%);
+  pointer-events: none;
+}
+
+.terminos-hero-container {
+  max-width: 1200px;
+  width: 100%;
+  position: relative;
+  z-index: 1;
+  opacity: 0;
+  transform: translateY(30px);
+  transition: all 0.8s ease;
+}
+
+.terminos-hero-container.animate {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.terminos-hero-text {
+  text-align: center;
+}
+
+.terminos-section-badge {
+  background: rgba(54, 166, 235, 0.2);
+  color: #36A6EB;
+  padding: 8px 20px;
+  border-radius: 50px;
+  font-size: 13px;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  margin-bottom: 20px;
+  display: inline-block;
+  border: 1px solid rgba(54, 166, 235, 0.3);
+}
+
+.terminos-hero h1 {
+  font-size: 56px;
+  color: #ffffff;
+  margin-bottom: 20px;
+  font-weight: 900;
+  line-height: 1.2;
+}
+
+.terminos-highlight {
+  background: linear-gradient(90deg, #36A6EB, #1e3a8a);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.terminos-hero p {
+  font-size: 18px;
+  color: rgba(255, 255, 255, 0.9);
+  max-width: 700px;
+  margin: 0 auto;
+  line-height: 1.6;
+}
+
+/* =========================================
+   CONTENT SECTION
+   ========================================= */
+.terminos-content {
+  padding: 100px 5%;
+  background: #ffffff;
+}
+
+.terminos-container {
+  max-width: 1000px;
+  width: 100%;
+  margin: 0 auto;
+}
+
+.terminos-wrapper {
+  display: flex;
+  flex-direction: column;
+  gap: 50px;
+}
+
+/* =========================================
+   SECTIONS
+   ========================================= */
+.terminos-section {
+  background: #ffffff;
+  border-radius: 20px;
+  padding: 40px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.06);
+  border: 1px solid rgba(54, 166, 235, 0.1);
+  transition: all 0.3s ease;
+}
+
+.terminos-section:hover {
+  box-shadow: 0 8px 30px rgba(54, 166, 235, 0.15);
+  border-color: rgba(54, 166, 235, 0.2);
+}
+
+.terminos-section-header {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  margin-bottom: 25px;
+  padding-bottom: 20px;
+  border-bottom: 2px solid rgba(54, 166, 235, 0.1);
+}
+
+.terminos-icon {
+  font-size: 32px;
+  color: #36A6EB;
+}
+
+.terminos-section-header h2 {
+  font-size: 28px;
+  color: #0f172a;
+  font-weight: 700;
+  margin: 0;
+}
+
+.terminos-section-content {
+  color: #475569;
+  line-height: 1.8;
+}
+
+.terminos-section-content p {
+  margin-bottom: 15px;
+  font-size: 16px;
+}
+
+.terminos-section-content ul {
+  list-style: none;
+  padding: 0;
+  margin: 20px 0;
+}
+
+.terminos-section-content li {
+  padding: 12px 0 12px 30px;
+  position: relative;
+  font-size: 15px;
+  color: #64748b;
+}
+
+.terminos-section-content li::before {
+  content: '✓';
+  position: absolute;
+  left: 0;
+  color: #36A6EB;
+  font-weight: bold;
+  font-size: 18px;
+}
+
+.terminos-section-content strong {
+  color: #0f172a;
+  font-weight: 600;
+}
+
+/* =========================================
+   FOOTER NOTE
+   ========================================= */
+.terminos-footer-note {
+  background: linear-gradient(135deg, rgba(54, 166, 235, 0.05), rgba(30, 58, 138, 0.05));
+  padding: 30px;
+  border-radius: 15px;
+  text-align: center;
+  border: 1px solid rgba(54, 166, 235, 0.1);
+  margin-top: 30px;
+}
+
+.terminos-footer-note p {
+  margin: 5px 0;
+  color: #64748b;
+  font-size: 14px;
+}
+
+.terminos-footer-note p:first-child {
+  font-weight: 600;
+  color: #36A6EB;
+}
+
+/* =========================================
+   RESPONSIVE
+   ========================================= */
+@media (max-width: 1024px) {
+  .terminos-hero h1 {
+    font-size: 48px;
+  }
+}
+
+@media (max-width: 768px) {
+  .terminos-hero {
+    min-height: 350px;
+    padding: 80px 5%;
+  }
+
+  .terminos-hero h1 {
+    font-size: 36px;
+  }
+
+  .terminos-hero p {
+    font-size: 16px;
+  }
+
+  .terminos-content {
+    padding: 60px 5%;
+  }
+
+  .terminos-section {
+    padding: 30px 25px;
+  }
+
+  .terminos-section-header h2 {
+    font-size: 24px;
+  }
+
+  .terminos-icon {
+    font-size: 28px;
+  }
+}
+
+@media (max-width: 480px) {
+  .terminos-hero h1 {
+    font-size: 28px;
+  }
+
+  .terminos-section {
+    padding: 25px 20px;
+  }
+
+  .terminos-section-header {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 10px;
+  }
+
+  .terminos-section-header h2 {
+    font-size: 20px;
+  }
+
+  .terminos-section-content li {
+    font-size: 14px;
+    padding: 10px 0 10px 25px;
+  }
+}
