@@ -224,7 +224,7 @@ export default function PozosTierra() {
                         </div>
                         <h2>Construyamos algo <span>extraordinario</span></h2>
                         <p>Converse con nuestros ingenieros especializados sobre sus ideas y déjenos ayudarle a llevar su proyecto de ingeniería eléctrica al siguiente nivel.</p>
-                        <a href="tel:+51943252468" className="pozos-btn-premium pozos-btn-cta">
+                        <a href="/contacto#contacto-formulario" className="pozos-btn-premium pozos-btn-cta">
                             Solicitar Asesoría Inmediata <Icon icon="solar:arrow-right-linear" />
                         </a>
                     </div>
