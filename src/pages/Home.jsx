@@ -2,14 +2,14 @@ import React from 'react'
 import './Home.css'
 
 // --- ASSETS (Imágenes) ---
-import heroimg1 from '../assets/imghero1.png'
-import heroImg2 from '../assets/img1header.jfif'
-import heroImg3 from '../assets/hero3.jpg'
-import heroImg4 from '../assets/slide4ac.png'
-import SP247 from '../assets/SP247.png'
+import heroimg1 from '../assets/hero1.webp'
+import heroImg2 from '../assets/hero2.webp'
+import heroImg3 from '../assets/hero3.webp'
+import heroImg4 from '../assets/hero4.webp'
+import SP247 from '../assets/SP247.webp'
 import facturacion from '../assets/imgapufact.png'
-import apugescom2 from '../assets/imgapugescom.png'
-import servapufact from '../assets/servapufact.png'
+import serveapugescom from '../assets/serveapugescom.webp'
+import servapufact from '../assets/servapufact.webp'
 import apugescom from '../assets/homeapugescom.png'
 import imgnostros from '../assets/imgnostros.png'
 import img2nosotros from '../assets/img2nosotros.png'
@@ -464,7 +464,7 @@ export default function Home() {
                   </div>
 
                   <div className="card-servicios">
-                      <img src={apugescom2} alt="Sistema de Gestión de Combustible" />
+                      <img src={serveapugescom} alt="Sistema de Gestión de Combustible" />
                       <div className="icon">
                           <Icon icon="pepicons-pop:electricity-circle" />
                       </div>
