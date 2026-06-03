@@ -15,7 +15,7 @@
     position: relative;
     display: flex;
     align-items: center;
-    background: linear-gradient(rgba(10, 15, 44, 0.65), rgba(10, 15, 44, 0.65)), url('../assets/heroapufact2.jpg');
+    background: linear-gradient(rgba(10, 15, 44, 0.65), rgba(10, 15, 44, 0.65)), url('../assets/apufacthero.webp');
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -143,7 +143,7 @@
 }
 
 .apufact-logo-container {
-    background: rgba(255, 255, 255, 0.9);
+    background: #ffffff;
     backdrop-filter: blur(8px);
     padding: 1rem;
     border-radius: 25px;

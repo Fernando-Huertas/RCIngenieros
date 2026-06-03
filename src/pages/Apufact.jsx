@@ -1,14 +1,14 @@
 import React, { useState, useEffect, useRef } from 'react'
 import { Icon } from '@iconify/react'
 import './Apufact.css'
-import heroImg from '../assets/servicio247.jpeg'
-import bgCardImg from '../assets/imgapufact.png'
-import heroapufact from '../assets/heroapufact.jpg'
-import apufactmain from '../assets/apufactmain.jpg'
+
+
+import apufactmain from '../assets/apufactmain.webp'
 import logoAPUFACT from '../assets/LogoAPUFACT.webp'
-import imgFeatures from '../assets/apufactfeatures.jpg'
-import funcionaApufact from '../assets/funcionapufact.jpg'
+import imgFeatures from '../assets/apufactfeatures.webp'
+import funcionaApufact from '../assets/funcionapufact.webp'
 import logoSunat from '../assets/verificado-por-sunat.webp'
+import logoAmazon from '../assets/Amazon_Logo.webp'
 
 export default function Apufact() {
     const [isMainVisible, setIsMainVisible] = useState(false);
@@ -156,7 +156,7 @@ export default function Apufact() {
                     {/* Tarjeta 2: AWS */}
                     <div className="trust-card reverse">
                         <div className="trust-card-image">
-                            <img src="https://upload.wikimedia.org/wikipedia/commons/9/93/Amazon_Web_Services_Logo.svg" alt="Amazon Web Services" className="trust-logo-aws" />
+                            <img src={logoAmazon} alt="Amazon Web Services" className="trust-logo-aws" />
                         </div>
                         <div className="trust-card-content">
                             <h3 className="trust-card-title">Infraestructura de Clase Mundial</h3>

@@ -4,10 +4,10 @@ import './Apugescom.css'
 
 // Assets
 import sectionBg from '../assets/sectionapugescom.png'
-import aboutImg from '../assets/apugescomabout.jpeg'
-import diagramImg from '../assets/funcionapufact.jpg'
-import soporteImg from '../assets/soporte-y-mantenimiento-rc.jpg'
-import eessImg from '../assets/EESS2.jpeg'
+import aboutImg from '../assets/apugescomabout.webp'
+import diagramImg from '../assets/flujo-apugescom.webp'
+import soporteImg from '../assets/soporte-y-mantenimiento-rc.webp'
+import eessImg from '../assets/EESS2.webp'
 import imgApugescom from '../assets/Logo_Apugescom2.webp'
 
 export default function Apugescom() {

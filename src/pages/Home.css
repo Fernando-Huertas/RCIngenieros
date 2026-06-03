@@ -1177,7 +1177,7 @@
       rgba(10, 15, 44, 0.4) 50%, 
       rgba(10, 15, 44, 0.205) 100%
     ), 
-    url('../assets/homeapugescom.png');
+    url('../assets/homeapugescom.webp');
   background-size:cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -1363,7 +1363,7 @@
     min-height: auto;
     padding: 60px 20px;
     background: linear-gradient(rgba(10, 15, 44, 0.9), rgba(10, 15, 44, 0.452)), 
-                url('../assets/homeapugescommovil.png');
+                url('../assets/homeapugescommovil.webp');
     background-size: cover;
     background-position: center;
   }
@@ -1595,7 +1595,7 @@
  position: relative;
   width: 100%;
   min-height: 0px; /* Altura mínima fija y clara */
-  background: linear-gradient(135deg, rgba(230, 245, 255, 0.555) 0%, rgba(247, 252, 255, 0) 100%), url('../assets/apufactversion1sinfondo.png');
+  background: linear-gradient(135deg, rgba(230, 245, 255, 0.555) 0%, rgba(247, 252, 255, 0) 100%), url('../assets/apufactversion1sinfondo.webp');
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;

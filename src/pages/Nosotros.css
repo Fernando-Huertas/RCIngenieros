@@ -4,7 +4,7 @@
 }
 
 .nosotros-hero {
-    background: linear-gradient(rgba(10, 15, 44, 0.8), rgba(10, 15, 44, 0.8)), url('/src/assets/nosotroshero.jpg');
+    background: linear-gradient(rgba(10, 15, 44, 0.8), rgba(10, 15, 44, 0.8)), url('/src/assets/nosotroshero.webp');
     background-size: cover;
     background-position: bottom;
     padding: 120px 20px;
