@@ -13,7 +13,7 @@
    HERO SECTION
    ========================================= */
 .productos-hero {
-    background: linear-gradient(rgba(10, 15, 44, 0.75), rgba(10, 15, 44, 0.75)), url('../assets/hero-productos.jpeg');
+    background: linear-gradient(rgba(10, 15, 44, 0.75), rgba(10, 15, 44, 0.75)), url('../assets/hero-productos.webp');
     background-size: cover;
     background-position: center;
     background-attachment: fixed;

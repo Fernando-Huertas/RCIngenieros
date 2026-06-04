@@ -113,9 +113,9 @@ export default function Navbar() {
             </button>
 
             {/*Logo*/}
-            <div className="logo">
+            <Link to="/" className="logo">
                 <img src={logoprincipal} alt="Logo RC ingenieros"/>
-            </div>
+            </Link>
 
             {/*Overlay oscurecedor*/}
             <div className={`sidebar-overlay ${isSidebarOpen ? "active" : ""}`} 
@@ -128,9 +128,9 @@ export default function Navbar() {
                 </button>
 
                 {/*Logo dentro del Menú*/}
-                <div className="sidebar-logo">
+                <Link to="/" className="sidebar-logo">
                     <img src={logorc1} alt="Logo RC ingenieros"/>
-                </div>
+                </Link>
 
                 <ul className="menu">
                     <li><Link to="/">Inicio</Link></li>

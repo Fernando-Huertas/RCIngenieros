@@ -3,7 +3,7 @@ import { Icon } from '@iconify/react'
 import './PozosTierra.css'
 
 // Assets
-import heroBg from '../assets/heropozoatierra.jpg'
+
 import measuringImg from '../assets/measuring.jpeg'
 import riskImg from '../assets/pozo-1.webp'
 import normativeImg from '../assets/pozo-cumplimiento.jpg'

@@ -57,7 +57,7 @@ function PoliticaPrivacidad() {
                 <ul>
                   <li><strong>Razón Social:</strong> RC Ingenieros</li>
                   <li><strong>RUC:</strong> [Número de RUC]</li>
-                  <li><strong>Dirección:</strong> [Dirección física]</li>
+                  <li><strong>Dirección:</strong> Av. Augusto B. Leguia 307, San Martín de Porres 15101</li>
                   <li><strong>Teléfono:</strong> +51 943 252 468</li>
                   <li><strong>Email:</strong> ventas@rcingenieros.com</li>
                   <li><strong>DPO (Delegado de Protección de Datos):</strong> ventas@rcingenieros.com</li>

@@ -518,7 +518,7 @@ export default function Home() {
                 </div>
                 <div className='nosotros-bottom-centro'>
                   <p>Comunicate con nosotros</p>
-                  <span>+51 987 654 321</span>
+                  <span>+51 943 252 468</span>
                 </div>
                 <div className='nosotros-bottom-boton'>
                   <a style={{ textDecoration: 'none' }} href="/nosotros" className='boton'>Ver más</a>
