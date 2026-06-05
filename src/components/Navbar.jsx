@@ -5,6 +5,7 @@ import logorc1 from '../assets/logorc1.webp'
 import { Icon } from '@iconify/react';
 import { useState } from 'react';
 import { useEffect } from 'react';
+import { useNavigate } from 'react-router-dom';
 
 export default function Navbar() {
 
@@ -32,6 +33,8 @@ export default function Navbar() {
       setIsSidebarOpen(!isSidebarOpen);
       if (isSidebarOpen) setIsServiciosOpen(false); // Cierra submenú si cerramos sidebar
     };
+
+    const navigate = useNavigate();
 
    return (
     <>
@@ -136,7 +139,10 @@ export default function Navbar() {
                     <li><Link to="/">Inicio</Link></li>
                     <li><Link to="/nosotros">Nosotros</Link></li>
                     <li className={`servicios ${isServiciosOpen ? "activo" : ""}`}
-            onClick={() => setIsServiciosOpen(!isServiciosOpen)}>
+                    onClick={() => {
+                        setIsServiciosOpen(!isServiciosOpen); 
+                        navigate("/servicios");
+                    }}>
                         Servicios <Icon icon="bx:chevron-down" />
 
                         <div className="dropdown" onClick={(e) => e.stopPropagation()}>

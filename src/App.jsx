@@ -2,6 +2,7 @@ import { BrowserRouter as Router, Routes, Route, useLocation } from 'react-route
 import { useEffect } from 'react'
 import Home from './pages/Home'
 import Nosotros from './pages/Nosotros'
+import Servicios from './pages/Servicios'
 import SoporteTecnico from './pages/SoporteTecnico'
 import Apufact from './pages/Apufact'
 import Apugescom from './pages/Apugescom'
@@ -16,11 +17,23 @@ import Footer from './components/Footer'
 import WhatsAppButton from './components/WhatsAppButton'
 
 function ScrollToTop() {
-  const { pathname } = useLocation()
+  const { pathname, hash } = useLocation()
 
   useEffect(() => {
-    window.scrollTo(0, 0)
-  }, [pathname])
+    if (!hash) {
+      window.scrollTo(0, 0)
+    } else {
+      const element = document.getElementById(hash.substring(1))
+      if (element) {
+        const offset = window.innerWidth >= 1920 ? 350 : 120
+        const elementPosition = element.getBoundingClientRect().top + window.scrollY
+        window.scrollTo({
+          top: elementPosition - offset,
+          behavior: 'smooth'
+        })
+      }
+    }
+  }, [pathname, hash])
 
   return null
 }
@@ -33,6 +46,7 @@ function App() {
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/nosotros" element={<Nosotros />} />
+        <Route path="/servicios" element={<Servicios />} />
         <Route path="/servicios/soporte-tecnico" element={<SoporteTecnico />} />
         <Route path="/servicios/facturacion-electronica" element={<Apufact />} />
         <Route path="/servicios/apugescom" element={<Apugescom />} />
