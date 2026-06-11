@@ -76,13 +76,13 @@ export default function Contacto() {
         {
             icon: 'solar:phone-bold',
             title: 'Teléfono',
-            content: '(01) 500-5584',
+            content: '(051) 7483851',
             color: '#84cc16'
         },
         {
             icon: 'solar:letter-bold',
             title: 'Email',
-            content: 'ventas@rcingenieros.com',
+            content: 'ventas01@rcingenieros.com',
             color: '#f59e0b'
         }
     ];

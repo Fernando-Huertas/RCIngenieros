@@ -67,19 +67,19 @@ export default function Footer() {
             <li className="contacto-item">
               <Icon icon="mdi:phone-outline" className="contacto-icon" />
               <div className="contacto-textos">
-                <span>(01) 500 - 5584</span>
+                <span>(051) 7483851</span>
               </div>
             </li>
             <li className="contacto-item">
               <Icon icon="ph:phone-call" className="contacto-icon" />
               <div className="contacto-textos">
-                <span>994 221 205</span>
+                <span>(051) 5005584</span>
               </div>
             </li>
             <li className="contacto-item">
               <Icon icon="mdi:email-outline" className="contacto-icon" />
               <div className="contacto-textos">
-                <a href="mailto:ventas@rcingenieros.com">ventas@rcingenieros.com</a>
+               {/* <a href="mailto:ventas@rcingenieros.com">ventas@rcingenieros.com</a>   */}
                 <a href="mailto:ventas01@rcingenieros.com">ventas01@rcingenieros.com</a>
               </div>
             </li>

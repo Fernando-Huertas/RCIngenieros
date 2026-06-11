@@ -50,14 +50,14 @@ export default function Navbar() {
                         <div className="icon-circle">
                             <Icon icon="entypo:old-phone" />
                         </div>
-                        <span className="font-contact">(01) 500-5584</span>
+                        <span className="font-contact">(051) 7483851</span>
                         
                     </div>
                     <div className="contact-item">
                         <div className="icon-circle">
                             <Icon icon="material-symbols:mail" />
                         </div>
-                        <span className="font-contact">ventas@rcingenieros.com</span>
+                        <span className="font-contact">ventas01@rcingenieros.com</span>
                     </div>
                 </div>
 
@@ -224,7 +224,7 @@ export default function Navbar() {
                         <Icon icon="mage:phone-call-fill" />
                     </div>
                     <div className="info-contact">
-                        <span style={{fontSize: '15px', fontWeight: '600', color: 'black'}}>943252468</span>
+                        <span style={{fontSize: '15px', fontWeight: '600', color: 'black'}}> (051) 7483851</span>
                         <span>Atencion: 8:00 am - 6:00 pm</span>
                     </div>
                 </div>
