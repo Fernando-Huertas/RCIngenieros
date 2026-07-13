@@ -353,6 +353,23 @@
     box-shadow: 0 10px 30px rgba(0,0,0,0.08);
 }
 
+.apufact-features-list li.apufact-feature-highlight {
+    background: linear-gradient(135deg, #f4f9ff 0%, #ffffff 100%);
+    border: 1px solid rgba(54, 166, 235, 0.3);
+    box-shadow: 0 8px 25px rgba(54, 166, 235, 0.08);
+}
+
+.apufact-features-list li.apufact-feature-highlight strong {
+    color: #17386d;
+    font-weight: 700;
+}
+
+.apufact-features-list li.apufact-feature-highlight .apufact-feature-icon {
+    background: #36A6EB;
+    color: #ffffff;
+    box-shadow: 0 4px 10px rgba(54, 166, 235, 0.4);
+}
+
 .apufact-feature-icon {
     font-size: 12px;
     color: #3b82f6;

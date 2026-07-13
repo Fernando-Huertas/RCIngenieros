@@ -238,11 +238,11 @@ export default function SoporteTecnico() {
                             <p>Más de 15 años de experiencia nos respaldan como pioneros en EESS.</p>
                         </div>
                         <div className="cta-action">
-                            <a href="tel:+51943853234" className="cta-button-phone">
+                            <a className="cta-button-phone">
                                 <div className="cta-icon-wrapper">
                                     <Icon icon="solar:phone-bold" />
                                 </div>
-                                <span>+51 943853234</span>
+                                <span>(01) 5005583</span>
                             </a>
                         </div>
                     </div>

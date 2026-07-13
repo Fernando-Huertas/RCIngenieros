@@ -76,7 +76,7 @@ export default function Contacto() {
         {
             icon: 'solar:phone-bold',
             title: 'Teléfono',
-            content: '(051) 7483851',
+            content: '(01) 500 5583 / 995 920 054 / 995 910 229 / 994 291 205',
             color: '#84cc16'
         },
         {

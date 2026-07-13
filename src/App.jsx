@@ -12,6 +12,7 @@ import Contacto from './pages/Contacto'
 import Surtidores from './pages/Surtidores'
 import TerminosCondiciones from './pages/TerminosCondiciones'
 import PoliticaPrivacidad from './pages/PoliticaPrivacidad'
+import LibroReclamaciones from './pages/LibroReclamaciones'
 import Navbar from './components/Navbar'
 import Footer from './components/Footer'
 import WhatsAppButton from './components/WhatsAppButton'
@@ -56,6 +57,7 @@ function App() {
         <Route path="/contacto" element={<Contacto />} />
         <Route path="/terminos-condiciones" element={<TerminosCondiciones />} />
         <Route path="/politica-privacidad" element={<PoliticaPrivacidad />} />
+        <Route path="/libro-reclamaciones" element={<LibroReclamaciones />} />
       </Routes>
       <Footer />
       <WhatsAppButton />

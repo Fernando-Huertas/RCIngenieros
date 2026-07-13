@@ -67,13 +67,13 @@ export default function Footer() {
             <li className="contacto-item">
               <Icon icon="mdi:phone-outline" className="contacto-icon" />
               <div className="contacto-textos">
-                <span>(051) 7483851</span>
+                <span>995 920 054 / 995 910 229 / 994 291 205</span>
               </div>
             </li>
             <li className="contacto-item">
               <Icon icon="ph:phone-call" className="contacto-icon" />
               <div className="contacto-textos">
-                <span>(051) 5005584</span>
+                <span>(01) 5005583</span>
               </div>
             </li>
             <li className="contacto-item">
@@ -97,7 +97,7 @@ export default function Footer() {
         <div className="footer-legal-links">
           <a href="/terminos-condiciones">Términos y Condiciones</a>
           <a href="/politica-privacidad">Políticas de Privacidad</a>
-          <a href="#">Libro de Reclamaciones</a>
+          <a href="/libro-reclamaciones">Libro de Reclamaciones</a>
         </div>
       </div>
 

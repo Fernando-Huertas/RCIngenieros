@@ -55,12 +55,12 @@ function PoliticaPrivacidad() {
               <div className="privacidad-section-content">
                 <p><strong>RC Ingenieros</strong> es responsable del tratamiento de sus datos personales.</p>
                 <ul>
-                  <li><strong>Razón Social:</strong> RC Ingenieros</li>
-                  <li><strong>RUC:</strong> [Número de RUC]</li>
-                  <li><strong>Dirección:</strong> Av. Augusto B. Leguia 307, San Martín de Porres 15101</li>
-                  <li><strong>Teléfono:</strong> +51 943 252 468</li>
-                  <li><strong>Email:</strong> ventas@rcingenieros.com</li>
-                  <li><strong>DPO (Delegado de Protección de Datos):</strong> ventas@rcingenieros.com</li>
+                  <li><strong>Razón Social:</strong> Ricardo Calderon Ingenieros SAC</li>
+                  <li><strong>RUC:</strong> 20519069262</li>
+                  <li><strong>Dirección:</strong> Av. Augusto B. Leguía 307 SMP - Lima - Perú</li>
+                  <li><strong>Teléfono:</strong> (01) 500 5583 / +51 994 291 20</li>
+                  <li><strong>Email:</strong> administracion@rcingenieros.com</li>
+                  {/*<li><strong>DPO (Delegado de Protección de Datos):</strong> ventas@rcingenieros.com</li>*/}
                 </ul>
               </div>
             </div>
@@ -151,7 +151,7 @@ function PoliticaPrivacidad() {
                   <li><strong>Cancelación:</strong> Solicitar la eliminación de sus datos</li>
                   <li><strong>Oposición:</strong> Oponerse al tratamiento de sus datos</li>
                 </ul>
-                <p>Para ejercer estos derechos, envíe un correo a ventas@rcingenieros.com con el asunto "Ejercicio de Derechos ARCO".</p>
+                <p>Para ejercer estos derechos, envíe un correo a administracion@rcingenieros.com con el asunto "Ejercicio de Derechos ARCO".</p>
               </div>
             </div>
 
@@ -250,9 +250,9 @@ function PoliticaPrivacidad() {
               <div className="privacidad-section-content">
                 <p>Para cualquier consulta, reclamación o ejercicio de derechos ARCO:</p>
                 <ul>
-                  <li><strong>Email:</strong> ventas@rcingenieros.com</li>
-                  <li><strong>Teléfono:</strong> +51 943 252 468</li>
-                  <li><strong>Horario de atención:</strong> Lunes a Viernes, 9:00 AM - 6:00 PM</li>
+                  <li><strong>Email:</strong> administracion@rcingenieros.com</li>
+                  <li><strong>Teléfono:</strong> (01) 500 5583 / +51 994 291 20</li>
+                  <li><strong>Horario de atención:</strong> Lunes a Viernes, 8:00 AM - 6:00 PM</li>
                   <li><strong>Tiempo de respuesta:</strong> Máximo 30 días hábiles</li>
                 </ul>
                 <p>Para reclamaciones, también puede presentarlas ante la Autoridad de Protección de Datos Personales (APDP).</p>

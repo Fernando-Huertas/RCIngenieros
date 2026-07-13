@@ -55,11 +55,11 @@ function TerminosCondiciones() {
               <div className="terminos-section-content">
                 <p><strong>RC Ingenieros</strong> es una empresa dedicada a la provisión de soluciones tecnológicas para estaciones de servicio, sistemas de facturación electrónica y servicios técnicos especializados.</p>
                 <ul>
-                  <li><strong>Razón Social:</strong> RC Ingenieros</li>
-                  <li><strong>RUC:</strong> [Número de RUC]</li>
-                  <li><strong>Dirección:</strong> [Dirección física]</li>
-                  <li><strong>Teléfono:</strong> +51 943 252 468</li>
-                  <li><strong>Email:</strong> ventas@rcingenieros.com</li>
+                  <li><strong>Razón Social:</strong>  Ricardo Calderon Ingenieros SAC</li>
+                  <li><strong>RUC:</strong> 20519069262</li>
+                  <li><strong>Dirección:</strong> Av. Augusto B. Leguía 307 SMP - Lima - Perú</li>
+                  <li><strong>Teléfono:</strong> (01) 500 5583 / +51 994 291 205</li>
+                  <li><strong>Email:</strong> administracion@rcingenieros.com</li>
                 </ul>
               </div>
             </div>
@@ -71,7 +71,7 @@ function TerminosCondiciones() {
                 <h2>2. Objeto del Acuerdo</h2>
               </div>
               <div className="terminos-section-content">
-                <p>Estos términos y condiciones regulan el uso de los servicios y productos ofrecidos por RC Ingenieros, incluyendo但不限于:</p>
+                <p>Estos términos y condiciones regulan el uso de los servicios y productos ofrecidos por RC Ingenieros:</p>
                 <ul>
                   <li><strong>APUGESCOM:</strong> Sistema de control para estaciones de servicio</li>
                   <li><strong>APUFACT:</strong> Sistema de facturación electrónica</li>
@@ -230,9 +230,9 @@ function TerminosCondiciones() {
               <div className="terminos-section-content">
                 <p>Para cualquier consulta, reclamación o aclaración sobre estos términos y condiciones:</p>
                 <ul>
-                  <li><strong>Email:</strong> ventas@rcingenieros.com</li>
-                  <li><strong>Teléfono:</strong> +51 943 252 468</li>
-                  <li><strong>Horario de atención:</strong> Lunes a Viernes, 9:00 AM - 6:00 PM</li>
+                  <li><strong>Email:</strong> administracion@rcingenieros.com</li>
+                  <li><strong>Teléfono:</strong> (01) 500 5583 / +51 994 291 205</li>
+                  <li><strong>Horario de atención:</strong> Lunes a Viernes, 8:00 AM - 6:00 PM</li>
                   <li><strong>Tiempo de respuesta:</strong> Máximo 24 horas hábiles</li>
                 </ul>
               </div>
@@ -241,7 +241,7 @@ function TerminosCondiciones() {
             {/* FOOTER NOTE */}
             <div className="terminos-footer-note">
               <p><strong>Última actualización:</strong> Mayo 2026</p>
-              <p>Al utilizar nuestros servicios, usted acepta estos términos y condiciones en su totalidad.</p>
+              <p>Al utilizar este sitio web, solicitar información o contratar nuestros servicios, usted acepta los Términos y Condiciones de RC Ingenieros S.A.C., así como el tratamiento de sus datos personales conforme a la normativa peruana vigente.</p>
             </div>
 
           </div>
