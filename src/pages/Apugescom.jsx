@@ -102,6 +102,17 @@ export default function Apugescom() {
                                 <span>Integrado con APUFACT</span>
                             </div>
                         </div>
+                        <div className="apugescom-about-actions">
+                            <a 
+                                href="https://wa.me/51995910229?text=Hola%20quiero%20una%20demo%20de%20apugescom" 
+                                className="apugescom-demo-btn secondary"
+                                target="_blank"
+                                rel="noopener noreferrer"
+                            >
+                                <Icon icon="solar:laptop-bold-duotone" className="demo-btn-icon" />
+                                Solicitar Demo Gratuita
+                            </a>
+                        </div>
                     </div>
                 </div>
             </section>

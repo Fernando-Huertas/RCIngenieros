@@ -53,6 +53,75 @@
     margin-top: 10px;
 }
 
+/* DEMO BUTTONS */
+.apugescom-hero-actions {
+    margin-top: 40px;
+}
+
+.apugescom-demo-btn {
+    display: inline-flex;
+    align-items: center;
+    gap: 12px;
+    background: linear-gradient(135deg, #1e3a8a 0%, #36A6EB 100%);
+    color: #ffffff;
+    font-size: 18px;
+    font-weight: 700;
+    padding: 18px 40px;
+    border-radius: 50px;
+    text-decoration: none;
+    box-shadow: 0 10px 25px rgba(54, 166, 235, 0.4);
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    transition: all 0.3s cubic-bezier(0.2, 0.8, 0.2, 1);
+    position: relative;
+    overflow: hidden;
+}
+
+.apugescom-demo-btn::before {
+    content: '';
+    position: absolute;
+    top: 0; left: -100%; width: 50%; height: 100%;
+    background: linear-gradient(to right, transparent, rgba(255,255,255,0.3), transparent);
+    transform: skewX(-20deg);
+    animation: shine 3s infinite;
+}
+
+@keyframes shine {
+    0% { left: -100%; }
+    20% { left: 200%; }
+    100% { left: 200%; }
+}
+
+.apugescom-demo-btn:hover {
+    transform: translateY(-5px) scale(1.02);
+    box-shadow: 0 20px 40px rgba(54, 166, 235, 0.6);
+    color: #ffffff;
+}
+
+.demo-btn-icon {
+    font-size: 24px;
+}
+
+.apugescom-about-actions {
+    margin-top: 35px;
+}
+
+.apugescom-demo-btn.secondary {
+    background: #f8fafc;
+    color: #1e3a8a;
+    box-shadow: 0 10px 20px rgba(0,0,0,0.05);
+    border: 2px solid #36A6EB;
+}
+
+.apugescom-demo-btn.secondary::before {
+    display: none;
+}
+
+.apugescom-demo-btn.secondary:hover {
+    background: #36A6EB;
+    color: #ffffff;
+    box-shadow: 0 15px 30px rgba(54, 166, 235, 0.3);
+}
+
 /* =========================================
    ABOUT SECTION - EXECUTIVE LAYOUT
    ========================================= */

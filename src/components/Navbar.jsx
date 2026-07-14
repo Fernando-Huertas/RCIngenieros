@@ -3,9 +3,8 @@ import './Navbar.css'
 import logoprincipal from '../assets/logoprincipal.jpg'
 import logorc1 from '../assets/logorc1.webp'
 import { Icon } from '@iconify/react';
-import { useState } from 'react';
-import { useEffect } from 'react';
-import { useNavigate } from 'react-router-dom';
+import { useState, useEffect } from 'react';
+import { useNavigate, useLocation } from 'react-router-dom';
 
 export default function Navbar() {
 
@@ -35,6 +34,13 @@ export default function Navbar() {
     };
 
     const navigate = useNavigate();
+    const location = useLocation();
+
+    // Cierra el menú y el sidebar automáticamente cada vez que cambiamos de ruta
+    useEffect(() => {
+        setIsSidebarOpen(false);
+        setIsServiciosOpen(false);
+    }, [location.pathname]);
 
    return (
     <>
