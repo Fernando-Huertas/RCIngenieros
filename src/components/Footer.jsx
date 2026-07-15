@@ -1,7 +1,8 @@
 import React from 'react';
 import './Footer.css';
 import { Icon } from '@iconify/react';
-import logorc1 from '../assets/logorc1.webp'; // Asumiendo este logo para el footer
+import logorc1 from '../assets/logorc1.webp';
+import iconoLibro from '../assets/icono-libro de reclamaciones.webp';
 
 export default function Footer() {
   return (
@@ -84,6 +85,9 @@ export default function Footer() {
               </div>
             </li>
           </ul>
+          <a href="/libro-reclamaciones" className="footer-libro-reclamaciones-link" aria-label="Libro de Reclamaciones INDECOPI">
+            <img src={iconoLibro} alt="Libro de Reclamaciones" className="footer-libro-img" />
+          </a>
         </div>
 
       </div>
