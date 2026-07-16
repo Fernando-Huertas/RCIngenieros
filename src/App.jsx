@@ -7,6 +7,7 @@ import SoporteTecnico from './pages/SoporteTecnico'
 import Apufact from './pages/Apufact'
 import Apugescom from './pages/Apugescom'
 import PozosTierra from './pages/PozosTierra'
+import DesarrolloSoftware from './pages/DesarrolloSoftware'
 import Productos from './pages/Productos'
 import Contacto from './pages/Contacto'
 import Surtidores from './pages/Surtidores'
@@ -52,6 +53,7 @@ function App() {
         <Route path="/servicios/facturacion-electronica" element={<Apufact />} />
         <Route path="/servicios/apugescom" element={<Apugescom />} />
         <Route path="/servicios/pozos-a-tierra" element={<PozosTierra />} />
+        <Route path="/servicios/DesarrolloSoftware" element={<DesarrolloSoftware />} />
         <Route path="/productos" element={<Productos />} />
         <Route path="/productos/surtidores" element={<Surtidores />} />
         <Route path="/contacto" element={<Contacto />} />

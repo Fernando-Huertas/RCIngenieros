@@ -181,6 +181,13 @@ export default function Navbar() {
                                 <span>Medición y Construcción de Pozos a Tierra</span>
                             </Link>
 
+                            <Link to="/servicios/DesarrolloSoftware" className="item">
+                                <div className="icon-servicio">
+                                    <Icon icon="lucide:code-2" />
+                                </div>
+                                <span>Desarrollo de Software</span>
+                            </Link>
+
                         </div>
                     </li>
                     <li><Link to="/productos">Productos</Link></li>

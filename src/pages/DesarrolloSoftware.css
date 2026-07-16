@@ -1,0 +1,457 @@
+/* =========================================
+   DESARROLLO DE SOFTWARE PAGE - PREMIUM DESIGN
+   ========================================= */
+.software-page {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    background-color: #f8fafc; /* Fondo general claro */
+    font-family: 'Inter', sans-serif;
+    overflow-x: hidden;
+}
+
+/* =========================================
+   HERO SECTION
+   ========================================= */
+.software-hero {
+    background: linear-gradient(rgba(10, 15, 44, 0.7), rgba(10, 15, 44, 0.8)), url('https://images.unsplash.com/photo-1555066931-4365d14bab8c?w=1920&q=80');
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    min-height: 550px;
+    display: flex;
+    align-items: center;
+    position: relative;
+    padding: 120px 5%;
+}
+
+.software-hero-overlay {
+    position: absolute;
+    top: 0; left: 0; width: 100%; height: 100%;
+    background: radial-gradient(circle at right center, rgba(54, 166, 235, 0.2), transparent 50%);
+    z-index: 1;
+}
+
+.software-hero-container {
+    max-width: 1400px;
+    width: 90%;
+    margin: 0 auto;
+    position: relative;
+    z-index: 10;
+    opacity: 0;
+    transform: translateY(30px);
+    transition: all 1s ease;
+}
+
+.software-hero-container.animate {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+.software-hero-text h1 {
+    font-size: clamp(40px, 6vw, 75px);
+    font-weight: 800;
+    color: #ffffff;
+    line-height: 1.1;
+    max-width: 900px;
+    margin-bottom: 20px;
+}
+
+.software-hero-highlight {
+    color: #36A6EB;
+    display: block;
+}
+
+.software-hero-subtitle {
+    font-size: clamp(16px, 2vw, 20px);
+    color: #cbd5e1;
+    max-width: 600px;
+    line-height: 1.6;
+    margin-bottom: 40px;
+}
+
+.software-demo-btn {
+    display: inline-flex;
+    align-items: center;
+    gap: 12px;
+    background: linear-gradient(135deg, #1e3a8a 0%, #36A6EB 100%);
+    color: #ffffff;
+    font-size: 18px;
+    font-weight: 700;
+    padding: 18px 40px;
+    border-radius: 50px;
+    text-decoration: none;
+    box-shadow: 0 10px 25px rgba(54, 166, 235, 0.4);
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    transition: all 0.3s cubic-bezier(0.2, 0.8, 0.2, 1);
+    position: relative;
+    overflow: hidden;
+}
+
+.software-demo-btn::before {
+    content: '';
+    position: absolute;
+    top: 0; left: -100%; width: 50%; height: 100%;
+    background: linear-gradient(to right, transparent, rgba(255,255,255,0.3), transparent);
+    transform: skewX(-20deg);
+    animation: shine 3s infinite;
+}
+
+.software-demo-btn:hover {
+    transform: translateY(-5px) scale(1.02);
+    box-shadow: 0 20px 40px rgba(54, 166, 235, 0.6);
+    color: #ffffff;
+}
+
+/* =========================================
+   COMMON SECTION STYLES
+   ========================================= */
+.software-section-header {
+    text-align: left;
+    margin-bottom: 60px;
+    max-width: 800px;
+}
+
+.software-section-header.center {
+    text-align: center;
+    margin: 0 auto 60px auto;
+}
+
+.software-section-badge {
+    background: rgba(54, 166, 235, 0.1);
+    color: #36A6EB;
+    padding: 8px 18px;
+    border-radius: 50px;
+    font-size: 13px;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 1.5px;
+    margin-bottom: 20px;
+    display: inline-block;
+}
+
+.software-section-header h2 {
+    font-size: clamp(32px, 4vw, 46px);
+    color: #0f172a;
+    margin-bottom: 15px;
+    line-height: 1.2;
+}
+
+.software-gradient-text {
+    background: linear-gradient(90deg, #1e3a8a, #36A6EB);
+    font-weight: 900;
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.software-section-header p {
+    font-size: 17px;
+    color: #64748b;
+    line-height: 1.6;
+}
+
+/* =========================================
+   SISTEMAS ESTRELLA
+   ========================================= */
+.software-sistemas {
+    padding: 100px 5%;
+    background: #ffffff;
+    display: flex;
+    justify-content: center;
+}
+
+.software-sistemas-wrapper {
+    max-width: 1400px;
+    width: 100%;
+}
+
+.software-sistemas-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+    gap: 40px;
+}
+
+.software-sistema-card {
+    background: #ffffff;
+    border: 1px solid #e2e8f0;
+    border-radius: 24px;
+    padding: 50px 40px;
+    box-shadow: 0 20px 40px rgba(0,0,0,0.04);
+    transition: all 0.4s ease;
+    position: relative;
+    overflow: hidden;
+}
+
+.software-sistema-card::before {
+    content: '';
+    position: absolute;
+    top: 0; left: 0; width: 100%; height: 5px;
+    background: linear-gradient(90deg, #e2e8f0, #e2e8f0);
+    transition: all 0.4s ease;
+}
+
+.software-sistema-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 30px 60px rgba(54, 166, 235, 0.1);
+}
+
+.software-sistema-card:nth-child(1):hover::before { background: linear-gradient(90deg, #f59e0b, #ef4444); }
+.software-sistema-card:nth-child(2):hover::before { background: linear-gradient(90deg, #10b981, #059669); }
+
+.software-sistema-icon-wrap {
+    width: 70px;
+    height: 70px;
+    border-radius: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 35px;
+    margin-bottom: 25px;
+}
+
+.software-sistema-icon-wrap.rest {
+    background: rgba(245, 158, 11, 0.1);
+    color: #f59e0b;
+}
+
+.software-sistema-icon-wrap.farm {
+    background: rgba(16, 185, 129, 0.1);
+    color: #10b981;
+}
+
+.software-sistema-card h3 {
+    font-size: 26px;
+    color: #0f172a;
+    margin-bottom: 15px;
+    font-weight: 800;
+}
+
+.software-sistema-desc {
+    font-size: 16px;
+    color: #64748b;
+    line-height: 1.6;
+    margin-bottom: 30px;
+}
+
+.software-sistema-features {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.software-sistema-features li {
+    display: flex;
+    align-items: flex-start;
+    gap: 15px;
+    font-size: 15px;
+    color: #475569;
+    line-height: 1.5;
+}
+
+.software-sistema-features li strong {
+    color: #0f172a;
+}
+
+.feat-icon {
+    font-size: 24px;
+    flex-shrink: 0;
+    margin-top: 2px;
+}
+
+.rest-icon { color: #f59e0b; }
+.farm-icon { color: #10b981; }
+
+/* =========================================
+   DIFERENCIALES
+   ========================================= */
+.software-diferenciales {
+    padding: 100px 5%;
+    background: linear-gradient(135deg, #0f172a 0%, #1e3a8a 100%);
+    display: flex;
+    justify-content: center;
+}
+
+.software-diferenciales-wrapper {
+    max-width: 1400px;
+    width: 100%;
+}
+
+.software-diferenciales .software-section-header h2,
+.software-diferenciales .software-section-header p {
+    color: #ffffff;
+}
+
+.software-diferenciales-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 30px;
+}
+
+.software-dif-item {
+    background: rgba(255, 255, 255, 0.05);
+    backdrop-filter: blur(10px);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    padding: 40px 30px;
+    border-radius: 20px;
+    transition: all 0.3s ease;
+}
+
+.software-dif-item:hover {
+    background: rgba(255, 255, 255, 0.1);
+    transform: translateY(-5px);
+}
+
+.dif-icon {
+    font-size: 45px;
+    color: #36A6EB;
+    margin-bottom: 20px;
+}
+
+.software-dif-item h4 {
+    font-size: 20px;
+    color: #ffffff;
+    margin-bottom: 15px;
+    font-weight: 700;
+}
+
+.software-dif-item p {
+    font-size: 15px;
+    color: #cbd5e1;
+    line-height: 1.6;
+}
+
+/* =========================================
+   FLUJO DE TRABAJO (TIMELINE)
+   ========================================= */
+.software-flujo {
+    padding: 120px 5%;
+    background: #ffffff;
+    display: flex;
+    justify-content: center;
+}
+
+.software-flujo-wrapper {
+    max-width: 1200px;
+    width: 100%;
+}
+
+.software-timeline {
+    position: relative;
+    max-width: 900px;
+    margin: 0 auto;
+}
+
+.software-timeline::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 30px;
+    height: 100%;
+    width: 2px;
+    background: #e2e8f0;
+}
+
+.timeline-item {
+    display: flex;
+    align-items: flex-start;
+    margin-bottom: 50px;
+    position: relative;
+}
+
+.timeline-item:last-child {
+    margin-bottom: 0;
+}
+
+.timeline-number {
+    width: 60px;
+    height: 60px;
+    background: linear-gradient(135deg, #1e3a8a 0%, #36A6EB 100%);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #ffffff;
+    font-size: 24px;
+    font-weight: 800;
+    flex-shrink: 0;
+    z-index: 2;
+    box-shadow: 0 10px 20px rgba(54, 166, 235, 0.3);
+}
+
+.timeline-content {
+    margin-left: 40px;
+    background: #f8fafc;
+    padding: 35px;
+    border-radius: 20px;
+    border: 1px solid #e2e8f0;
+    width: 100%;
+    transition: all 0.3s ease;
+}
+
+.timeline-content:hover {
+    box-shadow: 0 15px 30px rgba(0,0,0,0.05);
+    border-color: #36A6EB;
+}
+
+.timeline-content h4 {
+    font-size: 22px;
+    color: #0f172a;
+    margin-bottom: 10px;
+    font-weight: 700;
+}
+
+.timeline-content p {
+    font-size: 16px;
+    color: #64748b;
+    line-height: 1.6;
+}
+
+/* =========================================
+   ANIMATIONS
+   ========================================= */
+.software-sistemas-wrapper,
+.software-diferenciales-wrapper,
+.software-flujo-wrapper {
+    opacity: 0;
+    transform: translateY(40px);
+    transition: all 1s cubic-bezier(0.2, 0.8, 0.2, 1);
+}
+
+.animate {
+    opacity: 1 !important;
+    transform: translateY(0) !important;
+}
+
+/* =========================================
+   RESPONSIVE
+   ========================================= */
+@media (max-width: 1024px) {
+    .software-sistemas-grid {
+        grid-template-columns: 1fr;
+    }
+}
+
+@media (max-width: 768px) {
+    .software-hero {
+        padding: 100px 5% 60px 5%;
+        min-height: 450px;
+    }
+    .software-section-header h2 { font-size: 32px; }
+    
+    .timeline-content { padding: 25px; margin-left: 20px; }
+    .timeline-number { width: 50px; height: 50px; font-size: 20px; left: 35px;}
+    .software-timeline::before { left: 25px; }
+}
+
+@media (max-width: 480px) {
+    .software-sistema-card { padding: 30px 20px; }
+    .software-hero-text h1 { font-size: 36px; }
+    
+    .timeline-item { flex-direction: column; }
+    .software-timeline::before { display: none; }
+    .timeline-number { margin-bottom: 20px; }
+    .timeline-content { margin-left: 0; }
+}

@@ -52,6 +52,7 @@ export default function Footer() {
             <li><a href="/servicios/facturacion-electronica">Facturación Electronica</a></li>
             <li><a href="/servicios/apugescom">Gestión de Combustibles</a></li>
             <li><a href="/servicios/pozos-a-tierra">Pozos a Tierra</a></li>
+            <li><a href="/servicios/DesarrolloSoftware">Desarrollo de Software</a></li>
           </ul>
         </div>
 
