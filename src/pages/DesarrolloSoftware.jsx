@@ -59,64 +59,96 @@ export default function DesarrolloSoftware() {
                 </div>
             </section>
 
-            {/* SISTEMAS ESTRELLA */}
+            {/* SISTEMAS ESTRELLA (BENTO BOX) */}
             <section className="software-sistemas" ref={sistemasRef}>
                 <div className={`software-sistemas-wrapper ${isSistemasVisible ? 'animate' : ''}`}>
-                    <div className="software-section-header">
+                    <div className="software-section-header center">
                         <span className="software-section-badge">Nuestros Sistemas Especializados</span>
                         <h2>Soluciones <span className="software-gradient-text">Listas para Implementar</span></h2>
                         <p>Plataformas robustas y probadas, diseñadas específicamente para maximizar la eficiencia de su rubro.</p>
                     </div>
 
-                    <div className="software-sistemas-grid">
+                    <div className="software-bento-container">
                         {/* RESTAURANTES */}
-                        <div className="software-sistema-card">
-                            <div className="software-sistema-icon-wrap rest">
-                                <Icon icon="solar:chef-hat-bold-duotone" />
+                        <div className="software-bento-section">
+                            <div className="software-bento-content">
+                                <div className="software-sistema-icon-wrap rest">
+                                    <Icon icon="solar:chef-hat-bold-duotone" />
+                                </div>
+                                <h3>Sistema para Restaurantes</h3>
+                                <p className="software-sistema-desc">
+                                    La solución definitiva para la gestión de tu restaurante, cafetería o bar. Agiliza la atención, controla tus mesas y optimiza tu cocina.
+                                </p>
+                                <ul className="software-sistema-features">
+                                    <li>
+                                        <Icon icon="solar:shop-bold-duotone" className="feat-icon rest-icon" />
+                                        <span><strong>Gestión de Mesas y Delivery:</strong> Controla el estado de las mesas en tiempo real y gestiona pedidos a domicilio de forma eficiente.</span>
+                                    </li>
+                                    <li>
+                                        <Icon icon="solar:printer-bold-duotone" className="feat-icon rest-icon" />
+                                        <span><strong>Comandas Rápidas:</strong> Envío de pedidos directo a la cocina o barra (impresión automática de tickets).</span>
+                                    </li>
+                                    <li>
+                                        <Icon icon="solar:wallet-bold-duotone" className="feat-icon rest-icon" />
+                                        <span><strong>Caja y Facturación:</strong> Arqueos de caja rápidos, métodos de pago y emisión de comprobantes.</span>
+                                    </li>
+                                </ul>
+                                <div className="software-bento-action">
+                                    <a href="https://wa.me/51995910229?text=Hola%20estoy%20interesado%20en%20solicitar%20una%20demo%20del%20Sistema%20para%20Restaurantes" 
+                                       className="btn-demo-sistema rest-btn" target="_blank" rel="noopener noreferrer">
+                                        <Icon icon="ic:baseline-whatsapp" className="btn-demo-icon" />
+                                        Solicitar Demo
+                                    </a>
+                                </div>
                             </div>
-                            <h3>Sistema para Restaurantes</h3>
-                            <p className="software-sistema-desc">
-                                La solución definitiva para la gestión de tu restaurante, cafetería o bar. Agiliza la atención, controla tus mesas y optimiza tu cocina.
-                            </p>
-                            <ul className="software-sistema-features">
-                                <li>
-                                    <Icon icon="solar:shop-bold-duotone" className="feat-icon rest-icon" />
-                                    <span><strong>Gestión de Mesas y Delivery:</strong> Controla el estado de las mesas en tiempo real y gestiona pedidos a domicilio de forma eficiente.</span>
-                                </li>
-                                <li>
-                                    <Icon icon="solar:printer-bold-duotone" className="feat-icon rest-icon" />
-                                    <span><strong>Comandas Rápidas:</strong> Envío de pedidos directo a la cocina o barra (impresión automática de tickets).</span>
-                                </li>
-                                <li>
-                                    <Icon icon="solar:wallet-bold-duotone" className="feat-icon rest-icon" />
-                                    <span><strong>Caja y Facturación:</strong> Arqueos de caja rápidos, control de propinas, métodos de pago y emisión de comprobantes.</span>
-                                </li>
-                            </ul>
+                            <div className="software-bento-gallery">
+                                <div className="bento-img bento-img-main" style={{backgroundImage: "url('https://images.unsplash.com/photo-1555396273-367ea4eb4db5?w=800&q=80')"}}></div>
+                                <div className="bento-side-imgs">
+                                    <div className="bento-img bento-img-side" style={{backgroundImage: "url('https://images.unsplash.com/photo-1590846406792-0adc7f928f1e?w=400&q=80')"}}></div>
+                                    <div className="bento-img bento-img-side" style={{backgroundImage: "url('https://images.unsplash.com/photo-1517248135467-4c7edcad34c4?w=400&q=80')"}}></div>
+                                </div>
+                            </div>
                         </div>
 
                         {/* FARMACIAS */}
-                        <div className="software-sistema-card">
-                            <div className="software-sistema-icon-wrap farm">
-                                <Icon icon="solar:pills-3-bold-duotone" />
+                        <div className="software-bento-section reverse">
+                            <div className="software-bento-content">
+                                <div className="software-sistema-icon-wrap farm">
+                                    <Icon icon="solar:pills-3-bold-duotone" />
+                                </div>
+                                <h3>Sistema para Farmacias y Boticas</h3>
+                                <p className="software-sistema-desc">
+                                    Administra tu inventario de medicamentos de forma precisa, controla fechas de vencimiento y cumple con todas las normativas de salud.
+                                </p>
+                                <ul className="software-sistema-features">
+                                    <li>
+                                        <Icon icon="solar:calendar-date-bold-duotone" className="feat-icon farm-icon" />
+                                        <span><strong>Control de Lotes y Vencimientos:</strong> Alertas automáticas para evitar pérdidas de productos por caducidad.</span>
+                                    </li>
+                                    <li>
+                                        <Icon icon="solar:minimalistic-magnifer-bold-duotone" className="feat-icon farm-icon" />
+                                        <span><strong>Búsqueda Avanzada:</strong> Encuentra medicamentos por principio activo, marca o presentación en un segundo.</span>
+                                    </li>
+                                    <li>
+                                        <Icon icon="solar:document-medicine-bold-duotone" className="feat-icon farm-icon" />
+                                        <span><strong>Ventas y Recetas:</strong> Registro ágil de ventas con control de stock mínimo para reposiciones automáticas.</span>
+                                    </li>
+                                </ul>
+                                <div className="software-bento-action">
+                                    <a href="https://wa.me/51995910229?text=Hola%20estoy%20interesado%20en%20solicitar%20una%20demo%20del%20Sistema%20para%20Farmacias" 
+                                       className="btn-demo-sistema farm-btn" target="_blank" rel="noopener noreferrer">
+                                        <Icon icon="ic:baseline-whatsapp" className="btn-demo-icon" />
+                                        Solicitar Demo
+                                    </a>
+                                </div>
                             </div>
-                            <h3>Sistema para Farmacias y Boticas</h3>
-                            <p className="software-sistema-desc">
-                                Administra tu inventario de medicamentos de forma precisa, controla fechas de vencimiento y cumple con todas las normativas de salud.
-                            </p>
-                            <ul className="software-sistema-features">
-                                <li>
-                                    <Icon icon="solar:calendar-date-bold-duotone" className="feat-icon farm-icon" />
-                                    <span><strong>Control de Lotes y Vencimientos:</strong> Alertas automáticas para evitar pérdidas de productos por caducidad.</span>
-                                </li>
-                                <li>
-                                    <Icon icon="solar:minimalistic-magnifer-bold-duotone" className="feat-icon farm-icon" />
-                                    <span><strong>Búsqueda Avanzada:</strong> Encuentra medicamentos por principio activo, marca o presentación en un segundo.</span>
-                                </li>
-                                <li>
-                                    <Icon icon="solar:document-medicine-bold-duotone" className="feat-icon farm-icon" />
-                                    <span><strong>Ventas y Recetas:</strong> Registro ágil de ventas con control de stock mínimo para reposiciones automáticas.</span>
-                                </li>
-                            </ul>
+                            <div className="software-bento-gallery">
+                                <div className="bento-img bento-img-main" style={{backgroundImage: "url('https://images.unsplash.com/photo-1585435557343-3b092031a831?w=800&q=80')"}}></div>
+                                <div className="bento-side-imgs">
+                                    <div className="bento-img bento-img-side" style={{backgroundImage: "url('https://images.unsplash.com/photo-1576602976047-174e57a141cf?w=400&q=80')"}}></div>
+                                    <div className="bento-img bento-img-side" style={{backgroundImage: "url('https://images.unsplash.com/photo-1628771065518-0d82f59300fa?w=400&q=80')"}}></div>
+                                </div>
+                            </div>
                         </div>
                     </div>
                 </div>

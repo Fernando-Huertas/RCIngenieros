@@ -166,38 +166,45 @@
     width: 100%;
 }
 
-.software-sistemas-grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
-    gap: 40px;
+.software-bento-container {
+    display: flex;
+    flex-direction: column;
+    gap: 60px;
 }
 
-.software-sistema-card {
+.software-bento-section {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 40px;
     background: #ffffff;
     border: 1px solid #e2e8f0;
-    border-radius: 24px;
-    padding: 50px 40px;
+    border-radius: 32px;
+    padding: 40px;
     box-shadow: 0 20px 40px rgba(0,0,0,0.04);
     transition: all 0.4s ease;
-    position: relative;
-    overflow: hidden;
 }
 
-.software-sistema-card::before {
-    content: '';
-    position: absolute;
-    top: 0; left: 0; width: 100%; height: 5px;
-    background: linear-gradient(90deg, #e2e8f0, #e2e8f0);
-    transition: all 0.4s ease;
+.software-bento-section:hover {
+    box-shadow: 0 30px 60px rgba(54, 166, 235, 0.08);
+    transform: translateY(-5px);
 }
 
-.software-sistema-card:hover {
-    transform: translateY(-10px);
-    box-shadow: 0 30px 60px rgba(54, 166, 235, 0.1);
+.software-bento-section.reverse {
+    grid-template-columns: 1fr 1fr;
+}
+.software-bento-section.reverse .software-bento-content {
+    order: 2;
+}
+.software-bento-section.reverse .software-bento-gallery {
+    order: 1;
 }
 
-.software-sistema-card:nth-child(1):hover::before { background: linear-gradient(90deg, #f59e0b, #ef4444); }
-.software-sistema-card:nth-child(2):hover::before { background: linear-gradient(90deg, #10b981, #059669); }
+.software-bento-content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 20px;
+}
 
 .software-sistema-icon-wrap {
     width: 70px;
@@ -220,7 +227,7 @@
     color: #10b981;
 }
 
-.software-sistema-card h3 {
+.software-bento-content h3 {
     font-size: 26px;
     color: #0f172a;
     margin-bottom: 15px;
@@ -263,6 +270,82 @@
 
 .rest-icon { color: #f59e0b; }
 .farm-icon { color: #10b981; }
+
+/* =========================================
+   BENTO BOX GALLERY & BUTTONS
+   ========================================= */
+.software-bento-action {
+    margin-top: 30px;
+}
+
+.btn-demo-sistema {
+    display: inline-flex;
+    align-items: center;
+    gap: 10px;
+    font-size: 16px;
+    font-weight: 700;
+    color: #ffffff;
+    padding: 14px 28px;
+    border-radius: 50px;
+    text-decoration: none;
+    transition: all 0.3s ease;
+    box-shadow: 0 10px 20px rgba(0,0,0,0.1);
+}
+
+.rest-btn {
+    background: linear-gradient(135deg, #f59e0b 0%, #ef4444 100%);
+    box-shadow: 0 10px 20px rgba(245, 158, 11, 0.3);
+}
+
+.rest-btn:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 15px 25px rgba(245, 158, 11, 0.4);
+    color: #ffffff;
+}
+
+.farm-btn {
+    background: linear-gradient(135deg, #10b981 0%, #059669 100%);
+    box-shadow: 0 10px 20px rgba(16, 185, 129, 0.3);
+}
+
+.farm-btn:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 15px 25px rgba(16, 185, 129, 0.4);
+    color: #ffffff;
+}
+
+.btn-demo-icon {
+    font-size: 22px;
+}
+
+.software-bento-gallery {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    height: 100%;
+}
+
+.bento-img {
+    background-size: cover;
+    background-position: center;
+    border-radius: 20px;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+}
+
+.bento-img-main {
+    flex: 1;
+    min-height: 250px;
+}
+
+.bento-side-imgs {
+    display: flex;
+    gap: 15px;
+    height: 150px;
+}
+
+.bento-img-side {
+    flex: 1;
+}
 
 /* =========================================
    DIFERENCIALES
@@ -420,6 +503,147 @@
     transition: all 1s cubic-bezier(0.2, 0.8, 0.2, 1);
 }
 
+.software-diferenciales .software-section-header h2,
+.software-diferenciales .software-section-header p {
+    color: #ffffff;
+}
+
+.software-diferenciales-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 30px;
+}
+
+.software-dif-item {
+    background: rgba(255, 255, 255, 0.05);
+    backdrop-filter: blur(10px);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    padding: 40px 30px;
+    border-radius: 20px;
+    transition: all 0.3s ease;
+}
+
+.software-dif-item:hover {
+    background: rgba(255, 255, 255, 0.1);
+    transform: translateY(-5px);
+}
+
+.dif-icon {
+    font-size: 45px;
+    color: #36A6EB;
+    margin-bottom: 20px;
+}
+
+.software-dif-item h4 {
+    font-size: 20px;
+    color: #ffffff;
+    margin-bottom: 15px;
+    font-weight: 700;
+}
+
+.software-dif-item p {
+    font-size: 15px;
+    color: #cbd5e1;
+    line-height: 1.6;
+}
+
+/* =========================================
+   FLUJO DE TRABAJO (TIMELINE)
+   ========================================= */
+.software-flujo {
+    padding: 120px 5%;
+    background: #ffffff;
+    display: flex;
+    justify-content: center;
+}
+
+.software-flujo-wrapper {
+    max-width: 1200px;
+    width: 100%;
+}
+
+.software-timeline {
+    position: relative;
+    max-width: 900px;
+    margin: 0 auto;
+}
+
+.software-timeline::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 30px;
+    height: 100%;
+    width: 2px;
+    background: #e2e8f0;
+}
+
+.timeline-item {
+    display: flex;
+    align-items: flex-start;
+    margin-bottom: 50px;
+    position: relative;
+}
+
+.timeline-item:last-child {
+    margin-bottom: 0;
+}
+
+.timeline-number {
+    width: 60px;
+    height: 60px;
+    background: linear-gradient(135deg, #1e3a8a 0%, #36A6EB 100%);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #ffffff;
+    font-size: 24px;
+    font-weight: 800;
+    flex-shrink: 0;
+    z-index: 2;
+    box-shadow: 0 10px 20px rgba(54, 166, 235, 0.3);
+}
+
+.timeline-content {
+    margin-left: 40px;
+    background: #f8fafc;
+    padding: 35px;
+    border-radius: 20px;
+    border: 1px solid #e2e8f0;
+    width: 100%;
+    transition: all 0.3s ease;
+}
+
+.timeline-content:hover {
+    box-shadow: 0 15px 30px rgba(0,0,0,0.05);
+    border-color: #36A6EB;
+}
+
+.timeline-content h4 {
+    font-size: 22px;
+    color: #0f172a;
+    margin-bottom: 10px;
+    font-weight: 700;
+}
+
+.timeline-content p {
+    font-size: 16px;
+    color: #64748b;
+    line-height: 1.6;
+}
+
+/* =========================================
+   ANIMATIONS
+   ========================================= */
+.software-sistemas-wrapper,
+.software-diferenciales-wrapper,
+.software-flujo-wrapper {
+    opacity: 0;
+    transform: translateY(40px);
+    transition: all 1s cubic-bezier(0.2, 0.8, 0.2, 1);
+}
+
 .animate {
     opacity: 1 !important;
     transform: translateY(0) !important;
@@ -429,8 +653,17 @@
    RESPONSIVE
    ========================================= */
 @media (max-width: 1024px) {
-    .software-sistemas-grid {
+    .software-bento-section {
         grid-template-columns: 1fr;
+    }
+    .software-bento-section.reverse {
+        grid-template-columns: 1fr;
+    }
+    .software-bento-section.reverse .software-bento-content {
+        order: 1;
+    }
+    .software-bento-section.reverse .software-bento-gallery {
+        order: 2;
     }
 }
 
@@ -447,7 +680,7 @@
 }
 
 @media (max-width: 480px) {
-    .software-sistema-card { padding: 30px 20px; }
+    .software-bento-section { padding: 30px 20px; }
     .software-hero-text h1 { font-size: 36px; }
     
     .timeline-item { flex-direction: column; }
