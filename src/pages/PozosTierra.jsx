@@ -4,10 +4,10 @@ import './PozosTierra.css'
 
 // Assets
 
-import measuringImg from '../assets/measuring.jpeg'
-import riskImg from '../assets/pozo-1.webp'
-import normativeImg from '../assets/pozo-cumplimiento.jpg'
-import equipmentImg from '../assets/pozo-vidautil.webp'
+import measuringImg from '../assets/measuring_pit_rc_logo.png'
+import riskImg from '../assets/safety_pit_station.png'
+import normativeImg from '../assets/compliance_pit_station.png'
+import equipmentImg from '../assets/equipment_pit_station.png'
 import ctaBg from '../assets/slide4.png'
 
 export default function PozosTierra() {
