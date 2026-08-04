@@ -85,7 +85,7 @@ if ($conn->query($sql) === TRUE) {
     $conn->query($sql_update);
 
     // 5. Enviar el Correo de Notificación con PHPMailer
-    $destinatario = "administracion@rcingenieros.com";
+    $destinatario = "huertassupafernando@gmail.com";
     $asunto = "Nuevo " . strtoupper($tipoReclamacion) . " - " . $correlativo_oficial;
 
     $mensaje = "Se ha registrado un nuevo formulario en el Libro de Reclamaciones Virtual:\n\n";
