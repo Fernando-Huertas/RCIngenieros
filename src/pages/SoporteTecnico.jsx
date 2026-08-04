@@ -1,15 +1,15 @@
 import React, { useState, useEffect, useRef } from 'react'
 import { Icon } from '@iconify/react'
 import './SoporteTecnico.css'
-import soporteabout from '../assets/soporteabout.jpeg'
+import soporteabout from '../assets/soporte_about.webp'
 import integracion from '../assets/integracion.jpg'
-import accion2 from '../assets/accion2.jpg'
+
 import logognv from '../assets/gnvcontainer.jpg'
-import eess from '../assets/EESS.webp'
-import mantSurtidores from '../assets/mantenimiento_surtidores.png'
-import configSoftware from '../assets/configuracion_software.png'
-import calibEquipos from '../assets/calibracion_equipos.png'
-import asisTecnica from '../assets/asistencia_tecnica.png'
+import eess from '../assets/EE_SS.webp'
+import mantSurtidores from '../assets/mantenimiento_surtidores.webp'
+import configSoftware from '../assets/configuracion_software.webp'
+import calibEquipos from '../assets/calibracion_equipos.webp'
+import asisTecnica from '../assets/asistencia_tecnica.webp'
 
 
 

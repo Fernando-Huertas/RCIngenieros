@@ -102,7 +102,6 @@ export default function Footer() {
         <div className="footer-legal-links">
           <a href="/terminos-condiciones">Términos y Condiciones</a>
           <a href="/politica-privacidad">Políticas de Privacidad</a>
-          <a href="/libro-reclamaciones">Libro de Reclamaciones</a>
         </div>
       </div>
 

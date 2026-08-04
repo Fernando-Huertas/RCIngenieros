@@ -3,15 +3,11 @@ import { Icon } from '@iconify/react';
 import './LibroReclamaciones.css';
 
 export default function LibroReclamaciones() {
-    // Generar un número correlativo simulado
-    const [correlativo, setCorrelativo] = useState('');
+    // El correlativo se generará en el backend al enviar
+    const [correlativo, setCorrelativo] = useState('Se generará al enviar');
 
     useEffect(() => {
-        // En un entorno real, esto vendría del backend.
-        // Aquí generamos uno aleatorio para el formato visual.
-        const num = Math.floor(Math.random() * 1000000).toString().padStart(6, '0');
-        const year = new Date().getFullYear();
-        setCorrelativo(`N° ${num}-${year}`);
+        // Ya no generamos uno aleatorio aquí, el backend MySQL nos dará el correlativo real (ej: 000001-2026)
     }, []);
 
     const [formData, setFormData] = useState({
@@ -59,7 +55,7 @@ export default function LibroReclamaciones() {
         }));
     };
 
-    const handleSubmit = (e) => {
+    const handleSubmit = async (e) => {
         e.preventDefault();
         
         if (!formData.aceptaTerminos) {
@@ -69,16 +65,33 @@ export default function LibroReclamaciones() {
 
         setIsSubmitting(true);
 
-        // Simulamos un envío al backend o API de correos
-        setTimeout(() => {
-            console.log('--- ENVIANDO CORREO A: administracion@rcingenieros.com ---');
-            console.log('--- ENVIANDO COPIA A:', formData.email, '---');
-            console.log('DATOS DEL RECLAMO:', { correlativo, ...formData });
-            
+        try {
+            // Nota: Para desarrollo local, asegúrate de que la carpeta api-backend esté en tu htdocs de XAMPP
+            // y ajusta esta URL si tu carpeta se llama distinto.
+            const response = await fetch('http://localhost/api-backend/guardar_reclamo.php', {
+                method: 'POST',
+                headers: {
+                    'Content-Type': 'application/json',
+                },
+                body: JSON.stringify(formData)
+            });
+
+            const data = await response.json();
+
+            if (data.success) {
+                setCorrelativo(data.correlativo); // Guardamos el correlativo real generado por MySQL
+                setIsSubmitting(false);
+                setSubmitSuccess(true);
+                window.scrollTo({ top: 0, behavior: 'smooth' });
+            } else {
+                alert('Error al enviar: ' + (data.error || 'Intente nuevamente'));
+                setIsSubmitting(false);
+            }
+        } catch (error) {
+            console.error('Error:', error);
+            alert('Error de conexión. Asegúrate de tener XAMPP encendido y el archivo PHP en la ruta correcta (htdocs).');
             setIsSubmitting(false);
-            setSubmitSuccess(true);
-            window.scrollTo({ top: 0, behavior: 'smooth' });
-        }, 2000);
+        }
     };
 
     if (submitSuccess) {

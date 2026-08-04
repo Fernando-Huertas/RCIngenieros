@@ -4,10 +4,10 @@ import './PozosTierra.css'
 
 // Assets
 
-import measuringImg from '../assets/measuring_pit_rc_logo.png'
-import riskImg from '../assets/safety_pit_station.png'
-import normativeImg from '../assets/compliance_pit_station.png'
-import equipmentImg from '../assets/equipment_pit_station.png'
+import equical from '../assets/equipocalibrados.webp'
+import seguridad from '../assets/seguridad.webp'
+import normativa from '../assets/cumplimiento.webp'
+import equipamiento from '../assets/equipamiento.webp'
 import ctaBg from '../assets/slide4.png'
 
 export default function PozosTierra() {
@@ -102,7 +102,7 @@ export default function PozosTierra() {
                     <div className="pozos-services-layout">
                         <div className="pozos-services-visual">
                             <div className="pozos-visual-frame">
-                                <img src={measuringImg} alt="Servicios de Pozos a Tierra" />
+                                <img src={equical} alt="Servicios de Pozos a Tierra" />
                                 <div className="pozos-visual-overlay"></div>
                                 <div className="pozos-floating-badge">
                                     <Icon icon="solar:verified-check-bold-duotone" />
@@ -171,7 +171,7 @@ export default function PozosTierra() {
                     <div className="pozos-benefits-grid">
                         <div className="pozos-premium-benefit-card group">
                             <div className="pozos-benefit-image-wrapper">
-                                <img src={riskImg} alt="Seguridad garantizada" />
+                                <img src={seguridad} alt="Seguridad garantizada" />
                                 <div className="pozos-benefit-gradient-overlay"></div>
                             </div>
                             <div className="pozos-benefit-content">
@@ -185,7 +185,7 @@ export default function PozosTierra() {
                         
                         <div className="pozos-premium-benefit-card group">
                             <div className="pozos-benefit-image-wrapper">
-                                <img src={normativeImg} alt="Cumplimiento normativo" />
+                                <img src={normativa} alt="Cumplimiento normativo" />
                                 <div className="pozos-benefit-gradient-overlay"></div>
                             </div>
                             <div className="pozos-benefit-content">
@@ -199,7 +199,7 @@ export default function PozosTierra() {
                         
                         <div className="pozos-premium-benefit-card group">
                             <div className="pozos-benefit-image-wrapper">
-                                <img src={equipmentImg} alt="Larga vida útil" />
+                                <img src={equipamiento} alt="Larga vida útil" />
                                 <div className="pozos-benefit-gradient-overlay"></div>
                             </div>
                             <div className="pozos-benefit-content">

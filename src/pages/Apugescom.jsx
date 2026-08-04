@@ -236,7 +236,7 @@ export default function Apugescom() {
                 </div>
             </section>
 
-            {/* CTA */}
+            {/* CTA 
             <section className="apugescom-cta" ref={ctaRef}>
                 <div className={`apugescom-cta-container ${isCtaVisible ? 'animate' : ''}`}>
                     <h2>¿Listo para optimizar su estación?</h2>
@@ -246,7 +246,7 @@ export default function Apugescom() {
                         Llámanos: +51 943 853 234
                     </a>
                 </div>
-            </section>
+            </section>*/}
         </div>
     )
 }

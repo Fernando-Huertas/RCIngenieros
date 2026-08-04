@@ -194,7 +194,7 @@ export default function Productos() {
                                 <Icon icon="solar:phone-bold" />
                                 Solicitar Cotización
                             </a>
-                            <a href="mailto:ventas@rcingenieros.com" className="cta-button-secondary">
+                            <a href="/contacto#contacto-formulario" className="cta-button-secondary">
                                 <Icon icon="material-symbols:mail" />
                                 Enviar Correo
                             </a>
