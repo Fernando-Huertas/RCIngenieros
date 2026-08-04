@@ -2,6 +2,13 @@ import React, { useState, useEffect, useRef } from 'react'
 import { Icon } from '@iconify/react'
 import { Link } from 'react-router-dom'
 import './DesarrolloSoftware.css'
+import apumarket1 from '../assets/software/apumarket1.webp'
+import apumarket2 from '../assets/software/apumarket2.webp'
+import apumarket3 from '../assets/software/apumarket3.webp'
+import apufharma1 from '../assets/software/apufharma1.webp'
+import apufharma2 from '../assets/software/apufharma2.webp'
+import apufharma3 from '../assets/software/apufharma3.webp'
+
 
 export default function DesarrolloSoftware() {
     const [isHeroVisible, setIsHeroVisible] = useState(false);
@@ -102,10 +109,10 @@ export default function DesarrolloSoftware() {
                                 </div>
                             </div>
                             <div className="software-bento-gallery">
-                                <div className="bento-img bento-img-main" style={{backgroundImage: "url('https://images.unsplash.com/photo-1555396273-367ea4eb4db5?w=800&q=80')"}}></div>
+                                <img src={apumarket1} alt="" className='bento-img bento-img-main' />
                                 <div className="bento-side-imgs">
-                                    <div className="bento-img bento-img-side" style={{backgroundImage: "url('https://images.unsplash.com/photo-1590846406792-0adc7f928f1e?w=400&q=80')"}}></div>
-                                    <div className="bento-img bento-img-side" style={{backgroundImage: "url('https://images.unsplash.com/photo-1517248135467-4c7edcad34c4?w=400&q=80')"}}></div>
+                                    <img src={apumarket2} alt="" className='bento-img bento-img-side' />
+                                    <img src={apumarket3} alt="" className='bento-img bento-img-side' />
                                 </div>
                             </div>
                         </div>
@@ -143,10 +150,10 @@ export default function DesarrolloSoftware() {
                                 </div>
                             </div>
                             <div className="software-bento-gallery">
-                                <div className="bento-img bento-img-main" style={{backgroundImage: "url('https://images.unsplash.com/photo-1585435557343-3b092031a831?w=800&q=80')"}}></div>
+                                <img src={apufharma1} alt="" className='bento-img bento-img-main' />
                                 <div className="bento-side-imgs">
-                                    <div className="bento-img bento-img-side" style={{backgroundImage: "url('https://images.unsplash.com/photo-1576602976047-174e57a141cf?w=400&q=80')"}}></div>
-                                    <div className="bento-img bento-img-side" style={{backgroundImage: "url('https://images.unsplash.com/photo-1628771065518-0d82f59300fa?w=400&q=80')"}}></div>
+                                    <img src={apufharma2} alt="" className='bento-img bento-img-side' />
+                                    <img src={apufharma3} alt="" className='bento-img bento-img-side' />
                                 </div>
                             </div>
                         </div>

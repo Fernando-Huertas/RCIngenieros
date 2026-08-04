@@ -6,6 +6,10 @@ import integracion from '../assets/integracion.jpg'
 import accion2 from '../assets/accion2.jpg'
 import logognv from '../assets/gnvcontainer.jpg'
 import eess from '../assets/EESS.webp'
+import mantSurtidores from '../assets/mantenimiento_surtidores.png'
+import configSoftware from '../assets/configuracion_software.png'
+import calibEquipos from '../assets/calibracion_equipos.png'
+import asisTecnica from '../assets/asistencia_tecnica.png'
 
 
 
@@ -116,7 +120,7 @@ export default function SoporteTecnico() {
                         <div className="gallery-item">
                             <div className="gallery-image-wrapper">
                                 {/* Cuando tengas la foto, cambia el src por tu imagen importada */}
-                                <img src="https://placehold.co/1920x1080/1a2b4c/ffffff?text=FOTO+1+(16:9)" alt="Trabajo en estación 1" />
+                                <img src={mantSurtidores} alt="Mantenimiento de Surtidores en estación" />
                                 <div className="gallery-overlay">
                                     <div className="overlay-content">
                                         <Icon icon="solar:camera-bold-duotone" className="overlay-icon" />
@@ -129,7 +133,7 @@ export default function SoporteTecnico() {
                         {/* Placeholder 2 */}
                         <div className="gallery-item">
                             <div className="gallery-image-wrapper">
-                                <img src="https://placehold.co/1920x1080/2a3b5c/ffffff?text=FOTO+2+(16:9)" alt="Trabajo en estación 2" />
+                                <img src={configSoftware} alt="Configuración de Software en estación" />
                                 <div className="gallery-overlay">
                                     <div className="overlay-content">
                                         <Icon icon="solar:settings-bold-duotone" className="overlay-icon" />
@@ -142,7 +146,7 @@ export default function SoporteTecnico() {
                         {/* Placeholder 3 */}
                         <div className="gallery-item">
                             <div className="gallery-image-wrapper">
-                                <img src="https://placehold.co/1920x1080/10b981/ffffff?text=FOTO+3+(16:9)" alt="Trabajo en estación 3" />
+                                <img src={calibEquipos} alt="Calibración de Equipos en estación" />
                                 <div className="gallery-overlay">
                                     <div className="overlay-content">
                                         <Icon icon="solar:shield-check-bold-duotone" className="overlay-icon" />
@@ -155,7 +159,7 @@ export default function SoporteTecnico() {
                         {/* Placeholder 4 */}
                         <div className="gallery-item">
                             <div className="gallery-image-wrapper">
-                                <img src="https://placehold.co/1920x1080/36A6EB/ffffff?text=FOTO+4+(16:9)" alt="Trabajo en estación 4" />
+                                <img src={asisTecnica} alt="Asistencia Técnica en estación" />
                                 <div className="gallery-overlay">
                                     <div className="overlay-content">
                                         <Icon icon="solar:bolt-bold-duotone" className="overlay-icon" />
