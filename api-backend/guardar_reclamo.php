@@ -104,41 +104,60 @@ if ($conn->query($sql) === TRUE) {
     require __DIR__ . '/PHPMailer-master/src/PHPMailer.php';
     require __DIR__ . '/PHPMailer-master/src/SMTP.php';
 
-    $mail = new PHPMailer\PHPMailer\PHPMailer(true);
+    // ==========================================
+    // CONFIGURACIÓN SMTP (GMAIL)
+    // ==========================================
+    $smtp_user = 'huertassupafernando@gmail.com';
+    $smtp_pass = 'yemf wcil bvom ymsk';
+    // ==========================================
 
+    // --- CORREO 1: Al Administrador (destinatario principal) ---
+    $mail1 = new PHPMailer\PHPMailer\PHPMailer(true);
     try {
-        // Configuración del servidor SMTP (GMAIL)
-        $mail->isSMTP();
-        $mail->Host = 'smtp.gmail.com';
-        $mail->SMTPAuth = true;
+        $mail1->isSMTP();
+        $mail1->Host = 'smtp.gmail.com';
+        $mail1->SMTPAuth = true;
+        $mail1->Username = $smtp_user;
+        $mail1->Password = $smtp_pass;
+        $mail1->SMTPSecure = PHPMailer\PHPMailer\PHPMailer::ENCRYPTION_SMTPS;
+        $mail1->Port = 465;
 
-        // ==========================================
-        // IMPORTANTE: PON TU CORREO Y CONTRASEÑA AQUÍ
-        // ==========================================
-        $mail->Username = 'huertassupafernando@gmail.com';
-        // Si usas Gmail, necesitas generar una "Contraseña de aplicación", NO tu contraseña normal.
-        $mail->Password = 'yemf wcil bvom ymsk';
-        // ==========================================
+        $mail1->setFrom($smtp_user, 'Libro de Reclamaciones RC');
+        $mail1->addAddress($destinatario);
+        $mail1->addReplyTo($email, $nombre);
 
-        $mail->SMTPSecure = PHPMailer\PHPMailer\PHPMailer::ENCRYPTION_SMTPS; // SSL
-        $mail->Port = 465;
+        $mail1->CharSet = 'UTF-8';
+        $mail1->isHTML(false);
+        $mail1->Subject = $asunto;
+        $mail1->Body = $mensaje;
 
-        // Remitente y Destinatarios
-        $mail->setFrom('huertassupafernando@gmail.com', 'Libro de Reclamaciones RC');
-        $mail->addAddress($destinatario); // Correo del administrador
-        $mail->addAddress($email);        // Copia al cliente
-        $mail->addReplyTo($email, $nombre);
-
-        // Contenido del correo
-        $mail->CharSet = 'UTF-8';
-        $mail->isHTML(false);
-        $mail->Subject = $asunto;
-        $mail->Body = $mensaje;
-
-        $mail->send();
+        $mail1->send();
     } catch (Exception $e) {
-        // Si el correo falla, registramos el error pero no bloqueamos la respuesta exitosa al cliente
-        error_log("Error al enviar el correo con PHPMailer: {$mail->ErrorInfo}");
+        error_log("Error al enviar correo al administrador: {$mail1->ErrorInfo}");
+    }
+
+    // --- CORREO 2: Copia al Cliente ---
+    $mail2 = new PHPMailer\PHPMailer\PHPMailer(true);
+    try {
+        $mail2->isSMTP();
+        $mail2->Host = 'smtp.gmail.com';
+        $mail2->SMTPAuth = true;
+        $mail2->Username = $smtp_user;
+        $mail2->Password = $smtp_pass;
+        $mail2->SMTPSecure = PHPMailer\PHPMailer\PHPMailer::ENCRYPTION_SMTPS;
+        $mail2->Port = 465;
+
+        $mail2->setFrom($smtp_user, 'Libro de Reclamaciones RC');
+        $mail2->addAddress($email);
+
+        $mail2->CharSet = 'UTF-8';
+        $mail2->isHTML(false);
+        $mail2->Subject = "Copia de su " . $tipoReclamacion . " - " . $correlativo_oficial . " - RC Ingenieros";
+        $mail2->Body = $mensaje;
+
+        $mail2->send();
+    } catch (Exception $e) {
+        error_log("Error al enviar copia al cliente: {$mail2->ErrorInfo}");
     }
 
     // 6. Respuesta Exitosa a React
