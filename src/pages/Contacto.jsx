@@ -49,17 +49,38 @@ export default function Contacto() {
         });
     };
 
-    const handleSubmit = (e) => {
+    const handleSubmit = async (e) => {
         e.preventDefault();
-        console.log('Formulario enviado:', formData);
-        alert('Mensaje enviado correctamente. Nos pondremos en contacto contigo pronto.');
-        setFormData({
-            nombre: '',
-            email: '',
-            telefono: '',
-            asunto: '',
-            mensaje: ''
-        });
+        
+        try {
+            // Se hace la petición POST al nuevo archivo PHP de contacto
+            const response = await fetch('http://localhost/api-backend/enviar_contacto.php', {
+                method: 'POST',
+                headers: {
+                    'Content-Type': 'application/json'
+                },
+                body: JSON.stringify(formData)
+            });
+
+            const data = await response.json();
+
+            if (data.success) {
+                alert('Mensaje enviado correctamente. Nos pondremos en contacto contigo pronto.');
+                setFormData({
+                    nombre: '',
+                    email: '',
+                    telefono: '',
+                    asunto: '',
+                    mensaje: ''
+                });
+            } else {
+                alert('Ocurrió un error al enviar el mensaje. Por favor intenta más tarde.');
+                console.error("Error del servidor:", data);
+            }
+        } catch (error) {
+            console.error("Error en la petición:", error);
+            alert("Error de conexión. Asegúrate de estar corriendo el servidor PHP en localhost.");
+        }
     };
 
     const toggleFaq = (index) => {
