@@ -165,8 +165,9 @@
 }
 
 .productos-gradient-text {
-    background: linear-gradient(90deg, #1e3a8a, #36A6EB);
-    font-weight: 900;
+    background: #36A6EB;
+    font-size: 46px;
+    font-weight: 800;
     background-clip: text;
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;

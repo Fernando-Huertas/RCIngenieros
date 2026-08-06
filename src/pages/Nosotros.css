@@ -46,7 +46,8 @@
 
 .nosotros-titulo1 {
     font-size: 46px;
-    line-height: 1.1;
+    font-weight: 800;
+    line-height: 1.12;
     color: #000000;
     margin-bottom: 25px;
 }
@@ -173,6 +174,7 @@
 
 .values-header h2 {
     font-size: 46px;
+    font-weight: 800;
     color: #000000;
     margin-bottom: 25px;
 }
@@ -290,6 +292,7 @@
 
 .certificaciones-header h2 {
     font-size: 46px;
+    font-weight: 800;
     color: #000000;
     margin-bottom: 15px;
     letter-spacing: -0.5px;

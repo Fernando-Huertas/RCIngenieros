@@ -380,6 +380,7 @@
 .servicios-titulo-izq h2{
   color: black;
   font-size: 46px;
+  font-weight: 800;
   padding: 0;
   margin: 0;
 }
@@ -746,12 +747,20 @@
     gap: 20px;
 }
 .nosotros-subtitulo{
-    font-size: 14px;
-    font-weight: 700;
+    background: rgba(54, 166, 235, 0.1);
     color: #36A6EB;
+    padding: 8px 20px;
+    border-radius: 50px;
+    font-size: 13px;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 1.5px;
+    display: inline-block;
+    margin-bottom: 15px;
 }
 .nosotros-titulo{
     font-size: 46px;
+    font-weight: 800;
     color: #000000;
 }
 .nosotros-descripcion{
@@ -1217,7 +1226,8 @@
 }
 
 .apugescom-titulo {
-  font-size: 46px; /* Tamaño base grande */
+  font-size: 46px; 
+  font-weight: 800;
   color: #ffffff;
   line-height: 1.1;
   margin: 0;
@@ -1634,7 +1644,8 @@
 }
 
 .apufact-titulo {
-  font-size: 46px; /* Tamaño base grande */
+  font-size: 46px;
+  font-weight: 800;
   color: #000000;
   line-height: 1.1;
   margin: 0;
@@ -1921,6 +1932,7 @@
 
 .video-titulo {
   font-size: 46px;
+  font-weight: 800;
   color: #1a1a1a;
   line-height: 1.2;
   margin: 0;

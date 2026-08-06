@@ -48,60 +48,68 @@ export default function Productos() {
     const categories = [
         {
             id: 1,
+            name: 'Lector de chips',
+            image: servidoresImg, 
+            description: 'Lector de chips para ...',
+            products: '2 productos'
+        },
+        {
+            id: 2,
             name: 'Servidores',
             image: servidoresImg,
             description: 'Servidores de alta performance para infraestructura crítica',
             products: '12 productos'
         },
         {
-            id: 2,
+            id: 3,
             name: 'Impresoras',
             image: impresorasImg,
             description: 'Impresoras térmicas y de tickets para puntos de venta',
             products: '8 productos'
         },
         {
-            id: 3,
+            id: 4,
             name: 'Gabinetes',
             image: gabinetesImg,
             description: 'Racks y gabinetes para equipamiento de red',
             products: '15 productos'
         },
+         {
+            id: 5,
+            name: 'Surtidores',
+            image: surtidoresImg,
+            description: 'Surtidores de combustible de última generación',
+            products: '6 productos'
+        },
         {
-            id: 4,
+            id: 6,
             name: 'Patch Cord',
             image: patchCordImg,
             description: 'Cables de red patch cord de diversas longitudes',
             products: '20 productos'
         },
         {
-            id: 5,
+            id: 7,
             name: 'Cables UTP',
             image: cablesUtpImg,
             description: 'Cables UTP Cat5e, Cat6 para instalaciones de red',
             products: '25 productos'
         },
         {
-            id: 6,
+            id: 8,
             name: 'Productos Eléctricos',
             image: productosElectricosImg,
             description: 'Componentes eléctricos para instalaciones industriales',
             products: '30 productos'
         },
         {
-            id: 7,
+            id: 9,
             name: 'Luces LED Antiexplosivas',
             image: lucesLedImg,
             description: 'Iluminación certificada para zonas peligrosas',
             products: '10 productos'
         },
-        {
-            id: 8,
-            name: 'Surtidores',
-            image: surtidoresImg,
-            description: 'Surtidores de combustible de última generación',
-            products: '6 productos'
-        }
+       
     ];
 
     return (

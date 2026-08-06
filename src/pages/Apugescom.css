@@ -47,6 +47,20 @@
     max-width: 900px;
 }
 
+.apugescom-features-maintitle{
+    font-size: 75px;
+    font-weight: 900;
+    color: #17386d; /* Azul oscuro APUFACT fallback */
+    background: linear-gradient(90deg, #17386d, #36A6EB);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    margin-top: 0;
+    margin-bottom: 25px;
+    line-height: 1;
+    letter-spacing: -0.5px;
+}
+
+
 .apugescom-hero-highlight {
     color: #36A6EB;
     display: block;
@@ -123,7 +137,7 @@
 }
 
 /* =========================================
-   ABOUT SECTION - EXECUTIVE LAYOUT
+   SECCION NOSOTROS
    ========================================= */
 .apugescom-about {
     padding: 100px 5%;
@@ -194,6 +208,7 @@
 
 .apugescom-about-text-side h2 {
     font-size: 46px;
+    font-weight: 800;
     color: #0f172a;
     line-height: 1.2;
     margin-bottom: 25px;
@@ -290,12 +305,14 @@
 
 .apugescom-features-header h2 {
     font-size: 46px;
+    font-weight: 800;
     color: #0f172a;
     margin-bottom: 15px;
 }
 
 .apugescom-how-header h2 {
     font-size: 46px;
+    font-weight: 800;
     color: #0f172a;
     margin-bottom: 15px;
 }

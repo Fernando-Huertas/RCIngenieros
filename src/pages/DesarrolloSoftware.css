@@ -131,15 +131,17 @@
 }
 
 .software-section-header h2 {
-    font-size: clamp(32px, 4vw, 46px);
+    font-size: 46px;
     color: #0f172a;
+    font-weight: 800;
     margin-bottom: 15px;
     line-height: 1.2;
 }
 
 .software-gradient-text {
-    background: linear-gradient(90deg, #1e3a8a, #36A6EB);
-    font-weight: 900;
+    font-size: 46px;
+    background: #36A6EB;
+    font-weight: 800;
     background-clip: text;
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
@@ -293,7 +295,7 @@
 }
 
 .rest-btn {
-    background: linear-gradient(135deg, #3b82f6 0%, #1d4ed8 100%);
+    background: #3b82f6;
     box-shadow: 0 10px 20px rgba(59, 130, 246, 0.3);
 }
 
@@ -304,7 +306,7 @@
 }
 
 .farm-btn {
-    background: linear-gradient(135deg, #10b981 0%, #059669 100%);
+    background: #10b981;
     box-shadow: 0 10px 20px rgba(16, 185, 129, 0.3);
 }
 

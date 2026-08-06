@@ -289,7 +289,7 @@
 
 .apufact-features-subtitle {
     font-size: 42px;
-    font-weight: 700;
+    font-weight: 800;
     color: #111827;
     margin-bottom: 5px;
     line-height: 1.1;
@@ -538,6 +538,7 @@
 
 .how-it-works-title {
     font-size: 46px;
+    font-weight: 800;
     color: #111827;
     margin-top: 0;
     margin-bottom: 20px;
@@ -734,7 +735,7 @@
 }
 
 /* ==========================================================================
-    REVEAL ANIMATIONS (NUEVAS ANIMACIONES AL SCROLL)
+     (NUEVAS ANIMACIONES AL SCROLL)
 ========================================================================== */
 
 /* Apufact Main */

@@ -81,7 +81,7 @@ export default function Apugescom() {
                     </div>
                     <div className="apugescom-about-text-side">
                         <span className="apugescom-about-label">Sobre APUGESCOM</span>
-                        <h2>Sistemas de Gestión de Combustibles <strong>APUGESCOM</strong></h2>
+                        <h2>Sistemas de Gestión de Combustibles <span className="apugescom-features-maintitle">APUGESCOM</span></h2>
                         <p>
                             El sistema de gestión de combustibles APUGESCOM es un programa diseñado de manera
                             exclusiva con la finalidad de automatizar y administrar las Estaciones de Servicio.

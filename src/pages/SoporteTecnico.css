@@ -313,6 +313,7 @@
 
 .soporte-about-content h2 {
     font-size: 46px;
+    font-weight: 800;
     color: #000000;
     line-height: 1.2;
     margin-bottom: 30px;
@@ -388,6 +389,7 @@
 
 .gallery-header h2 {
     font-size: 46px;
+    font-weight: 800;
     color: #ffffff;
     margin-bottom: 20px;
 }
@@ -511,6 +513,7 @@
 
 .apufact-header h2 {
     font-size: 46px;
+    font-weight: 800;
     color: #000000;
     margin-bottom: 20px;
 }
@@ -822,6 +825,7 @@
 
 .gnv-header h2 {
     font-size: 46px;
+    font-weight: 800;
     color: #000000;
     margin-bottom: 15px;
 }
@@ -982,7 +986,7 @@
 
 .mantenimiento-content h2 {
     font-size: 46px;
-    font-weight: 700;
+    font-weight: 800;
     color: #000000;
     line-height: 1.2;
     margin-bottom: 30px;
