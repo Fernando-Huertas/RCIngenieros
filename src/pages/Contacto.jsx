@@ -53,8 +53,8 @@ export default function Contacto() {
         e.preventDefault();
         
         try {
-            // Se hace la petición POST al nuevo archivo PHP de contacto
-            const response = await fetch('http://localhost/api-backend/enviar_contacto.php', {
+            // Se usa ruta relativa para producción
+            const response = await fetch('/api-backend/enviar_contacto.php', {
                 method: 'POST',
                 headers: {
                     'Content-Type': 'application/json'
@@ -79,7 +79,7 @@ export default function Contacto() {
             }
         } catch (error) {
             console.error("Error en la petición:", error);
-            alert("Error de conexión. Asegúrate de estar corriendo el servidor PHP en localhost.");
+            alert("Error de conexión con el servidor. Inténtalo más tarde.");
         }
     };
 

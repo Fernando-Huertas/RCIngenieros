@@ -68,7 +68,7 @@ export default function LibroReclamaciones() {
         try {
             // Nota: Para desarrollo local, asegúrate de que la carpeta api-backend esté en tu htdocs de XAMPP
             // y ajusta esta URL si tu carpeta se llama distinto.
-            const response = await fetch('http://localhost/api-backend/guardar_reclamo.php', {
+            const response = await fetch('/api-backend/guardar_reclamo.php', {
                 method: 'POST',
                 headers: {
                     'Content-Type': 'application/json',
