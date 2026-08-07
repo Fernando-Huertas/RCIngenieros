@@ -34,6 +34,7 @@ require __DIR__ . '/PHPMailer-master/src/PHPMailer.php';
 require __DIR__ . '/PHPMailer-master/src/SMTP.php';
 
 // ==========================================
+// ==========================================
 // CONFIGURACIÓN SMTP (PRODUCCIÓN)
 // ==========================================
 $smtp_user = 'ventas01@rcingenieros.com';

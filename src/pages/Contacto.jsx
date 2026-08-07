@@ -7,6 +7,8 @@ export default function Contacto() {
     const [isInfoVisible, setIsInfoVisible] = useState(false);
     const [isFormVisible, setIsFormVisible] = useState(false);
     const [openFaq, setOpenFaq] = useState(null);
+    const [isSubmitting, setIsSubmitting] = useState(false);
+    const [showModal, setShowModal] = useState(false);
 
     const mapRef = useRef(null);
     const infoRef = useRef(null);
@@ -51,6 +53,7 @@ export default function Contacto() {
 
     const handleSubmit = async (e) => {
         e.preventDefault();
+        setIsSubmitting(true);
         
         try {
             // Se usa ruta relativa para producción
@@ -65,7 +68,7 @@ export default function Contacto() {
             const data = await response.json();
 
             if (data.success) {
-                alert('Mensaje enviado correctamente. Nos pondremos en contacto contigo pronto.');
+                setShowModal(true);
                 setFormData({
                     nombre: '',
                     email: '',
@@ -80,6 +83,8 @@ export default function Contacto() {
         } catch (error) {
             console.error("Error en la petición:", error);
             alert("Error de conexión con el servidor. Inténtalo más tarde.");
+        } finally {
+            setIsSubmitting(false);
         }
     };
 
@@ -252,9 +257,18 @@ export default function Contacto() {
                                         placeholder="Escribe tu mensaje aquí..."
                                     ></textarea>
                                 </div>
-                                <button type="submit" className="form-submit-btn">
-                                    <Icon icon="solar:paper-plane-bold" />
-                                    Enviar Mensaje
+                                <button type="submit" className="form-submit-btn" disabled={isSubmitting}>
+                                    {isSubmitting ? (
+                                        <>
+                                            <Icon icon="line-md:loading-twotone-loop" />
+                                            Enviando...
+                                        </>
+                                    ) : (
+                                        <>
+                                            <Icon icon="solar:paper-plane-bold" />
+                                            Enviar Mensaje
+                                        </>
+                                    )}
                                 </button>
                             </form>
                         </div>
@@ -279,6 +293,22 @@ export default function Contacto() {
                     </div>
                 </div>
             </section>
+
+            {/* MODAL DE ÉXITO */}
+            {showModal && (
+                <div className="contacto-modal-overlay">
+                    <div className="contacto-modal-content">
+                        <div className="contacto-modal-icon">
+                            <Icon icon="solar:check-circle-bold" />
+                        </div>
+                        <h3>¡Mensaje Enviado!</h3>
+                        <p>Hemos recibido tu consulta correctamente. Nos pondremos en contacto contigo a la brevedad posible.</p>
+                        <button className="contacto-modal-close" onClick={() => setShowModal(false)}>
+                            Entendido
+                        </button>
+                    </div>
+                </div>
+            )}
         </div>
     )
 }
