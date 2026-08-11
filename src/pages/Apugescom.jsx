@@ -110,7 +110,7 @@ export default function Apugescom() {
                                 rel="noopener noreferrer"
                             >
                                 <Icon icon="solar:laptop-bold-duotone" className="demo-btn-icon" />
-                                Solicitar Demo Gratuita
+                                Solicitar Demo Gratis
                             </a>
                         </div>
                     </div>

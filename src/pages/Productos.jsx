@@ -168,15 +168,14 @@ export default function Productos() {
                                 <p className="category-description">{category.description}</p>
                                 <div className="category-footer">
                                     <span className="category-products-count">{category.products}</span>
-                                    {category.name === 'Surtidores' ? (
-                                        <Link to="/productos/surtidores" className="category-view-btn">
-                                            Ver productos <Icon icon="line-md:arrow-right" />
-                                        </Link>
-                                    ) : (
-                                        <button className="category-view-btn">
-                                            Ver productos <Icon icon="line-md:arrow-right" />
-                                        </button>
-                                    )}
+                                    <a 
+                                        href={`https://wa.me/51995910229?text=Hola,%20quisiera%20consultar%20sobre%20los%20productos%20de%20la%20categoría:%20${category.name}`}
+                                        target="_blank" 
+                                        rel="noopener noreferrer" 
+                                        className="category-view-btn whatsapp-btn"
+                                    >
+                                        Consultar <Icon icon="ic:baseline-whatsapp" />
+                                    </a>
                                 </div>
                             </div>
                         ))}
@@ -198,8 +197,8 @@ export default function Productos() {
                             tus necesidades y presupuesto. Contáctanos para una asesoría personalizada.
                         </p>
                         <div className="cta-buttons">
-                            <a href="tel:+51943252468" className="cta-button-primary">
-                                <Icon icon="solar:phone-bold" />
+                            <a href="https://wa.me/51995910229?text=Hola,%20necesito%20una%20cotización%20de%20sus%20productos." target="_blank" rel="noopener noreferrer" className="cta-button-primary">
+                                <Icon icon="ic:baseline-whatsapp" />
                                 Solicitar Cotización
                             </a>
                             <a href="/contacto#contacto-formulario" className="cta-button-secondary">

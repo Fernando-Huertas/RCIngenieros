@@ -288,6 +288,14 @@
     transform: translateX(5px);
 }
 
+.category-view-btn.whatsapp-btn {
+    background: #25D366;
+}
+
+.category-view-btn.whatsapp-btn:hover {
+    background: #128C7E;
+}
+
 /* =========================================
    CTA SECTION
    ========================================= */
