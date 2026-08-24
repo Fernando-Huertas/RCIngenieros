@@ -5,6 +5,7 @@ import './Productos.css'
 
 // Assets
 import heroBg from '../assets/hero.png'
+import lectorchipGNV from '../assets/categorias/lectorchipGNV.webp'
 import servidoresImg from '../assets/categorias/servidores-rc.webp'
 import impresorasImg from '../assets/categorias/impresoras-termicas-rc.webp'
 import gabinetesImg from '../assets/categorias/gabinetes-rc.webp'
@@ -13,6 +14,8 @@ import cablesUtpImg from '../assets/categorias/cable-de-red-rc.webp'
 import productosElectricosImg from '../assets/categorias/suministros-electricos-rc.webp'
 import lucesLedImg from '../assets/categorias/luces-led-antiexplosiva-rc.webp'
 import surtidoresImg from '../assets/categorias/surtidores.webp'
+import gabinetesPOSImg from '../assets/categorias/gabinetePOS.webp'
+import touchPanelPCImg from '../assets/categorias/touchRC.webp'
 
 export default function Productos() {
     const [isHeroVisible, setIsHeroVisible] = useState(false);
@@ -49,9 +52,9 @@ export default function Productos() {
         {
             id: 1,
             name: 'Lector de chips',
-            image: servidoresImg, 
-            description: 'Lector de chips para ...',
-            products: '2 productos'
+            image: lectorchipGNV, 
+            description: 'Identifica el vehiculo y autoriza la carga de GNV',
+            products: '100+ productos'
         },
         {
             id: 2,
@@ -108,6 +111,21 @@ export default function Productos() {
             image: lucesLedImg,
             description: 'Iluminación certificada para zonas peligrosas',
             products: '10 productos'
+        },
+         {
+            id: 10,
+            name: 'Gabinetes POS',
+            image: gabinetesPOSImg,
+            description: 'Gabinetes para estaciones de servicio y puntos de venta',
+            products: '10 productos'
+        },
+        {
+            id: 11,
+            name: 'Touch Panel PC',
+            image: touchPanelPCImg,
+            description: 'Touch Panel PC estaciones de servicio y puntos de venta',
+            products: '10 productos',
+            pdfUrl: '/docs/Touchs-RC.pdf'
         },
        
     ];
@@ -168,14 +186,27 @@ export default function Productos() {
                                 <p className="category-description">{category.description}</p>
                                 <div className="category-footer">
                                     <span className="category-products-count">{category.products}</span>
-                                    <a 
-                                        href={`https://wa.me/51995910229?text=Hola,%20quisiera%20consultar%20sobre%20los%20productos%20de%20la%20categoría:%20${category.name}`}
-                                        target="_blank" 
-                                        rel="noopener noreferrer" 
-                                        className="category-view-btn whatsapp-btn"
-                                    >
-                                        Consultar <Icon icon="ic:baseline-whatsapp" />
-                                    </a>
+                                    <div className="category-actions-group">
+                                        {category.pdfUrl && (
+                                            <a 
+                                                href={category.pdfUrl} 
+                                                target="_blank" 
+                                                rel="noopener noreferrer" 
+                                                className="category-view-btn pdf-btn"
+                                                title={`Ver ficha técnica de ${category.name}`}
+                                            >
+                                                <Icon icon="solar:document-text-bold" /> PDF
+                                            </a>
+                                        )}
+                                        <a 
+                                            href={`https://wa.me/51995910229?text=Hola,%20quisiera%20consultar%20sobre%20los%20productos%20de%20la%20categoría:%20${category.name}`}
+                                            target="_blank" 
+                                            rel="noopener noreferrer" 
+                                            className="category-view-btn whatsapp-btn"
+                                        >
+                                            Consultar <Icon icon="ic:baseline-whatsapp" />
+                                        </a>
+                                    </div>
                                 </div>
                             </div>
                         ))}
