@@ -5,6 +5,7 @@ import './Nosotros.css'
 // Assets de Certificaciones
 import iso27001 from '../assets/iso27001.webp'
 import sunat from '../assets/verificado-por-sunat.webp'
+import homologado from '../assets/homologado.webp'
 import nosotroscontent from '../assets/nosotroscont.jpg'
 
 export default function Nosotros() {
@@ -13,6 +14,7 @@ export default function Nosotros() {
     const certificacionesList = [
         { id: 1, name: 'ISO 27001', desc: 'Seguridad Info', src: iso27001 },
         { id: 2, name: 'SUNAT', desc: 'Verificado por SUNAT', src: sunat },
+        { id: 3, name: 'HODELPE', desc: 'Empresa Homologada', src: homologado },
     ];
 
     const [isContentVisible, setIsContentVisible] = useState(false);
