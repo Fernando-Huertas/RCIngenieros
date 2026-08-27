@@ -9,11 +9,11 @@ try {
     $mail->isSMTP();
     $mail->Host = 'mail.rcingenieros.com';
     $mail->SMTPAuth = true;
-    $mail->Username = 'administracion@rcingenieros.com';
-    $mail->Password = 'administración.Rci';
+    $mail->Username = 'ventas01@rcingenieros.com';
+    $mail->Password = 'ventas01RC';
     $mail->SMTPSecure = PHPMailer\PHPMailer\PHPMailer::ENCRYPTION_STARTTLS;
     $mail->Port = 587;
-    
+
     $mail->SMTPOptions = array(
         'ssl' => array(
             'verify_peer' => false,
@@ -22,9 +22,9 @@ try {
         )
     );
 
-    $mail->setFrom('administracion@rcingenieros.com', 'Test');
-    $mail->addAddress('huertassupafernando@gmail.com');
-    $mail->Subject = 'Test SMTP';
+    $mail->setFrom('ventas01@rcingenieros.com', 'Test Ventas WEBRCINGENIEROS');
+    $mail->addAddress('ventas01@rcingenieros.com');
+    $mail->Subject = 'Test SMTP - RC Ingenieros';
     $mail->Body = 'Test';
     $mail->send();
     echo "Message has been sent\n";

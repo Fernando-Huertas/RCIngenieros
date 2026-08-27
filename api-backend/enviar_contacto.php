@@ -51,7 +51,7 @@ try {
     $mail->Username = $smtp_user;
     $mail->Password = $smtp_pass;
     $mail->SMTPSecure = PHPMailer\PHPMailer\PHPMailer::ENCRYPTION_STARTTLS;
-    $mail->Port = 465;
+    $mail->Port = 587;
     
     // Evitar error de certificado en local
     $mail->SMTPOptions = array(
@@ -101,7 +101,7 @@ try {
         $mail2->Username = $smtp_user;
         $mail2->Password = $smtp_pass;
         $mail2->SMTPSecure = PHPMailer\PHPMailer\PHPMailer::ENCRYPTION_STARTTLS;
-        $mail2->Port = 465;
+        $mail2->Port = 587;
         
         $mail2->SMTPOptions = array(
             'ssl' => array('verify_peer' => false, 'verify_peer_name' => false, 'allow_self_signed' => true)

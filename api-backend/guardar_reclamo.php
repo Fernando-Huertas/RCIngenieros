@@ -313,7 +313,7 @@ if ($conn->query($sql) === TRUE) {
         $mail1->Username = $smtp_user;
         $mail1->Password = $smtp_pass;
         $mail1->SMTPSecure = PHPMailer\PHPMailer\PHPMailer::ENCRYPTION_STARTTLS;
-        $mail1->Port = 465;
+        $mail1->Port = 587;
 
         // Evitar error de certificado en local
         $mail1->SMTPOptions = array(
@@ -351,7 +351,7 @@ if ($conn->query($sql) === TRUE) {
         $mail2->Username = $smtp_user;
         $mail2->Password = $smtp_pass;
         $mail2->SMTPSecure = PHPMailer\PHPMailer\PHPMailer::ENCRYPTION_STARTTLS;
-        $mail2->Port = 465;
+        $mail2->Port = 587;
 
         // Evitar error de certificado en local
         $mail2->SMTPOptions = array(
