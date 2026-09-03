@@ -2,11 +2,12 @@ import React, { useState, useEffect, useRef } from 'react'
 import { Icon } from '@iconify/react'
 import './Nosotros.css'
 
-// Assets de Certificaciones
+// Assets de Certificaciones y Fundador
 import iso27001 from '../assets/iso27001.webp'
 import sunat from '../assets/verificado-por-sunat.webp'
 import homologado from '../assets/homologado.webp'
 import nosotroscontent from '../assets/nosotroscont.jpg'
+import inge from '../assets/inge.webp'
 
 export default function Nosotros() {
     
@@ -18,20 +19,23 @@ export default function Nosotros() {
     ];
 
     const [isContentVisible, setIsContentVisible] = useState(false);
+    const [isFounderVisible, setIsFounderVisible] = useState(true);
     const [isValuesVisible, setIsValuesVisible] = useState(false);
     const [isCertificacionesVisible, setIsCertificacionesVisible] = useState(false);
 
     const contentRef = useRef(null);
+    const founderRef = useRef(null);
     const valuesRef = useRef(null);
     const certificacionesRef = useRef(null);
 
     useEffect(() => {
-        const observerOptions = { threshold: 0.15 };
+        const observerOptions = { threshold: 0.05 };
         
         const handleIntersect = (entries) => {
             entries.forEach(entry => {
                 if (entry.isIntersecting) {
                     if (entry.target === contentRef.current) setIsContentVisible(true);
+                    if (entry.target === founderRef.current) setIsFounderVisible(true);
                     if (entry.target === valuesRef.current) setIsValuesVisible(true);
                     if (entry.target === certificacionesRef.current) setIsCertificacionesVisible(true);
                 }
@@ -41,6 +45,7 @@ export default function Nosotros() {
         const observer = new IntersectionObserver(handleIntersect, observerOptions);
 
         if (contentRef.current) observer.observe(contentRef.current);
+        if (founderRef.current) observer.observe(founderRef.current);
         if (valuesRef.current) observer.observe(valuesRef.current);
         if (certificacionesRef.current) observer.observe(certificacionesRef.current);
 
@@ -158,6 +163,48 @@ export default function Nosotros() {
                             </p>
                         </div>
 
+                    </div>
+                </div>
+            </section>
+
+            {/* Sección Fundador / Dirección General */}
+            <section className="nosotros-founder" ref={founderRef}>
+                <div className={`founder-grid ${isFounderVisible ? 'animate' : ''}`}>
+                    <div className="founder-image-col">
+                        <div className="founder-image-wrapper">
+                            <img 
+                                src={inge} 
+                                alt="Ing. Ricardo Calderón - Fundador y Gerente General" 
+                                className="founder-img"
+                            />
+                            <div className="founder-badge-experience">
+                                <span className="exp-number">+18</span>
+                                <span className="exp-text">Años de<br />Trayectoria</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div className="founder-info-col">
+                        <div className="founder-header">
+                            <span className="nosotros-section-badge">Liderazgo & Dirección</span>
+                            <h2>Ing. Ricardo Calderón</h2>
+                            <h3 className="founder-role">Fundador & Gerente General</h3>
+                        </div>
+                        <div className="founder-quote-box">
+                            <p className="founder-description">
+                                Con más de 18 años de trayectoria en el sector tecnológico, eléctrico y de telecomunicaciones, el <strong>Ing. Ricardo Calderón</strong> ha liderado el crecimiento sostenido de <strong>RC Ingenieros</strong>, consolidándola como un referente de innovación y confiabilidad en el Perú. Su visión estratégica y riguroso estándar técnico han sido el pilar fundamental para desarrollar soluciones integrales de ingeniería, automatización y software especializado para la industria de estaciones de servicio y el sector industrial en todo el país.
+                            </p>
+                        </div>
+                        <div className="founder-tags">
+                            <span className="founder-tag">
+                                <Icon icon="solar:shield-check-bold" /> Dirección Estratégica
+                            </span>
+                            <span className="founder-tag">
+                                <Icon icon="solar:bolt-bold" /> Automatización & Electricidad
+                            </span>
+                            <span className="founder-tag">
+                                <Icon icon="solar:server-square-bold" /> Infraestructura de Redes
+                            </span>
+                        </div>
                     </div>
                 </div>
             </section>

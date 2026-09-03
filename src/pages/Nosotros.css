@@ -273,6 +273,170 @@
     margin: 0;
 }
 
+/* ==========================================================================
+    SECCIÓN FUNDADOR / DIRECCIÓN GENERAL (DISEÑO ABIERTO Y ESPACIOSO)
+========================================================================== */
+.nosotros-founder {
+    width: 100%;
+    max-width: 1400px;
+    padding: 60px 0 100px 0;
+    margin: 0 auto;
+    position: relative;
+}
+
+.founder-grid {
+    width: 90%;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: 410px 1fr;
+    gap: 50px;
+    align-items: center;
+}
+
+.founder-image-col {
+    position: relative;
+    width: 100%;
+}
+
+.founder-image-wrapper {
+    position: relative;
+    width: 100%;
+    height: 520px;
+    border-radius: 28px;
+    overflow: hidden;
+    box-shadow: 0 20px 45px rgba(18, 51, 97, 0.14);
+}
+
+.founder-img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center top;
+    transition: transform 0.6s ease;
+}
+
+.founder-image-wrapper:hover .founder-img {
+    transform: scale(1.03);
+}
+
+.founder-badge-experience {
+    position: absolute;
+    bottom: 24px;
+    left: 24px;
+    right: 24px;
+    background: linear-gradient(135deg, #0a1329 0%, #123361 100%);
+    border: 1.5px solid rgba(54, 166, 235, 0.5);
+    border-radius: 18px;
+    padding: 14px 22px;
+    display: flex;
+    align-items: center;
+    gap: 16px;
+    backdrop-filter: blur(10px);
+    box-shadow: 0 12px 28px rgba(0, 0, 0, 0.3);
+}
+
+.exp-number {
+    font-size: 34px;
+    font-weight: 900;
+    color: #36A6EB;
+    line-height: 1;
+    letter-spacing: -1px;
+}
+
+.exp-text {
+    font-size: 13px;
+    font-weight: 700;
+    color: #ffffff;
+    line-height: 1.25;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+}
+
+.founder-info-col {
+    display: flex;
+    flex-direction: column;
+}
+
+.founder-header {
+    margin-bottom: 20px;
+}
+
+.founder-header h2 {
+    font-size: 46px;
+    font-weight: 800;
+    color: #000000;
+    margin: 12px 0 6px 0;
+    line-height: 1.15;
+    letter-spacing: -0.5px;
+}
+
+.founder-role {
+    font-size: 17px;
+    font-weight: 700;
+    color: #36A6EB;
+    text-transform: uppercase;
+    letter-spacing: 1.5px;
+    margin: 0;
+}
+
+.founder-quote-box {
+    border-left: 4px solid #36A6EB;
+    background: rgba(54, 166, 235, 0.04);
+    padding: 24px 30px;
+    border-radius: 0 20px 20px 0;
+    margin-bottom: 30px;
+}
+
+.founder-description {
+    font-size: 17px;
+    line-height: 1.8;
+    color: #555555;
+    margin: 0;
+}
+
+.founder-description strong {
+    color: #000000;
+    font-weight: 700;
+}
+
+.founder-tags {
+    display: flex;
+    gap: 10px;
+    flex-wrap: wrap;
+    align-items: center;
+}
+
+.founder-tag {
+    background: #ffffff;
+    border: 1px solid #e2e8f0;
+    color: #1e293b;
+    padding: 9px 16px;
+    border-radius: 50px;
+    font-size: 13.5px;
+    font-weight: 600;
+    display: inline-flex;
+    align-items: center;
+    gap: 7px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.04);
+    transition: all 0.3s ease;
+    white-space: nowrap;
+}
+
+.founder-tag:hover {
+    border-color: #36A6EB;
+    color: #36A6EB;
+    transform: translateY(-2px);
+    box-shadow: 0 8px 20px rgba(54, 166, 235, 0.15);
+}
+
+.founder-tag svg {
+    color: #36A6EB;
+    font-size: 18px;
+}
+
+/* ==========================================================================
+    CERTIFICACIONES
+========================================================================== */
 .certificaciones {
     background: linear-gradient(135deg, #f0f7ff 0%, #ffffff 100%);
     padding: 100px 0;
@@ -412,6 +576,21 @@
         font-size: 38px;
     }
 
+    .founder-grid {
+        grid-template-columns: 1fr;
+        gap: 50px;
+    }
+
+    .founder-image-wrapper {
+        max-width: 500px;
+        height: 440px;
+        margin: 0 auto;
+    }
+
+    .founder-header h2 {
+        font-size: 36px;
+    }
+
     .values-grid {
         grid-template-columns: repeat(2, 1fr);
     }
@@ -455,6 +634,52 @@
         flex-direction: column;
         align-items: center;
         text-align: center;
+    }
+
+    .nosotros-founder {
+        padding: 40px 0 60px 0;
+        margin: 0 auto;
+    }
+
+    .founder-grid {
+        grid-template-columns: 1fr;
+        gap: 35px;
+    }
+
+    .founder-image-wrapper {
+        height: 380px;
+        border-radius: 22px;
+    }
+
+    .founder-header {
+        text-align: center;
+    }
+
+    .founder-header h2 {
+        font-size: 30px;
+    }
+
+    .founder-role {
+        font-size: 15px;
+    }
+
+    .founder-quote-box {
+        padding: 20px;
+    }
+
+    .founder-description {
+        font-size: 15.5px;
+        line-height: 1.7;
+    }
+
+    .founder-tags {
+        gap: 8px;
+        justify-content: center;
+    }
+
+    .founder-tag {
+        font-size: 13px;
+        padding: 8px 14px;
     }
 
     .nosotros-values {
@@ -529,7 +754,7 @@
 
 /* ==========================================================================
     REVEAL ANIMATIONS (NUEVAS ANIMACIONES AL SCROLL)
-========================================================================== */
+========================================================================= */
 
 /* Nosotros Content */
 .nosotros-grid .nosotros-text {
@@ -562,6 +787,18 @@
 .nosotros-grid.animate .feature-item:nth-child(2) { transition-delay: 0.6s; opacity: 1; transform: translateY(0); }
 .nosotros-grid.animate .feature-item:nth-child(3) { transition-delay: 0.8s; opacity: 1; transform: translateY(0); }
 
+/* Nosotros Founder */
+.founder-grid .founder-image-col {
+    opacity: 1;
+    transform: translateX(0);
+    transition: all 0.8s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+.founder-grid .founder-info-col {
+    opacity: 1;
+    transform: translateX(0);
+    transition: all 0.8s cubic-bezier(0.16, 1, 0.3, 1);
+}
 
 /* Nosotros Values */
 .values-container .values-header {
