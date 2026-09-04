@@ -18,10 +18,34 @@ import Navbar from './components/Navbar'
 import Footer from './components/Footer'
 import WhatsAppButton from './components/WhatsAppButton'
 
+const PAGE_TITLES = {
+  '/': 'RC Ingenieros | Ricardo Calderón Ingenieros - Soluciones Tecnológicas',
+  '/nosotros': 'Sobre Nosotros | Ing. Ricardo Calderón - Fundador | RC Ingenieros',
+  '/servicios': 'Servicios de Ingeniería y Tecnología | RC Ingenieros',
+  '/servicios/soporte-tecnico': 'Soporte Técnico Especializado GNV y GLP | RC Ingenieros',
+  '/servicios/facturacion-electronica': 'APUFACT - Facturación Electrónica SUNAT | RC Ingenieros',
+  '/servicios/apugescom': 'APUGESCOM - Gestión y Control de Combustibles | RC Ingenieros',
+  '/servicios/pozos-a-tierra': 'Pozos a Tierra y Certificación Técnica | RC Ingenieros',
+  '/servicios/DesarrolloSoftware': 'Desarrollo de Software a Medida | RC Ingenieros',
+  '/productos': 'Productos & Equipamiento Industrial | RC Ingenieros',
+  '/productos/surtidores': 'Surtidores y Dispensadores de Combustibles | RC Ingenieros',
+  '/contacto': 'Contacto y Asesoría Comercial | RC Ingenieros',
+  '/terminos-condiciones': 'Términos y Condiciones | RC Ingenieros',
+  '/politica-privacidad': 'Políticas de Privacidad | RC Ingenieros',
+  '/libro-reclamaciones': 'Libro de Reclamaciones | Ricardo Calderón Ingenieros S.A.C.'
+};
+
 function ScrollToTop() {
   const { pathname, hash } = useLocation()
 
   useEffect(() => {
+    // Dynamic SEO Page Title
+    if (PAGE_TITLES[pathname]) {
+      document.title = PAGE_TITLES[pathname];
+    } else {
+      document.title = 'RC Ingenieros | Ricardo Calderón Ingenieros';
+    }
+
     if (!hash) {
       window.scrollTo(0, 0)
     } else {

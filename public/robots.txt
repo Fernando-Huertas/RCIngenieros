@@ -1,0 +1,6 @@
+# Robots.txt para RC Ingenieros (Ricardo Calderón Ingenieros S.A.C.)
+User-agent: *
+Allow: /
+
+# Sitemap
+Sitemap: https://rcingenieros.com/sitemap.xml
