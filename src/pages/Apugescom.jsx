@@ -10,6 +10,16 @@ import soporteImg from '../assets/soporte-y-mantenimiento-rc.webp'
 import eessImg from '../assets/EESS2.webp'
 import imgApugescom from '../assets/Logo_Apugescom2.webp'
 
+// Assets de Tarjetas Características (Imágenes de referencia de alta calidad)
+import featVentasCentralizadas from '../assets/apugescom/ventas_centralizadas.jpg'
+import featControlInventario from '../assets/apugescom/control_inventario.jpg'
+import featCambioPrecios from '../assets/apugescom/cambio_precios.jpg'
+import featEmisionTickets from '../assets/apugescom/emision_tickets.jpg'
+import featReportesVentas from '../assets/apugescom/reportes_ventas.jpg'
+import featPuntoVenta from '../assets/apugescom/punto_venta.jpg'
+import featFidelizacion from '../assets/apugescom/fidelizacion.jpg'
+import featMultimarca from '../assets/apugescom/multimarca.jpg'
+
 export default function Apugescom() {
     const [isAboutVisible, setIsAboutVisible] = useState(false);
     const [isFeaturesVisible, setIsFeaturesVisible] = useState(false);
@@ -127,16 +137,22 @@ export default function Apugescom() {
                     </div>
                     <div className="apugescom-features-grid">
                         {[
-                            { image: "https://images.unsplash.com/photo-1551288049-bebda4e38f71?w=600&h=400&fit=crop", title: "Ventas Centralizadas", desc: "Centraliza las ventas de todas las islas de dispensadores en un solo panel.", link: "/servicios/apugescom/ventas-centralizadas" },
-                            { image: "https://images.unsplash.com/photo-1586771107445-d3ca888129ff?w=600&h=400&fit=crop", title: "Control de Inventario", desc: "Control exacto del inventario del combustible en tiempo real.", link: "/servicios/apugescom/control-inventario" },
-                            { image: "https://images.unsplash.com/photo-1556742049-0cfed4f7a07d?w=600&h=400&fit=crop", title: "Cambio de Precios", desc: "Cambio de precios al instante en todos los dispensadores conectados.", link: "/servicios/apugescom/cambio-precios" },
-                            { image: "https://images.unsplash.com/photo-1557804506-669a67965ba0?w=600&h=400&fit=crop", title: "Emisión de Tickets", desc: "Emisión automática de tickets al finalizar despacho en las islas.", link: "/servicios/apugescom/emision-tickets" },
-                            { image: "https://images.unsplash.com/photo-1460925895917-afdab827c52f?w=600&h=400&fit=crop", title: "Reportes de Ventas", desc: "Variedad de reportes de ventas, recaudaciones y control de ingresos.", link: "/servicios/apugescom/reportes-ventas" },
-                            { image: "https://images.unsplash.com/photo-1556742502-ec7270b4d5d2?w=600&h=400&fit=crop", title: "Punto de Venta", desc: "Integración completa para el Punto de Venta (Market) de la estación.", link: "/servicios/apugescom/punto-venta" },
-                            { image: "https://images.unsplash.com/photo-1522071820081-009f0129c71c?w=600&h=400&fit=crop", title: "Fidelización", desc: "Control del Criss o Fidelización de Flotas para sus clientes frecuentes.", link: "/servicios/apugescom/fidelizacion" },
-                            { image: "https://images.unsplash.com/photo-1519389950473-47ba0277781c?w=600&h=400&fit=crop", title: "Multimarca", desc: "Compatible con Wayne, Gilbarco, Tokheim, Tatsumo, Datacontrol, Kraus y más.", link: "/servicios/apugescom/multimarca" }
+                            { image: featVentasCentralizadas, title: "Ventas Centralizadas", desc: "Centraliza las ventas de todas las islas de dispensadores en un solo panel." },
+                            { image: featControlInventario, title: "Control de Inventario", desc: "Control exacto del inventario del combustible en tiempo real." },
+                            { image: featCambioPrecios, title: "Cambio de Precios", desc: "Cambio de precios al instante en todos los dispensadores conectados." },
+                            { image: featEmisionTickets, title: "Emisión de Tickets", desc: "Emisión automática de tickets al finalizar despacho en las islas." },
+                            { image: featReportesVentas, title: "Reportes de Ventas", desc: "Variedad de reportes de ventas, recaudaciones y control de ingresos." },
+                            { image: featPuntoVenta, title: "Punto de Venta", desc: "Integración completa para el Punto de Venta (Market) de la estación." },
+                            { image: featFidelizacion, title: "Fidelización", desc: "Control del Criss o Fidelización de Flotas para sus clientes frecuentes." },
+                            { image: featMultimarca, title: "Multimarca", desc: "Compatible con Wayne, Gilbarco, Tokheim, Tatsumo, Datacontrol, Kraus y más." }
                         ].map((item, index) => (
-                            <a href={item.link} className="apugescom-feature-card" key={index}>
+                            <a 
+                                href={`https://wa.me/51995910229?text=${encodeURIComponent(`Hola, deseo más información sobre el módulo de ${item.title} en APUGESCOM`)}`} 
+                                className="apugescom-feature-card" 
+                                key={index}
+                                target="_blank"
+                                rel="noopener noreferrer"
+                            >
                                 <div className="apugescom-feature-image">
                                     <img src={item.image} alt={item.title} />
                                     <div className="apugescom-feature-overlay"></div>
@@ -145,7 +161,7 @@ export default function Apugescom() {
                                     <h3>{item.title}</h3>
                                     <p>{item.desc}</p>
                                     <div className="apugescom-feature-btn">
-                                        <span>Ver más</span>
+                                        <span>Consultar</span>
                                         <Icon icon="line-md:arrow-right" />
                                     </div>
                                 </div>

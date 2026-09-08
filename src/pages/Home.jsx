@@ -538,8 +538,8 @@ export default function Home() {
                 </h2>
                 <p className='apugescom-descripcion'>
                   APUGESCOM es su solución completa para el control total de sus Estaciones de Servicios en GLP,
-                   GNL, UREA y Líquidos. Permite la gestión integral de inventarios, dipensadores, ventas y reportes
-                    en tiempo real, maximizando la presición, eficiencia operativa y la rentabilidad de su negocio de combustibles.
+                   GNL, UREA y Líquidos. Permite la gestión integral de inventarios, dispensadores, ventas y reportes
+                    en tiempo real, maximizando la precisión, eficiencia operativa y la rentabilidad de su negocio de combustibles.
                 </p>
                 <div className='apugescom-buttons'>
                  <a style={{ textDecoration: 'none' }} href="/contacto#contacto-formulario" className='btn-cotizar'>

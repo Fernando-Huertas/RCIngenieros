@@ -82,7 +82,7 @@ export default function Nosotros() {
                             {[
                                 {
                                     title: "Experiencia comprobada",
-                                    desc: "Más de una década de dedicación al sector nos permite ejecutar proyectos de gran envergadura (GNV, GLP, Líquidos) con una precisión inigualable, minimizando riesgos y garantizando resultados que perduran.",
+                                    desc: "Más de una década de dedicación al sector nos permite ejecutar proyectos de gran envergadura (GNV, GLP,GNL Líquidos) con una precisión inigualable, minimizando riesgos y garantizando resultados que perduran.",
                                     icon: "solar:settings-bold-duotone"
                                 },
                                 {

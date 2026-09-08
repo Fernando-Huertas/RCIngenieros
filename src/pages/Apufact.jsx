@@ -101,7 +101,7 @@ export default function Apufact() {
                             <li className="apufact-feature-highlight"><Icon icon="mdi:check-decagram-outline" className="apufact-feature-icon" /> <span><strong>Autorizados por SUNAT</strong>, somos proveedor de servicios electrónicos (PSE-OSE)</span></li>
                             <li className="apufact-feature-highlight"><Icon icon="mdi:check-decagram-outline" className="apufact-feature-icon" /> <span><strong>Certificación ISO 27001</strong> (seguridad de la información)</span></li>
                             <li><Icon icon="mdi:check-decagram-outline" className="apufact-feature-icon" /> Visualiza tu información desde tu celular, tablet o PC</li>
-                            <li><Icon icon="mdi:check-decagram-outline" className="apufact-feature-icon" /> Integracion con tu punyo de venta o ERP</li>
+                            <li><Icon icon="mdi:check-decagram-outline" className="apufact-feature-icon" /> Integración con tu punto de venta o ERP</li>
                             <li><Icon icon="mdi:check-decagram-outline" className="apufact-feature-icon" /> Optimiza y agiliza el proceso de envío de tus CPE.</li>
                             <li><Icon icon="mdi:check-decagram-outline" className="apufact-feature-icon" /> Información segura en Amazon Web Service (AWS)</li>
                         </ul>

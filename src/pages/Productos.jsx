@@ -16,6 +16,8 @@ import lucesLedImg from '../assets/categorias/luces-led-antiexplosiva-rc.webp'
 import surtidoresImg from '../assets/categorias/surtidores.webp'
 import gabinetesPOSImg from '../assets/categorias/gabinetePOS.webp'
 import touchPanelPCImg from '../assets/categorias/touchRC.webp'
+import upsImg from '../assets/categorias/UPS.webp'
+import estabilizadorimg from '../assets/categorias/estabilizador.webp'
 
 export default function Productos() {
     const [isHeroVisible, setIsHeroVisible] = useState(false);
@@ -127,6 +129,20 @@ export default function Productos() {
             products: '10 productos',
             pdfUrl: '/docs/Touchs-RC.pdf'
         },
+        {
+            id:12,
+            name:'UPS',
+            image: upsImg,
+            description:'Manten encendidos tus equipos y protege tu inversión',
+            products: '10 productos',
+        },
+        {
+            id:13,
+            name:'Estabilizador',
+            image: estabilizadorimg,
+            description:'Protege la vida util de tus equipos',
+            products: '10 productos',
+        }
        
     ];
 
