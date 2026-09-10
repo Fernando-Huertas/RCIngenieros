@@ -167,7 +167,7 @@ export default function Nosotros() {
                 </div>
             </section>
 
-            {/* Sección Fundador / Dirección General */}
+            {/* Sección Fundador / Dirección General 
             <section className="nosotros-founder" ref={founderRef}>
                 <div className={`founder-grid ${isFounderVisible ? 'animate' : ''}`}>
                     <div className="founder-image-col">
@@ -207,7 +207,7 @@ export default function Nosotros() {
                         </div>
                     </div>
                 </div>
-            </section>
+            </section>*/}
 
             {/* Sección Certificaciones */}
             <section className='certificaciones' ref={certificacionesRef}>
