@@ -229,7 +229,7 @@ export default function Home() {
             <div className="info-hero">
                 <div className="info-hero-group">
                     <div className="info-hero-cuadro">
-                        <span className="info-title">20+</span>
+                        <span className="info-title">800+</span>
                         <span className="info-description">Clientes Activos</span>
                     </div>
                     <div className="info-hero-cuadro">
@@ -276,7 +276,7 @@ export default function Home() {
             <div className="info-hero">
                 <div className="info-hero-group">
                     <div className="info-hero-cuadro">
-                        <span className="info-title">20+</span>
+                        <span className="info-title">800+</span>
                         <span className="info-description">Clientes Activos</span>
                     </div>
                     <div className="info-hero-cuadro">
@@ -324,7 +324,7 @@ export default function Home() {
             <div className="info-hero">
                 <div className="info-hero-group">
                     <div className="info-hero-cuadro">
-                        <span className="info-title">20+</span>
+                        <span className="info-title">800+</span>
                         <span className="info-description">Clientes Activos</span>
                     </div>
                     <div className="info-hero-cuadro">
@@ -372,7 +372,7 @@ export default function Home() {
             <div className="info-hero">
                 <div className="info-hero-group">
                     <div className="info-hero-cuadro">
-                        <span className="info-title">20+</span>
+                        <span className="info-title">800+</span>
                         <span className="info-description">Clientes Activos</span>
                     </div>
                     <div className="info-hero-cuadro">
