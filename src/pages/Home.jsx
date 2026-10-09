@@ -243,7 +243,7 @@ export default function Home() {
                         <span className="info-description">Soporte Técnico</span>
                     </div>
                     <div className="info-hero-cuadro">
-                        <span className="info-title">15+</span>
+                        <span className="info-title">18+</span>
                         <span className="info-description">Años de Experiencia</span>
                     </div>
                 </div>
@@ -290,7 +290,7 @@ export default function Home() {
                         <span className="info-description">Soporte Técnico</span>
                     </div>
                     <div className="info-hero-cuadro">
-                        <span className="info-title">15+</span>
+                        <span className="info-title">18+</span>
                         <span className="info-description">Años de Experiencia</span>
                     </div>
                 </div>
@@ -338,7 +338,7 @@ export default function Home() {
                         <span className="info-description">Soporte Técnico</span>
                     </div>
                     <div className="info-hero-cuadro">
-                        <span className="info-title">15+</span>
+                        <span className="info-title">18+</span>
                         <span className="info-description">Años de Experiencia</span>
                     </div>
                 </div>
@@ -386,7 +386,7 @@ export default function Home() {
                         <span className="info-description">Soporte Técnico</span>
                     </div>
                     <div className="info-hero-cuadro">
-                        <span className="info-title">15+</span>
+                        <span className="info-title">18+</span>
                         <span className="info-description">Años de Experiencia</span>
                     </div>
                 </div>
@@ -485,7 +485,7 @@ export default function Home() {
                 <img src={imgnostros} alt="#" />
               </div>
               <div className='img-info'>
-                <h2>15+</h2>
+                <h2>18+</h2>
                 <span>Años de Experiencia</span>
               </div>
               <div className='img-secundaria'>
